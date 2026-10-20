@@ -60,9 +60,9 @@ export function StatusBadge({ status }) {
   const s = STATUS[status] || { label: status, tone: 'grey' };
   return <Badge tone={s.tone}>{s.label}</Badge>;
 }
-export function Field({ label, help, children, className = '' }) {
+export function Field({ label, help, children, className = '', style }) {
   return (
-    <label className={`f ${className}`}>
+    <label className={`f ${className}`} style={style}>
       {label}
       {children}
       {help && <span className="help">{help}</span>}

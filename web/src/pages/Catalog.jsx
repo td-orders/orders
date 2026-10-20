@@ -43,13 +43,16 @@ export default function Catalog() {
     <div className="page">
       <div className="page-head">
         <div><h1>Nuovo ordine</h1><div className="sub">Elenco chiuso del modulo TD-SGI-MOD252: aggiungi al carrello le confezioni che servono</div></div>
-        {ops && <Field label="Ordine per conto della struttura"><select value={strutturaId} onChange={(e) => setStrutturaId(e.target.value)} style={{ minWidth: 280 }}><option value="">Scegli la struttura…</option>{(strutture.data || []).map((s) => <option key={s.id} value={s.id}>{s.name} ({s.code})</option>)}</select></Field>}
       </div>
+      {ops && !strutturaId && <div className="alert warn" style={{ marginBottom: 14 }}>Stai ordinando per conto di una struttura: scegli prima il cliente o la sede.</div>}
       <ErrorBox error={err} />
       <div className="catalog">
         <div>
-          <div className="filters">
-            <Field label="Cerca"><input placeholder="Nome o codice articolo" value={search} onChange={(e) => setSearch(e.target.value)} /></Field>
+          <div className="toolbar">
+            <div className="row">
+              {ops && <Field label="Ordine per conto della struttura" style={{ flex: 2 }}><select value={strutturaId} onChange={(e) => setStrutturaId(e.target.value)}><option value="">Scegli il cliente o la sede…</option>{(strutture.data || []).map((s) => <option key={s.id} value={s.id}>{s.name} ({s.code})</option>)}</select></Field>}
+              <Field label="Cerca nel catalogo" style={{ flex: 1, minWidth: 220 }}><input placeholder="Nome o codice articolo" value={search} onChange={(e) => setSearch(e.target.value)} /></Field>
+            </div>
             <div className="chips">
               <button className={`chipbtn ${!cat ? 'on' : ''}`} onClick={() => setCat('')}>Tutti</button>
               {(categories.data || []).map((c) => <button key={c.code} className={`chipbtn ${cat === c.code ? 'on' : ''}`} onClick={() => setCat(c.code)}>{c.name}</button>)}
