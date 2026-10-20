@@ -1,0 +1,9374 @@
+[
+{
+"exam_code": "B505P",
+"exam_name": "Tampone Vaginale Completo",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "113",
+"exam_name": "A.Anti Treponema Pallidum IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1158",
+"exam_name": "Echinococco IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "044",
+"exam_name": "G-6-PDH Eritrocitaria",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "100",
+"exam_name": "Titolo antistreptolisinico (TAS)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "101",
+"exam_name": "Proteina C Reattiva (PCR)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1010",
+"exam_name": "Proteina C Reattiva ad alta sensibilità",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "102",
+"exam_name": "RA Test",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1039",
+"exam_name": "Indice Homa",
+"article_code": "PRV04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "10701Q",
+"exam_name": "A.Anti Epstein Barr (EBNA) IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "10710Q",
+"exam_name": "A.Anti Epstein Barr VCA IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1071Q",
+"exam_name": "A.Anti Epstein Barr VCA IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1079",
+"exam_name": "Curva da carico di glucosio standard (2 punti)",
+"article_code": "PRV04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1090",
+"exam_name": "Curva da carico di glucosio completa",
+"article_code": "PRV04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1101",
+"exam_name": "Immunoglobuline A",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1102",
+"exam_name": "Immunoglobuline G ",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1103",
+"exam_name": "Immunoglobuline M",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "11601",
+"exam_name": "A.Anti Rosolia IgG (Rubeo)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "11602",
+"exam_name": "A.Anti Rosolia IgM (Rubeo)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1166",
+"exam_name": "Curva Glicemica in Gravidanza",
+"article_code": "PRV04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "117",
+"exam_name": "Carcinoma Cellule Squamose (S.C.C. o T.A.4)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1177",
+"exam_name": "TSH Riflesso",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "11801Q",
+"exam_name": "A.Anti Toxoplasma gondii IgG Abs Quantitativo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "11802Q",
+"exam_name": "A.Anti Toxoplasma gondii IgM Abs Quantitativo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "11805",
+"exam_name": "A.Anti Toxoplasma gondii Avidita' IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1181",
+"exam_name": "PSA Reflex",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "119",
+"exam_name": "Mioglobina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1209",
+"exam_name": "Dosaggio C3/C3C",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "12099",
+"exam_name": "Dosaggio C4/C4C",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1282",
+"exam_name": "Glicemia preprandiale (per interni)",
+"article_code": "PRV04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "130",
+"exam_name": "Alfa-1 Antitripsina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1309",
+"exam_name": "B 2 Microglobulina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "131",
+"exam_name": "Aptoglobina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1367",
+"exam_name": "PROLATTINA II Campione",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1368",
+"exam_name": "PROLATTINA III campione",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1372",
+"exam_name": "A.Anti Tireoperossidasi",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1373",
+"exam_name": "A.Anti Tireoglobulina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1378",
+"exam_name": "Insulinemia post prandiale",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1382",
+"exam_name": "Peptide C Post Prandiale",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "140",
+"exam_name": "Ceruloplasmina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1482",
+"exam_name": "TROPONINA I AD ELEVATA SENSIBILITA'",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1531Q",
+"exam_name": "A.Anti Citomegalovirus IgG Abs Quantitativo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1532Q",
+"exam_name": "A.Anti Citomegalovirus IgM Abs Quantitativo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1535",
+"exam_name": "A.Anti Citomegalovirus Avidita' IgG + IgG per CMV",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1664",
+"exam_name": "ETANOLO Ematico con valenza medico legale",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1667",
+"exam_name": "Dosaggio catene leggere libere Kappa e Lambda sieriche",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1668",
+"exam_name": "Dosaggio catene libere Lambda sieriche",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1669",
+"exam_name": "Dosaggio catene libere leggere Lambda sieriche",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1670",
+"exam_name": "A.Anti HIV 1-2",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1911",
+"exam_name": "Creatinina urinaria su campione estemporaneo",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1911",
+"exam_name": "Creatinina urinaria su campione estemporaneo",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "200",
+"exam_name": "Glicemia",
+"article_code": "PRV04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "201",
+"exam_name": "Glicemia Post Prandiale",
+"article_code": "PRV04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "202",
+"exam_name": "Glicemia frazionata",
+"article_code": "PRV04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "205",
+"exam_name": "Emoglobina Glicata",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "206",
+"exam_name": "Glicosuria (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2062",
+"exam_name": "Glicosuria su campione estemporaneo",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2062",
+"exam_name": "Glicosuria su campione estemporaneo",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "207",
+"exam_name": "Glicosuria Frazionata",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "207",
+"exam_name": "Glicosuria Frazionata",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "210",
+"exam_name": "Azotemia (Urea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "211",
+"exam_name": "Azoturia (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2111",
+"exam_name": "Clearance Urea (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2112",
+"exam_name": "Azoturia su campione estemporaneo",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2112",
+"exam_name": "Azoturia su campione estemporaneo",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "220",
+"exam_name": "Creatininemia",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "221",
+"exam_name": "Clearance della Creatinina (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2243",
+"exam_name": "FOSFORO URINARIO CAMPIONE ESTEMPORANEO",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2243",
+"exam_name": "FOSFORO URINARIO CAMPIONE ESTEMPORANEO",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2244",
+"exam_name": "MAGNESIO URINARIO SU CAMPIONE ESTEMPORANEO",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2244",
+"exam_name": "MAGNESIO URINARIO SU CAMPIONE ESTEMPORANEO",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2245",
+"exam_name": "SODIO URINARIO SU CAMPIONE ESTEMPORANEO",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2245",
+"exam_name": "SODIO URINARIO SU CAMPIONE ESTEMPORANEO",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2246",
+"exam_name": "POTASSIO URINARIO SU CAMPIONE ESTEMPORANEO",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2246",
+"exam_name": "POTASSIO URINARIO SU CAMPIONE ESTEMPORANEO",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "230",
+"exam_name": "Uricemia",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "231",
+"exam_name": "Uricosuria (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2312",
+"exam_name": "Uricosuria su campione estemporaneo",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2312",
+"exam_name": "Uricosuria su campione estemporaneo",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "232",
+"exam_name": "Creatininuria (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "241",
+"exam_name": "Sodiemia (Na)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "242",
+"exam_name": "Potassiemia ( K )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "243",
+"exam_name": "Cloremia (Cl)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "244",
+"exam_name": "Calcemia (Ca)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "245",
+"exam_name": "Fosforemia (P)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "246",
+"exam_name": "Magnesiemia (Mg)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "247",
+"exam_name": "Litiemia",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "248",
+"exam_name": "Cupremia (Rame Sierico)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "250",
+"exam_name": "Calcio Ionizzato",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "251",
+"exam_name": "Sodio urinario (Na) (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "252",
+"exam_name": "Potassio Urinario ( K ) (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "253",
+"exam_name": "Cloro urinario (Cl) (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2532",
+"exam_name": "Cloro urinario (Cl) su campione estemporaneo",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2532",
+"exam_name": "Cloro urinario (Cl) su campione estemporaneo",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "254",
+"exam_name": "CALCIURIA ( Ca ) (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2540",
+"exam_name": "CALCIO URINARIO SU CAMPIONE ESTEMPORANEO",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2540",
+"exam_name": "CALCIO URINARIO SU CAMPIONE ESTEMPORANEO",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "255",
+"exam_name": "Fosfaturia ( P ) (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "256",
+"exam_name": "Magnesio urinario (Mg) (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "259",
+"exam_name": "Microalbuminuria",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "259",
+"exam_name": "Microalbuminuria",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2590",
+"exam_name": "Microalbuminuria (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2592",
+"exam_name": "Microalbuminuria II Camp.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2592",
+"exam_name": "Microalbuminuria II Camp.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2593",
+"exam_name": "Microalbuminuria III Camp.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2593",
+"exam_name": "Microalbuminuria III Camp.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2599",
+"exam_name": "Proteine totali",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "25990",
+"exam_name": "Proteine Totali per Elettroforesi",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2602",
+"exam_name": "Albuminemia",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "262",
+"exam_name": "Proteinuria (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2622",
+"exam_name": "Proteinuria (Urine 24 h) II Campione",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "262SP",
+"exam_name": "Proteinuria su campione estemporaneo",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "262SP",
+"exam_name": "Proteinuria su campione estemporaneo",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "267",
+"exam_name": "A.C.E. (Angiotensin Converting Enzyme)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "280",
+"exam_name": "Bilirubinemia Totale",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "281",
+"exam_name": "Bilirubinemia Frazionata",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "282",
+"exam_name": "Fosfatasi Alcalina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "285",
+"exam_name": "GAMMA GT",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "288",
+"exam_name": "Acidi Biliari",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "288PP",
+"exam_name": "Acidi Biliari  post prandiale",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2900",
+"exam_name": "AST (GOT)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2901",
+"exam_name": "ALT (GPT)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "292",
+"exam_name": "Ammoniemia",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "300",
+"exam_name": "Colinesterasi",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "301",
+"exam_name": "CPK",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "302",
+"exam_name": "LDH (NAC attivato)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "305",
+"exam_name": "Lattato",
+"article_code": "PRV04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "310",
+"exam_name": "Amilasemia (Alfa-Amilasi)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "3100",
+"exam_name": "Amilasi Pancreatica",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "311",
+"exam_name": "Amilasuria (Urine 24 h)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "319",
+"exam_name": "Lipasi",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "320",
+"exam_name": "Colesterolo totale",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "323",
+"exam_name": "Trigliceridi",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "325",
+"exam_name": "Colesterolo HDL",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "3250",
+"exam_name": "Apolipoproteina A1",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "3253",
+"exam_name": "Lipoproteina a",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "326",
+"exam_name": "Colesterolo LDL",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "3260",
+"exam_name": "Apolipoproteina B",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "327",
+"exam_name": "INDICE DI RISCHIO (RAPPORTO HDL/LDL)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "330",
+"exam_name": "Sideremia (Ferro Sierico)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "3310",
+"exam_name": "TIBC-Capacita' ferro legante totale",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "332",
+"exam_name": "Transferrina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "3321",
+"exam_name": "Percentuale di saturazione della Transferrina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "352",
+"exam_name": "Cistatina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "353",
+"exam_name": "Procalcitonina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "428",
+"exam_name": "CREATINCHINASI ISOENZIMA MB (CK-MB)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "4526",
+"exam_name": "ANTICORPI ANTI TREPONEMA PALLIDUM SCREENING",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "600",
+"exam_name": "HBsAg (Antigene Au) Markers Epatite B",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6011",
+"exam_name": "A.Anti HBsAb Quantitativo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "602",
+"exam_name": "HBeAg",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "603",
+"exam_name": "A.Anti HBeAb (Markers Epatite B)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "604",
+"exam_name": "A.Anti HBcAb (Markers Epatite B)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "605",
+"exam_name": "A.Anti HCV (Markers Epatite C)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "606",
+"exam_name": "A.Anti HAV Totali",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "608",
+"exam_name": "A.Anti HAV IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "609",
+"exam_name": "HBcAb (CORE VIRUS EPATITE B) Abs IgM ",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "612",
+"exam_name": "Triiodotironina (T3)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6120",
+"exam_name": "Triiodotironina libera (FT3)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "613",
+"exam_name": "Tiroxina (T4)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6130",
+"exam_name": "Tiroxina libera (FT4)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "614",
+"exam_name": "TSH",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6141",
+"exam_name": "Tireoglobulina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "615",
+"exam_name": "FSH",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "616",
+"exam_name": "LH",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "617",
+"exam_name": "Prolattina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "617120",
+"exam_name": "Prolattina 120 minuti",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "617150",
+"exam_name": "Prolattina 150 minuti",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "617180",
+"exam_name": "Prolattina 180 minuti",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "61720",
+"exam_name": "Prolattina 20 minuti",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "61730",
+"exam_name": "Prolattina 30 minuti",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "61760",
+"exam_name": "Prolattina 60 minuti",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "618",
+"exam_name": "Peptide C",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6180",
+"exam_name": "BHCG Plasmatica",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "619",
+"exam_name": "17 beta Estradiolo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6190",
+"exam_name": "S.H.B.G. (Sex Hormone Binding Globulin)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "620",
+"exam_name": "Progesterone Plasmatico",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "621",
+"exam_name": "Testosterone plasmatico",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6211",
+"exam_name": "Testosterone libero",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "623",
+"exam_name": "Cortisolo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "626",
+"exam_name": "Cortisolo urinario",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6301",
+"exam_name": "Omocisteina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6323",
+"exam_name": "He4 (Ovarian Cancer Marker)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6337",
+"exam_name": "Amfetamine/Metamfetamine matrice urinaria - Valenza Legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6337CL",
+"exam_name": "Amfetamine/Metamfetamine matrice urinaria - Valenza clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6337CL",
+"exam_name": "Amfetamine/Metamfetamine matrice urinaria - Valenza clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6338",
+"exam_name": "Ecstasy (MDMA) matrice urinaria - Valenza Legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6338CL",
+"exam_name": "Ecstasy (MDMA) matrice urinaria - Valenza clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6338CL",
+"exam_name": "Ecstasy (MDMA) matrice urinaria - Valenza clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "636",
+"exam_name": "DHEA-S",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "641",
+"exam_name": "Paratormone (PTH)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "650",
+"exam_name": "CEA (Carcino - Embryonic Antigen)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "651",
+"exam_name": "Alfa 1 Fetoproteina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6510",
+"exam_name": "CA 125",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6511",
+"exam_name": "CA 19-9 (GICA)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6512",
+"exam_name": "CA 15-3",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6514",
+"exam_name": "P.S.A.",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "65140",
+"exam_name": "FREE PSA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6516",
+"exam_name": "A.Anti Recettori T.S.H.",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "65190",
+"exam_name": "CYFRA 21-1",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "652",
+"exam_name": "Insulinemia",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6533",
+"exam_name": "Curva Insulinemica",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "660",
+"exam_name": "Digossina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "661",
+"exam_name": "Vitamina B 12",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6610",
+"exam_name": "Vitamina D (25 OH)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "662",
+"exam_name": "Folati (Vitamina B9)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "663",
+"exam_name": "Ferritina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "665",
+"exam_name": "IgE TOTALI",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "667",
+"exam_name": "Cannabinoidi matrice urinaria - Valenza Legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6671",
+"exam_name": "Metadone matrice urinaria - Valenza Legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6671CL",
+"exam_name": "Metadone matrice urinaria - Valenza clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6671CL",
+"exam_name": "Metadone matrice urinaria - Valenza clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "667CL",
+"exam_name": "Cannabinoidi matrice urinaria - Valenza clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "667CL",
+"exam_name": "Cannabinoidi matrice urinaria - Valenza clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "668",
+"exam_name": "Oppiacei matrice urinaria - Valenza Legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "668CL",
+"exam_name": "Oppiacei matrice urinaria - Valenza clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "668CL",
+"exam_name": "Oppiacei matrice urinaria - Valenza clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "669",
+"exam_name": "Cocaina matrice urinaria - Valenza Legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "669CL",
+"exam_name": "Cocaina matrice urinaria - Valenza clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "669CL",
+"exam_name": "Cocaina matrice urinaria - Valenza clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "671",
+"exam_name": "Ac.Valproico",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "694",
+"exam_name": "Ciclosporina",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7160",
+"exam_name": "Zinco ematico",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "734",
+"exam_name": "Etanolo urinario - valenza clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "734",
+"exam_name": "Etanolo urinario - valenza clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7341",
+"exam_name": "Etanolo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7342",
+"exam_name": "Etanolo urinario - Valenza legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7841",
+"exam_name": "Osmolalità sierica",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7842",
+"exam_name": "Osmolalità urinaria",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7842",
+"exam_name": "Osmolalità urinaria",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7980",
+"exam_name": "ProBNP",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1488",
+"exam_name": "Breath Test urea C13 (lettura + kit)",
+"article_code": "KIT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2239",
+"exam_name": "Breath Test Lattosio (Lettura + Kit)",
+"article_code": "KIT04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2239L",
+"exam_name": "Breath Test Lattulosio (Lettura + Kit)",
+"article_code": "KIT05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "BREFRU",
+"exam_name": "Breath Test Fruttosio (Lettura + Kit)",
+"article_code": "KIT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "BREGLU",
+"exam_name": "Breath Test Glucosio (Lettura + Kit)",
+"article_code": "KIT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "BRESOR",
+"exam_name": "Breath Test al Sorbitolo (Lettura + kit)",
+"article_code": "KIT06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10218",
+"exam_name": "MAMMELLA - AGOASPIRATO MAMMARIO",
+"article_code": "CIT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10218",
+"exam_name": "MAMMELLA - AGOASPIRATO MAMMARIO",
+"article_code": "CIT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10219",
+"exam_name": "TIROIDE - AGOASPIRATO TIROIDE",
+"article_code": "CIT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10219",
+"exam_name": "TIROIDE - AGOASPIRATO TIROIDE",
+"article_code": "CIT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10266",
+"exam_name": "CERVICE UTERINA - NEWPAP - DNA: MONOSTRATO + HPV HIGH RISK",
+"article_code": "CIT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10269",
+"exam_name": "CERVICE UTERINA - PAP TEST SINGOLO VETRINO",
+"article_code": "CIT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10269",
+"exam_name": "CERVICE UTERINA - PAP TEST SINGOLO VETRINO",
+"article_code": "CIT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10270",
+"exam_name": "CERVICE UTERINA - PAP TEST MONOSTRATO",
+"article_code": "CIT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10271",
+"exam_name": "VAGINA - PAP TEST MONOSTRATO",
+"article_code": "CIT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10272",
+"exam_name": "VAGINA - PAP TEST VAGINALE  (vetrino)",
+"article_code": "CIT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10272",
+"exam_name": "VAGINA - PAP TEST VAGINALE  (vetrino)",
+"article_code": "CIT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10278",
+"exam_name": "ES. CITOLOGICO URINE PER RICERCA CELLULE NEOPLASTICHE 1° CAMP",
+"article_code": "CIT04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10279",
+"exam_name": "ES. CITOLOGICO URINE PER RICERCA CELLULE NEOPLASTICHE 2° CAMP",
+"article_code": "CIT04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10280",
+"exam_name": "ES. CITOLOGICO URINE PER RICERCA CELLULE NEOPLASTICHE 3° CAMP",
+"article_code": "CIT04",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10281",
+"exam_name": "ES. CITOLOGICO ESPETTORATO PER RICERCA CELLULE NEOPLASTICHE 1° CAMP",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10282",
+"exam_name": "ES. CITOLOGICO ESPETTORATO PER RICERCA CELLULE NEOPLASTICHE 2° CAMP",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10283",
+"exam_name": "ES. CITOLOGICO ESPETTORATO PER RICERCA CELLULE NEOPLASTICHE 3° CAMP",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "016",
+"exam_name": "Tempo di Protrombina (P.T.)",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "017",
+"exam_name": "aPTT (Tempo di Tromboplastina Parziale)",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "018",
+"exam_name": "Antitrombina III",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "020",
+"exam_name": "Fibrinogeno",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "043",
+"exam_name": "D-Dimero",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "070",
+"exam_name": "Proteina C funzionale",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "071",
+"exam_name": "Proteina S libera",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "072",
+"exam_name": "Resist. alla Proteina C attivata (APC-R)",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1353",
+"exam_name": "L.A.C. (Lupus anticoagulant)",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "342",
+"exam_name": "Fattore VII",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "360",
+"exam_name": "Fattore  V",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "440",
+"exam_name": "Fattore X",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "441",
+"exam_name": "Fattore II",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1346",
+"exam_name": "CDT-Transferrina Carboidrato Carente (Desialata) HPLC",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1346ML",
+"exam_name": "CDT-Transferrina Carboidrato Carente (Desialata) HPLC Valenza Medico Legale",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "260",
+"exam_name": "Elettroforesi",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "0014",
+"exam_name": "Emocromocitometrico completo",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "003",
+"exam_name": "FORMULA LEUCOCITARIA",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "004",
+"exam_name": "Piastrine in citrato",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "004E",
+"exam_name": "Piastrine in EDTA",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "005",
+"exam_name": "Reticolociti",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "007",
+"exam_name": "Conta Leucociti",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "008",
+"exam_name": "Conta Eosinofili",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2970",
+"exam_name": "Versamenti Cavitari (esame chimico-fisico)",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "4599",
+"exam_name": "Esame microscopico di sangue periferico",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "549M",
+"exam_name": "Esame liquido sinoviale",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "EMFR",
+"exam_name": "Emocromo a caldo",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "515",
+"exam_name": "Feci ricerca sangue occulto",
+"article_code": "KIT10",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5152",
+"exam_name": "Feci ricerca sangue occulto II campione",
+"article_code": "KIT10",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5153",
+"exam_name": "Feci ricerca sangue occulto III campione",
+"article_code": "KIT10",
+"qty_per_exam": 1
+},
+{
+"exam_code": "520",
+"exam_name": "Elastasi 1 Pancreatica Fecale",
+"article_code": "KIT10",
+"qty_per_exam": 1
+},
+{
+"exam_code": "592",
+"exam_name": "Ricerca Antigene Helicobacter Pylori FECI",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5922",
+"exam_name": "Ricerca Antigene Helicobacter Pylori II Camp.",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5923",
+"exam_name": "Ricerca Antigene Helicobacter Pylori III Camp.",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "843",
+"exam_name": "Calprotectina fecale",
+"article_code": "KIT10",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B543B",
+"exam_name": "Esame di Base del Liquido Seminale (Spermiogramma)",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE132",
+"exam_name": "Predisposizione al morbo celiaco - 16 marcatori",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "MYFOOD1",
+"exam_name": "My Food Profile Mediterraneo Basic - 54 alimenti",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "MYFOOD2",
+"exam_name": "My Food Profile Extended - 108 alimenti",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "MYFOOD3",
+"exam_name": "My Food Profile Advanced - 216 alimenti",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1000",
+"exam_name": "Immunofissazione Sierica",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1001",
+"exam_name": "Immunofissazione urinaria",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1001",
+"exam_name": "Immunofissazione urinaria",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "265",
+"exam_name": "Elettroforesi Proteine Urinarie",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "4604DNA",
+"exam_name": "Epstein-Barr Virus (EBV) DNA quantitativo",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60091",
+"exam_name": "DNA - HBV Quantitativo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60125",
+"exam_name": "HLA Morbo Celiaco DQ2-DQ8",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60131",
+"exam_name": "HIV 1 RNA Quantitativo",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60530",
+"exam_name": "HCV RNA Quantitativo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8758",
+"exam_name": "Rilevazione COVID-19 (Tampone naso-faringeo)",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5041",
+"exam_name": "Esame molecolare tampone rettale per CRE (Enterobatteri resistenti ai Carbapenemi)",
+"article_code": "TMP03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE090",
+"exam_name": "Gene Fattore II : ricerca della mutazione G20210A",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE091",
+"exam_name": "Gene Fattore V: ricerca della mutazione G1691A (detta di Leiden)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE097",
+"exam_name": "Gene MTHFR: ricerca della mutazione C677T",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE100",
+"exam_name": "Pannello Trombofilia 3 Mutazioni (Fattore V di Leiden; Fattore II; MTHFR C677T)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE133",
+"exam_name": "Intolleranza genetica al lattosio",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10000",
+"exam_name": "ANO - EMORROIDECTOMIA/RESEZ RETTALE STARR",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10001",
+"exam_name": "ANO - POLIPECTOMIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10002",
+"exam_name": "APPENDICE - APPENDICECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10003",
+"exam_name": "ARTICOLAZ. ASPORTAZIONE DI NEOFORMAZIONE (ARTICOLAZIONI)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10004",
+"exam_name": "ARTICOLAZ. - BIOPSIA ARTICOLAZIONI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10005",
+"exam_name": "ARTICOLAZ. - BIOPSIA DA DISCO INTERVERTEBRALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10006",
+"exam_name": "ARTICOLAZ. - BIOPSIA DA DISCO INTERVERTEBRALE (NEOPLASIA)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10007",
+"exam_name": "ARTICOLAZ. - BIOPSIA per malattia di Dupuytren o di Quervain",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10008",
+"exam_name": "ARTICOLAZ. - BIOPSIA SINOVIALE, BIOPSIA TENDINEA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10009",
+"exam_name": "ARTICOLAZ. - ESCISSIONE NEOFORMAZIONE SINOVIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10010",
+"exam_name": "ARTICOLAZ. - MENISCECTOMIA POST-TRAUMATICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10011",
+"exam_name": "ARTO INFERIORE - AMPUTAZIONE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10012",
+"exam_name": "ARTO INFERIORE - AMPUTAZIONE (PER NEOPLASIA)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10013",
+"exam_name": "ARTO SUPERIORE - AMPUTAZIONE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10014",
+"exam_name": "ARTO SUPERIORE - AMPUTAZIONE (PER NEOPLASIA)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10015",
+"exam_name": "BOCCA - BIOPSIA CAVO ORALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10016",
+"exam_name": "BOCCA - BIOPSIA CAVO ORALE ESCISSIONE/NEOFORMAZIONE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10017",
+"exam_name": "BOCCA - EMIGLOSSECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10021",
+"exam_name": "CERVICE - BIOPSIA CERVICE UTERINA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10022",
+"exam_name": "CERVICE - CONIZZAZIONE DELLA CERVICE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10023",
+"exam_name": "SOMA - PRELIEVO IN SEDE DI INTERVENTO COMPLESSO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10024",
+"exam_name": "CERVICE - POLIPECTOMIA ENDOCERVICALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10027",
+"exam_name": "ANO - FISTOLA ANALE ",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10028",
+"exam_name": "COLECISTI - COLECISTECTOMIA ALLARGATA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10029",
+"exam_name": "COLECISTI - COLECISTECTOMIA SEMPLICE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10030",
+"exam_name": "COLEDOCO - DIGER.BIOPSIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10031",
+"exam_name": "COLON - COLECTOMIA TOTALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10032",
+"exam_name": "COLON - DIGERENTE BIOPSIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10033",
+"exam_name": "COLON - EMICOLECTOMIA (CON LINFOADENECTOMIA)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10035",
+"exam_name": "COLON - POLIPECTOMIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10036",
+"exam_name": "COLON - RESEZIONE SEGMENTARIA DEL COLON",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10037",
+"exam_name": "CUORE - BIOPSIA ENDOMIOCARDICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10038",
+"exam_name": "CUORE - BIOPSIA MUSCOLO/BEM",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10040",
+"exam_name": "CUORE - VALVOLA CARDIACA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10042",
+"exam_name": "CUTE - BIOPSIA CUTE (PUNCH)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10043",
+"exam_name": "CUTE - SENO PILONIDALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10044",
+"exam_name": "CUTE E ANNESSI - BIOPSIA ESCISSIONALE CUTE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10045",
+"exam_name": "CUTE E ANNESSI - ESCISSIONE ALLARGATA CUTE E/O TESSUTI MOLLI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10046",
+"exam_name": "DITO - AMPUTAZIONE DITO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10047",
+"exam_name": "DITO - AMPUTAZIONE DITO (PER NEOPLASIA)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10048",
+"exam_name": "DUODENO/ILEO - DIGERENTE/ BIOPSIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10049",
+"exam_name": "DUODENO/ILEO-DIGERENTE/ POLIPECTOMIA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10050",
+"exam_name": "ESOFAGO - DIGERENTE BIOPSIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10051",
+"exam_name": "ESOFAGO - POLIPECTOMIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10052",
+"exam_name": "ESOFAGO - RESEZIONE ESOFAGO-GASTRICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10053",
+"exam_name": "ESOFAGO - RESEZIONE SEGMENTARIA DELL'ESOFAGO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10054",
+"exam_name": "FARINGE - EMIFARINGECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10055",
+"exam_name": "FARINGE - FARINGOLARINGECTOMIA TOTALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10056",
+"exam_name": "FARINGE - TONSILLECTOMIA  PER LINFOMA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10057",
+"exam_name": "FARINGE - TONSILLECTOMIA E/O ADENOIDECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10060",
+"exam_name": "FEGATO - AGOBIOPSIA EPATICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10061",
+"exam_name": "FEGATO - BIOPSIA FEGATO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10062",
+"exam_name": "FEGATO - EPATECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10063",
+"exam_name": "FEGATO - RESEZIONE SEGMENTARIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10066",
+"exam_name": "FETO - ETA' GESTAZ.ANT.ALLA 20^SETT.E/O PESO <500",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10067",
+"exam_name": "G.SALIVARE - AGOBIOPSIA GHIANDOLE SALIVARI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10068",
+"exam_name": "G.SALIVARE - ASPORTAZIONE ALLARGATA GHIANDOLA SALIVARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10069",
+"exam_name": "G.SALIVARE - ASPORTAZIONE SEMPLICE GHIANDOLA SALIVARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10070",
+"exam_name": "G.SALIVARE - BIOPSIA GHIANDOLA SALIVARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10071",
+"exam_name": "G.SALIVARE - NODULECTOMIA GHIANDOLA SALIVARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10072",
+"exam_name": "IPOFISECTOMIA TOTALE O PARZIALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10073",
+"exam_name": "LABBRO - RESEZIONE CUNEIFORME LABBRO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10074",
+"exam_name": "LABBRO - RESEZIONE QUADRANGOLARE LABBRO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10075",
+"exam_name": "LARINGE - BIOPSIA LARINGEA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10076",
+"exam_name": "SOMA - CONSULENZA ISTOLOGICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10077",
+"exam_name": "LARINGE - CORDECTOMIA BILATERALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10078",
+"exam_name": "LARINGE - CORDECTOMIA MONOLATERALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10079",
+"exam_name": "EMILARINGECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10080",
+"exam_name": "LARINGE - EPIGLOTTIDECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10081",
+"exam_name": "LARINGE - LARINGECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10082",
+"exam_name": "LARINGE - LARINGECTOMIA SOVRAGLOTTIDA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10083",
+"exam_name": "LARINGE - LARINGECTOMIA TOTALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10084",
+"exam_name": "LARINGE - LARINGECTOMIA TOTALE CON SVUOTAMENTO DEL COLLO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10085",
+"exam_name": "LARINGE - POLIPECTOMIA O NODULECTOMIA LARINGE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10086",
+"exam_name": "LINFONODO - AGOBIOPSIA LINFONODALE (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10088",
+"exam_name": "LINFONODO - LINFONODO SENTINELLA ASPORTAZIONE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10089",
+"exam_name": "LINFONODO - BIOPSIA LINFONODO SUPERFICIALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10090",
+"exam_name": "LINFONODO - LINFOADENECTOMIA REGIONALE DI LINFONODI MULTIPLI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10091",
+"exam_name": "LINFONODO - LINFOADENECTOMIA REGIONALE MULTIPLI DA STAZIONI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10092",
+"exam_name": "LINFONODO - SVUOTAMENTO LINFONODALE ALLARGATO CAPO, COLLO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10093",
+"exam_name": "BOCCA - BIOPSIA LINGUA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10094",
+"exam_name": "BOCCA - RESEZIONE CUNEIFORME LINGUA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10095",
+"exam_name": "MIDOLLO OSSEO - BIOPSIA OSTEOMIDOLLARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10096",
+"exam_name": "MIDOLLO OSSEO  - MIDOLLO OSSEO APPOSIZIONE/STRISCI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10099",
+"exam_name": "OCCHIO - BIOPSIA CONGIUNTIVALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10100",
+"exam_name": "MAMMELLA – AGOBIOPSIA MAMMARIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10101",
+"exam_name": "MAMMELLA - MASTECTECTOMIA SEMPLICE O TOTALE (CON O SENZA LINF.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10102",
+"exam_name": "MAMMELLA - MASTECTOMIA RADICALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10103",
+"exam_name": "MAMMELLA - MASTECTOMIA SOTTOCUTANEA SEMPLICE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10104",
+"exam_name": "MAMMELLA - NODULECTOMIA MAMMELLA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10105",
+"exam_name": "MAMMELLA - QUADRANTECTOMIA O RESEZIONE PARZIALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10106",
+"exam_name": "MAMMELLA - RESEZIONE PARZIALE IN CORSO DI MASTOPLASTICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10107",
+"exam_name": "MEDIASTINO - BIOPSIA MEDIASTINO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10108",
+"exam_name": "MEDIASTINO - ESCISSIONE NEOFORMAZIONE MEDIASTINO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10109",
+"exam_name": "MILZA - AGOBIOPSIA MILZA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10110",
+"exam_name": "MILZA - SPLENECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10111",
+"exam_name": "MILZA - SPLENECTOMIA PER PATOLOGIA TRAUMATICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10112",
+"exam_name": "NASO - BIOPSIA CAVITA' NASALI (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10113",
+"exam_name": "NASO - ETMOIDECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10114",
+"exam_name": "NASO - POLIPECTOMIA NASALE (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10115",
+"exam_name": "NASO - RESEZIONE DEI TURBINATI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10116",
+"exam_name": "NASO - RESEZIONE DEL SETTO NASALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10117",
+"exam_name": "NASO - RESEZIONE ETMOIDO-MASCELLARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10118",
+"exam_name": "NASO - RESEZIONE ETMOIDO-MASCELLARE CON EXENTERATIO ORBITAE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10119",
+"exam_name": "NASO - RESEZIONE MASCELLARE CON SVUOTAMENTO LINFONODALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10120",
+"exam_name": "OCCHIO - ASPORTAZIONE GHIANDOLA LACRIMALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10121",
+"exam_name": "OCCHIO - BIOPSIA BULBO OCULARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10122",
+"exam_name": "OCCHIO - BIOPSIA GHIANDOLA LACRIMALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10123",
+"exam_name": "OCCHIO - BULBO OCULARE - ENUCLEAZIONE SEMPLICE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10124",
+"exam_name": "OCCHIO - ESCISSIONE NEOFORMAZIONE GHIANDOLA LACRIMALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10125",
+"exam_name": "OCCHIO - EXENTERATIO ORBITAE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10126",
+"exam_name": "OSSO - ASPORTAZIONE DI NEOFORMAZIONE OSSO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10127",
+"exam_name": "OSSO - BIOPSIA INCISIONALE OSSO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10128",
+"exam_name": "OSSO - EMIMANDIBOLECTOMIA (CON LINFOADENECTOMIA)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10129",
+"exam_name": "OSSO - RESEZIONE SEGMENTARIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10130",
+"exam_name": "OSSO - TESTA FEMORALE ESCISSA PER ESECUZIONE PROTESI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10131",
+"exam_name": "OVAIO - ANNESSIECTOMIA MONO/BILAT ALLARGATA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10132",
+"exam_name": "OVAIO - BIOPSIA E/O RESEZIONE CUNEIFORME OVAIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10133",
+"exam_name": "OVAIO - BIOPSIA OVARICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10134",
+"exam_name": "OVAIO - OVARIECTOMIA BILATERALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10135",
+"exam_name": "OVAIO - OVARIECTOMIA ALLARGATA (UTERO, OMENTO, LINFONODI)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10136",
+"exam_name": "OVAIO - OVARIECTOMIA MONOLATERALE CON O SENZA SALPINGECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10137",
+"exam_name": "PANCREAS - AGOBIOPSIA PANCREAS",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10138",
+"exam_name": "PANCREAS - CAUDECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10139",
+"exam_name": "PANCREAS - DUODENO-CEFALOPANCREASECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10140",
+"exam_name": "PANCREAS - RESEZIONE PARZIALE PANCREAS",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10141",
+"exam_name": "PARAGANGLI - ASPORTAZIONE CHIRURGICA PARAGANGLI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10142",
+"exam_name": "PARAGANGLI - ASPORTAZIONE PER PATOLOGIA NEOPLASTICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10143",
+"exam_name": "PARATIROIDE - BIOPSIA O AGOBIOPSIA PARATIROIDE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10144",
+"exam_name": "PARATIROIDE - BIOPSIA PARATIROIDI (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10145",
+"exam_name": "PARATIROIDE - PARATIROIDECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10147",
+"exam_name": "PENE - AMPUTAZIONE PENE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10148",
+"exam_name": "PENE - BIOPSIA PENE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10149",
+"exam_name": "PERICARDIO - BIOPSIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10151",
+"exam_name": "PERITONEO - BIOPSIA DI MASSA INTRAADDOMINALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10152",
+"exam_name": "PERITONEO - BIOPSIA PERITONEALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10153",
+"exam_name": "PERITONEO - OMENTECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10154",
+"exam_name": "PERITONEO - SACCO ERNIARIO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10155",
+"exam_name": "PLACENTA - PLACENTA, FUNICOLO E MEMBRANE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10156",
+"exam_name": "PLEURA - BIOPSIA PLEURA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10157",
+"exam_name": "PLEURA - DECORTICAZIONE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10158",
+"exam_name": "POLMONE - AGOBIOPSIA PLEUROPOLMONARE TAC",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10159",
+"exam_name": "POLMONE - AGOBIOPSIA PLEURICA/POLMONARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10160",
+"exam_name": "POLMONE - LOBECTOMIA POLMONARE SEMPLICE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10161",
+"exam_name": "POLMONE - PNEUMECTOMIA (CON O SENZA LINFOADENECTOMIA)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10162",
+"exam_name": "POLMONE - PNEUMECTOMIA ALLARGATA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10163",
+"exam_name": "POLMONE - RESEZIONE ATIPICA POLMONARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10164",
+"exam_name": "POLMONE - RESEZIONE SEGMENTARIA POLMONARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10165",
+"exam_name": "PROSTATA - AGOBIOPSIA PROSTATICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10166",
+"exam_name": "PROSTATA - PROSTATECTOMIA (ENUCLEAZIONE, NODULECTOMIA)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10167",
+"exam_name": "PROSTATA - PROSTATECTOMIA EXTRAFASCIALE ALLARGATA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10168",
+"exam_name": "PROSTATA - RESEZIONE ENDOSCOPICA TRANSURETRALE (T.U.R.P.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10169",
+"exam_name": "RENE - BIOPSIA RENALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10170",
+"exam_name": "RENE - NEFRECTOMIA RADICALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10171",
+"exam_name": "RENE - NEFRECTOMIA SEMPLICE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10172",
+"exam_name": "RENE - RESEZIONE PARZIALE RENE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10173",
+"exam_name": "RETTO - AMPUTAZIONE RETTO-SIGMA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10174",
+"exam_name": "RETTO - AMPUTAZIONE RETTO-SIGMA PIU' CUTE PERIANALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10175",
+"exam_name": "RETTO - DIGERENTE BIOPSIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10176",
+"exam_name": "RETTO - POLIPECTOMIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10178",
+"exam_name": "SISTEMA NERVOSO - BIOPSIA A CIELO APERTO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10179",
+"exam_name": "SISTEMA NERVOSO - BIOPSIA STEREOTASSICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10180",
+"exam_name": "SISTEMA NERVOSO - ESCISSIONE TUMORALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10181",
+"exam_name": "SNP - BIOPSIA DI NERVO PERIFERICO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10182",
+"exam_name": "SNP - ESCISSIONE DI NEOFORMAZIONE NERVO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10183",
+"exam_name": "SNP - GANGLIECTOMIA SISTEMA NERVOSO PERIFERICO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10185",
+"exam_name": "SOMA - ALLESTIMENTO PREPARATI ISTOCHIMICI CIASCUNO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10188",
+"exam_name": "Intraoperatoria estemporanea",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10193",
+"exam_name": "STOMACO - DIGERENTE BIOPSIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10194",
+"exam_name": "STOMACO - GASTRECTOMIA PARZIALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10195",
+"exam_name": "STOMACO - GASTRECTOMIA SUBTOTALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10196",
+"exam_name": "STOMACO - GASTRECTOMIA TOTALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10197",
+"exam_name": "STOMACO - GASTRECTOMIA TOTALE ALLARGATA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10198",
+"exam_name": "STOMACO - GASTRORESEZIONE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10199",
+"exam_name": "STOMACO - POLIPECTOMIA ENDOSCOPICA (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10200",
+"exam_name": "SURRENE - AGOBIOPSIA SURRENE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10201",
+"exam_name": "SURRENE - SURRENECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10202",
+"exam_name": "TESSUTI MOLLI - AGOBIOPSIA TESSUTI MOLLI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10204",
+"exam_name": "TESSUTI MOLLI - BIOPSIA ESCISS.TESSUTI MOLLI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10205",
+"exam_name": "TESSUTI MOLLI - BIOPSIA INCIS.TESSUTI MOLLI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10207",
+"exam_name": "TESSUTI MOLLI - ESCISSIONE ALLARGATA DI NEOFORMAZIONE TESSUTI MOLLI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10208",
+"exam_name": "TENUE - RESEZIONE ILEO COLICA (CON O SENZA LINFOADENECTOMIA)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10209",
+"exam_name": "TENUE - RESEZIONE SEGMENTARIA TENUE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10210",
+"exam_name": "TESTICOLO - AGOBIOSPIA TESTICOLO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10211",
+"exam_name": "TESTICOLO - BIOPSIA ANNESSI TESTICOLARI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10212",
+"exam_name": "TESTICOLO - BIOPSIA BILATERALE TESTICOLO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10213",
+"exam_name": "TESTICOLO - BIOPSIA TESTICOLARE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10214",
+"exam_name": "TESTICOLO - EMASCULAZIONE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10215",
+"exam_name": "TESTICOLO - ORCHIECTOMIA BILAT. PER CASTRAZIONE TERAPEUTICA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10216",
+"exam_name": "TESTICOLO - ORCHIECTOMIA SEMPLICE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10217",
+"exam_name": "TESTICOLO - ORCHIFUNICOLECTOMIA ALLARGATA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10220",
+"exam_name": "UTERO – BIOBSIA ENDOMETRIALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10221",
+"exam_name": "TIROIDE - EMITIROIDECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10222",
+"exam_name": "TIROIDE - NODULECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10223",
+"exam_name": "TIROIDE - TIROIDECTOMIA ALLARGATA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10224",
+"exam_name": "TIROIDE - TIROIDECTOMIA TOTALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10225",
+"exam_name": "TRACHEA - BIOPSIA ENDOBRONCHIALE (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10226",
+"exam_name": "TRACHEA - BIOPSIA TRACHEA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10227",
+"exam_name": "TUBA - BIOPSIA TUBA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10228",
+"exam_name": "TUBA - RESEZIONE BILATERALE (PER STERILIZZAZIONE)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10229",
+"exam_name": "TUBA - SALPINGECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10230",
+"exam_name": "TUBA - SALPINGECTOMIA PER GRAVIDANZA EXTRAUTERINA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10231",
+"exam_name": "URETERE - RESEZIONE URETERALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10232",
+"exam_name": "URETRA - RESEZIONE URETRALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10233",
+"exam_name": "SOMA - PANNELLO LINFONODO (FINO A 6 IIC)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10234",
+"exam_name": "UTERO – POLIPECTOMIA ENDOMETRIALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10235",
+"exam_name": "UTERO - EVISCERAZIONE ANTERIORE UTERO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10236",
+"exam_name": "UTERO - EVISCERAZIONE POSTERIORE UTERO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10237",
+"exam_name": "UTERO - ISTERECTOMIA RADICALE PER NEOPLASIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10238",
+"exam_name": "UTERO - ISTERECTOMIA SEMPLICE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10239",
+"exam_name": "UTERO - ISTEROANNESSIECTOMIA PER FIBROMATOSI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10240",
+"exam_name": "UTERO - MATERIALE ESPULSO SPONTANEAMENTE (UTERO)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10241",
+"exam_name": "UTERO - MIOMECTOMIA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10242",
+"exam_name": "UTERO - RASCHIAMENTO ENDOMETRIALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10243",
+"exam_name": "VAGINA - AMPUTAZIONE VAGINA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10244",
+"exam_name": "VAGINA - BIOPSIA VAGINALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10245",
+"exam_name": "VASO - BIOPSIA DI VASO ARTERIOSO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10246",
+"exam_name": "VASO - BIOPSIA DI VASO VENOSO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10247",
+"exam_name": "VASO - ESCISSIONE DI M.A.V.",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10248",
+"exam_name": "VASO - RESEZIONE DI VASO ARTERIOSO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10249",
+"exam_name": "VASO - RESEZIONE DI VASO VENOSO",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10250",
+"exam_name": "VESCICA - BIOPSIA ENDOSCOPICA VESCICALE (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10251",
+"exam_name": "VESCICA - CISTECTOMIA PARZIALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10252",
+"exam_name": "VESCICA - CISTECTOMIA RADICALE  ALLARGATA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10253",
+"exam_name": "VESCICA - CISTECTOMIA SEMPLICE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10254",
+"exam_name": "VESCICA - RESEZIONE ENDOSCOPICA TRANSURETRALE (T.U.R.V.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10255",
+"exam_name": "VULVA - ASPORTAZIONE DELLA GHIANDOLA DI BARTOLINI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10256",
+"exam_name": "VULVA - BIOPSIA VULVARE (SING.)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10257",
+"exam_name": "VULVA - VULVECTOMIA PARZIALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10258",
+"exam_name": "VULVA - VULVECTOMIA RADICALE (CON LINFOADENECT. INGUINALE)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10259",
+"exam_name": "VULVA - VULVECTOMIA SEMPLICE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10260",
+"exam_name": "SOMA - PANNELLO RECETTORI DELLA MAMMELLA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10285",
+"exam_name": "ANO - CONDILOMI",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10290",
+"exam_name": "UTERO - SPAZZOLATO ENDOMETRIALE",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10297",
+"exam_name": "COLON - DIGERENTE BIOPSIA ORIENTATA PER RICERCA",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10312",
+"exam_name": "Indagine immunoistochimica CD138 e NK",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "IN10313",
+"exam_name": "Determinazioni immunoistochimiche",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1563MQ",
+"exam_name": "A.Anti Herpes 1-2 IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1563Q",
+"exam_name": "A.Anti Herpes 1-2 IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "159",
+"exam_name": "A.Anti Morbillo IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1590",
+"exam_name": "A.Anti Morbillo IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1600",
+"exam_name": "A.Anti Micoplasma Pneumoniae IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1601",
+"exam_name": "A.Anti Micoplasma Pneumoniae IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "162",
+"exam_name": "A.Anti Parotite IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1620",
+"exam_name": "A.Anti Parotite IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "163",
+"exam_name": "A.Anti Pertosse IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1631",
+"exam_name": "A.Anti Pertosse IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1640Q",
+"exam_name": "A.Anti Varicella IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "164Q",
+"exam_name": "A.Anti Varicella IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1951",
+"exam_name": "Quantiferon",
+"article_code": "KIT11",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2820",
+"exam_name": "Fosfatasi Alcalina Ossea Specifica",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "329",
+"exam_name": "Vitamina D 1-25 Diidrossi",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "640",
+"exam_name": "ACTH",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "666",
+"exam_name": "IgE Multiplex - Test Alex 2",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "107",
+"exam_name": "Mono Test (MNI)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "115",
+"exam_name": "TPHA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "142",
+"exam_name": "Crioglobuline",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "144",
+"exam_name": "A.Anti Tetano IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1505",
+"exam_name": "Etilglucoronide matrice urinaria - valenza clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1505",
+"exam_name": "Etilglucoronide matrice urinaria - valenza clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1506",
+"exam_name": "Etilglucuronide matrice urinaria - Valenza Legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2200",
+"exam_name": "Test Rapido per ric. Dell’Antigene SARS-CoV-2",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "451",
+"exam_name": "Test di gravidanza",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "451",
+"exam_name": "Test di gravidanza",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "4527",
+"exam_name": "VDRL/RPR",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6670",
+"exam_name": "Barbiturici matrice urinaria - Valenza clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6670",
+"exam_name": "Barbiturici matrice urinaria - Valenza clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6672",
+"exam_name": "Barbiturici matrice urinaria - Valenza Legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6691",
+"exam_name": "Benzodiazepine matrice urinaria - Valenza Legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6691CL",
+"exam_name": "Benzodiazepine matrice urinaria - Valenza Clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6691CL",
+"exam_name": "Benzodiazepine matrice urinaria - Valenza Clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "848",
+"exam_name": "Buprenorfina matrice urinaria - Valenza Legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "848CL",
+"exam_name": "Buprenorfina matrice urinaria - Valenza clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "848CL",
+"exam_name": "Buprenorfina matrice urinaria - Valenza clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1077",
+"exam_name": "Strongyloides Stercoralis Abs",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "518",
+"exam_name": "Scotch Test",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5182",
+"exam_name": "Scotch Test II campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5183",
+"exam_name": "Scotch Test III campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "549",
+"exam_name": "Esame colturale liquido sinoviale aerobi ",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6198",
+"exam_name": "Streptococcus Pneumoniae Ag urinario",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6198",
+"exam_name": "Streptococcus Pneumoniae Ag urinario",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6199",
+"exam_name": "Cryptosporidium Ag ricerca diretta",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6201",
+"exam_name": "Giardia ricerca diretta",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B500",
+"exam_name": "Esame colturale urine con Antibiogramma",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B500",
+"exam_name": "Esame colturale urine con Antibiogramma",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5002",
+"exam_name": "Esame colturale urine II Campione con Antibiogramma",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5002",
+"exam_name": "Esame colturale urine II Campione con Antibiogramma",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5003",
+"exam_name": "Esame colturale urine III Campione con Antibiogramma",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5003",
+"exam_name": "Esame colturale urine III Campione con Antibiogramma",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B501",
+"exam_name": "Esame colturale delle feci (Coprocoltura) con Antibiogramma",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5012",
+"exam_name": "Esame colturale delle feci (Coprocoltura) II Campione con Antibiogramma",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5013",
+"exam_name": "Esame colturale delle feci (Coprocoltura) III Campione con Antibiogramma",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B503",
+"exam_name": "Esame Colturale Tampone Faringeo per Streptococcus Pyogenes con Antibiogramma",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5031",
+"exam_name": "Esame colturale tampone cavo orale con Antibiogramma",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5032",
+"exam_name": "Esame colturale tampone linguale con Antibiogramma",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5033",
+"exam_name": "Tampone faringeo con ricerca Streptococchi, Stafilococchi e Miceti",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B503E",
+"exam_name": "Tampone Faringeo esteso",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B504",
+"exam_name": "Esame colturale tampone solco balano prepuziale con Antibiogramma",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5040",
+"exam_name": "Esame colturale tampone vulvare con Antibiogramma",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5045",
+"exam_name": "Esame colturale tampone rettale germi comuni",
+"article_code": "TMP03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5048",
+"exam_name": "Esame colturale tampone anale",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B505",
+"exam_name": "Esame colturale tampone vaginale con Antibiogramma",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B506",
+"exam_name": "Ricerca Streptococcus agalactiae",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B507",
+"exam_name": "Esame colturale espettorato con Antibiogramma",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5070",
+"exam_name": "Esame colturale tampone cutaneo con Antibiogramma",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B50701",
+"exam_name": "Esame colturale espettorato II campione con Antibiogramma",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B50702",
+"exam_name": "Esame colturale espettorato III campione con Antibiogramma",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5072",
+"exam_name": "Esame colturale tampone cutaneo II Campione con Antibiogramma",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5073",
+"exam_name": "Esame colturale tampone cutaneo III Campione con Antibiogramma",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5100U",
+"exam_name": "Esame microscopico Tampone Uretrale",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5100V",
+"exam_name": "Esame microscopico Tampone Vaginale",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B527",
+"exam_name": "Emocoltura per batteri aerobi",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5272",
+"exam_name": "Emocoltura per batteri aerobi II Campione",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5273",
+"exam_name": "Emocoltura per batteri aerobi III Campione",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B528",
+"exam_name": "Esame colturale del sangue (Emocoltura) pediatrico con Antibiogramma",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B543",
+"exam_name": "Esame colturale liquido seminale con Antibiogramma",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B548",
+"exam_name": "Esame colturale pus con Antibiogramma",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B553",
+"exam_name": "Esame colturale secreto prostatico con Antibiogramma",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B564",
+"exam_name": "Esame colturale tampone auricolare con Antibiogramma",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B564D",
+"exam_name": "Esame colturale tampone auricolare destro con Antibiogramma",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B564S",
+"exam_name": "Esame colturale tampone auricolare sinistro con Antibiogramma",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B565",
+"exam_name": "Esame colturale tampone congiuntivale con Antibiogramma",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B565D",
+"exam_name": "Esame colturale tampone congiuntivale destro con Antibiogramma",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B565S",
+"exam_name": "Esame colturale tampone congiuntivale sinistro con Antibiogramma",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B567",
+"exam_name": "Esame colturale broncoaspirato",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5681",
+"exam_name": "Emocoltura per batteri anaerobi",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B56812",
+"exam_name": "Emocoltura per batteri anaerobi II Campione",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B56813",
+"exam_name": "Emocoltura per batteri anaerobi III Campione",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B573",
+"exam_name": "Esame colturale tampone nasale con Antibiogramma",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B573D",
+"exam_name": "Esame colturale tampone nasale destro",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B573S",
+"exam_name": "Esame colturale tampone nasale sinistro",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B574",
+"exam_name": "Staphylococcus aureus Meticillino Resistente nel Tampone nasale con Antibiogramma",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B589",
+"exam_name": "Yersinia nelle feci esame colturale",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5892",
+"exam_name": "Yersinia nelle feci esame colturale II Campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5893",
+"exam_name": "Yersinia nelle feci esame colturale III Campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B590",
+"exam_name": "Ricerca Miceti lievitiformi (Candida) nelle feci",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5901",
+"exam_name": "Ricerca Miceti lievitiformi (Candida) nelle feci II campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5902",
+"exam_name": "Ricerca Miceti lievitiformi (Candida) nelle feci III campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B593",
+"exam_name": "COLTURALE FECI (E.coli PATOGENI)",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9001",
+"exam_name": "Esame Colturale Urina I mitto",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9001",
+"exam_name": "Esame Colturale Urina I mitto",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9002",
+"exam_name": "Esame Colturale Punta Catetere (aerobi)",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9003",
+"exam_name": "Esame Colturale Materiale Intraoperatorio (aerobi)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9003AN",
+"exam_name": "Esame Colturale Materiale Intraoperatorio (anaerobi)",
+"article_code": "IST02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9004",
+"exam_name": "Esame Colturale Liquido Pleurico (aerobi)",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9005",
+"exam_name": "Esame Colturale Liquido Drenaggio (aerobi)",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9006",
+"exam_name": "Esame Colturale Liquido Ascitico (aerobi)",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9008",
+"exam_name": "Esame Colturale Batteri Anaerobi Liquido Pleurico",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9009",
+"exam_name": "Esame Colturale Batteri Anaerobi Pus/Essudato",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9012",
+"exam_name": "Esame colturale Liquido Sinoviale anaerobi ",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9016",
+"exam_name": "Esame Colturale Endometrio (batteri aerobi e miceti)",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B9017",
+"exam_name": "Esame Colturale Endometrio (batteri anaerobi)",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "CCRE",
+"exam_name": "Test di conferma per CRE",
+"article_code": "TMP03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "MENF",
+"exam_name": "Tampone Faringeo - Esame Colturale Meningococco",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "MENN",
+"exam_name": "Tampone Nasale - Esame Colturale Meningococco",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "MRSA",
+"exam_name": "RICERCA S. AUREUS METICILLINO RESISTENTE",
+"article_code": "TMP02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "514A",
+"exam_name": "Esame Feci x Parassiti (AMEBA)",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "517",
+"exam_name": "Esame Chimico Fisico completo delle Feci",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5172",
+"exam_name": "Esame Chimico Fisico completo delle Feci II campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5173",
+"exam_name": "Esame Chimico Fisico completo delle Feci III campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "585",
+"exam_name": "Ricerca Rotavirus",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "587",
+"exam_name": "Ricerca Adenovirus",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5872",
+"exam_name": "Ricerca Adenovirus II campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5873",
+"exam_name": "Ricerca Adenovirus III campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B503S",
+"exam_name": "Ricerca rapida Streptococcus pyogenes su tampone faringeo",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B507M",
+"exam_name": "Esame microscopico Espettorato",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5880",
+"exam_name": "Clostridium difficile",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B58802",
+"exam_name": "Clostridium difficile II campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B58803",
+"exam_name": "Clostridium difficile III campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "021",
+"exam_name": "Coombs Diretto",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "023",
+"exam_name": "Gruppo e fattore Rh ",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6231",
+"exam_name": "Cortisolo salivare",
+"article_code": "KIT13",
+"qty_per_exam": 1
+},
+{
+"exam_code": "022",
+"exam_name": "Coombs Indiretto",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "024",
+"exam_name": "Resistenza Osmotica Globulare",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "0603",
+"exam_name": "Linfociti CD34+",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "0609",
+"exam_name": "Linfociti T CD4+",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "073",
+"exam_name": "PLASMINOGENO",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "074",
+"exam_name": "Fattore XIII",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "0740",
+"exam_name": "Fattore IX",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "0741",
+"exam_name": "Fattore XI",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "0743",
+"exam_name": "Fattore XII",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "103",
+"exam_name": "Waaler-Rose",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1044",
+"exam_name": "Epatite Delta (HDV) RNA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "105",
+"exam_name": "Alfa-1-Glicoproteina (Mucoproteina)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1050",
+"exam_name": "CANDIDA ALBICANS IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1051",
+"exam_name": "Gene PAI-1 RICERCA DELLA MUTAZIONE 4G/5G",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1065",
+"exam_name": "Anticorpi Anti Dnasi B",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1072",
+"exam_name": "A.Anti Epstein Barr VIRUS EA Abs Early IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "109",
+"exam_name": "Widal-Wright",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1109",
+"exam_name": "Anticorpi Anti PCNA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1129",
+"exam_name": "Leishmania",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1132",
+"exam_name": "Lisozima Sierico",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1138",
+"exam_name": "A.Anti Helicobacter Pylori IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "114",
+"exam_name": "A.Anti Treponema Pallidum IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1154",
+"exam_name": "A.Anti Adenovirus IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "11551",
+"exam_name": "A.Anti Adenovirus IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1156",
+"exam_name": "Virus Respiratorio Sinciziale Abs IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1157",
+"exam_name": "Virus Respiratorio Sinciziale Abs IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "116",
+"exam_name": "A.Anti Schistosoma",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "11803",
+"exam_name": "Toxoplasma gondii IgG conferma",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1190",
+"exam_name": "Mioglobina Urinaria",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1194",
+"exam_name": "BORRELIA IgG TEST DI CONFERMA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1200",
+"exam_name": "CH 50 (complementemia)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1201",
+"exam_name": "Complemento C1 inibitore (Proteina)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1202",
+"exam_name": "Complemento C1Q",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1203",
+"exam_name": "Complemento-C3 Attivatore (Fattore B)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1218",
+"exam_name": "HLA-G",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1219",
+"exam_name": "A.Anti Leptospira Ig Totali",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "122",
+"exam_name": "A.Anti Listeria",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1225",
+"exam_name": "Anticorpi anti Cardiolipina IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "124",
+"exam_name": "Titolo Antistafilolisinico (TAF)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1241",
+"exam_name": "Influenza B IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1241A",
+"exam_name": "Influenza A IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1242",
+"exam_name": "A.Anti Fattore Intrinseco",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "125",
+"exam_name": "A.Anti Insula (ICA)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1257",
+"exam_name": "N-METILACETAMMIDE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1257",
+"exam_name": "N-METILACETAMMIDE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1258",
+"exam_name": "N- METILACETAMMIDE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1258",
+"exam_name": "N- METILACETAMMIDE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "12659",
+"exam_name": "A.Anti Coxsackie Virus A",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1268",
+"exam_name": "Anti-ZnT8",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1273",
+"exam_name": "ACIDO FENILMERCAPTURICO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1273",
+"exam_name": "ACIDO FENILMERCAPTURICO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "128",
+"exam_name": "A.Anti Reticolina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13091",
+"exam_name": "B 2 Microglobulina 24h",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1311",
+"exam_name": "Alfa 2 Macroglobulina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13121",
+"exam_name": "Anticorpi Anti SSA (Ro)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13122",
+"exam_name": "Anticorpi Anti SSB (La)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13123",
+"exam_name": "Anticorpi Anti Sm",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13124",
+"exam_name": "Anticorpi Anti Sm/RNP",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13125",
+"exam_name": "Anticorpi Anti  SCL-70",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13126",
+"exam_name": "Anticorpi anti Jo-1",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13129",
+"exam_name": "Anticorpi Anti-RNA Polimerasi III",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1313",
+"exam_name": "Immunocomplessi Circolanti",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1319",
+"exam_name": "A.Anti Clamidia Trachomatis IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1320",
+"exam_name": "A.Anti Clamidia Trachomatis IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13200",
+"exam_name": "A.Anti Chlamydia Pneumoniae IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13201",
+"exam_name": "A.Anti Chlamydia Pneumoniae IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13204",
+"exam_name": "A.Anti Clamidia Pneumoniae IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13209",
+"exam_name": "A.Anti Difterite IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "13214",
+"exam_name": "Entamoeba histolytica IgG (Ameba Anticorpi)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1321A",
+"exam_name": "ANTICORPI ANTI LEGIONELLA PNEUMOPHILA IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1321B",
+"exam_name": "ANTICORPI ANTI LEGIONELLA PNEUMOPHILA IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1323",
+"exam_name": "A.Anti Clamidia Trachomatis IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "134",
+"exam_name": "A.Anti Cute",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "135",
+"exam_name": "A.Anti Mitocondri (AMA)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1350",
+"exam_name": "A.Anti Microsoma LKM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1354",
+"exam_name": "CITOPLASMA NEUTROFILI ABS (ANCA)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1355",
+"exam_name": "A.Anti Cellule Parietali APCA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "136",
+"exam_name": "A.Anti Muscolo Liscio (ASMA)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1360",
+"exam_name": "A.Anti Muscolo Striato",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1364",
+"exam_name": "Anticorpi anti Mieloperossidasi (MPO)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1365",
+"exam_name": "Anticorpi anti Proteinasi 3 (PR3)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1377",
+"exam_name": "A.Anti IA2",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "138",
+"exam_name": "A.Anti Membrana Basale del Glomerulo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1383",
+"exam_name": "Zonulina Sierica",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1391",
+"exam_name": "Anticorpi Anti Cardiolipina IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1392",
+"exam_name": "Anticorpi Anti Cardiolipina IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "141",
+"exam_name": "Anti CENP (Anti centromero B)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1418",
+"exam_name": "Indice ROMA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1423",
+"exam_name": "Cariotipo su sangue periferico",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "143",
+"exam_name": "A.Anti Surrene",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1448",
+"exam_name": "BERILLIO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1448",
+"exam_name": "BERILLIO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1449",
+"exam_name": "BERILLIO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1449",
+"exam_name": "BERILLIO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1460",
+"exam_name": "A.Anti BORRELIA BURGDORFERI IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1461",
+"exam_name": "A.Anti BORRELIA BURGDORFERI IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "148",
+"exam_name": "A.Anti Helicobacter Pylori IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1485",
+"exam_name": "Isoenzimi CK (Creatinchinasi)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1520",
+"exam_name": "A.Anti Beta 2 Glicoproteina IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1521",
+"exam_name": "A.Anti Beta 2 Glicoproteina IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "154",
+"exam_name": "A.Anti Endomisio IgA (EMA)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1541",
+"exam_name": "A.Anti Endomisio IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1548",
+"exam_name": "BORRELIA BURGDOFERI DNA",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "155",
+"exam_name": "A.Anti Transglutaminasi IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1556",
+"exam_name": "ACIDO METOSSIACETICO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1556",
+"exam_name": "ACIDO METOSSIACETICO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1557",
+"exam_name": "ACIDO METOSSIACETICO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1557",
+"exam_name": "ACIDO METOSSIACETICO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1559",
+"exam_name": "A.Anti Transglutaminasi IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1571",
+"exam_name": "A.Anti Parvovirus B19 IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1572",
+"exam_name": "A.Anti Parvovirus B19 IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1576",
+"exam_name": "Clozapina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "158",
+"exam_name": "A.Anti GAD 65",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1584",
+"exam_name": "A.Anti MAG (Glicoproteina mielina associata) IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1587",
+"exam_name": "DAO Test",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1610",
+"exam_name": "A.Anti Bartonella Henselae IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1624",
+"exam_name": "ACIDO MANDELICO + ACIDO FENILGLIOSSILICO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1624",
+"exam_name": "ACIDO MANDELICO + ACIDO FENILGLIOSSILICO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1625",
+"exam_name": "ACIDO MANDELICO + ACIDO FENILGLIOSSILICO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1625",
+"exam_name": "ACIDO MANDELICO + ACIDO FENILGLIOSSILICO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1632",
+"exam_name": "ACIDO BUTOSSIACETICO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1632",
+"exam_name": "ACIDO BUTOSSIACETICO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1633",
+"exam_name": "ACIDO BUTOSSIACETICO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1633",
+"exam_name": "ACIDO BUTOSSIACETICO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1637",
+"exam_name": "Sindrome di Gilbert",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "164P",
+"exam_name": "A.Anti Poliovirus IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "166",
+"exam_name": "Weil-Felix",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1672",
+"exam_name": "HIV1/HIV2 WB (Test di conferma)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1938G",
+"exam_name": "Anticorpi Anti ds-DNA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2102",
+"exam_name": "Molibdeno Urinario Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2102",
+"exam_name": "Molibdeno Urinario Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2103",
+"exam_name": "Molibdeno Urinario Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2103",
+"exam_name": "Molibdeno Urinario Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2224",
+"exam_name": "1,2 CICLOESANDIOLO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2224",
+"exam_name": "1,2 CICLOESANDIOLO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2225",
+"exam_name": "1,2 CICLOESANDIOLO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2225",
+"exam_name": "1,2 CICLOESANDIOLO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2248",
+"exam_name": "Anticorpi IgG S-RBD contro SARS-CoV-2",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2400",
+"exam_name": "Bicarbonati",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "258",
+"exam_name": "Isoenzimi della Fosfatasi Alcalina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2580",
+"exam_name": "Isoenzimi L.D.H.",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2603",
+"exam_name": "Prealbumina (T.B.P.A.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2675",
+"exam_name": "A.Anti HTLV I/II",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "283",
+"exam_name": "Fosfatasi Acida Totale",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2830",
+"exam_name": "Fosfatasi acida prostatica (PAP)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "295",
+"exam_name": "Piruvatochinasi Eritrocitaria",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "299",
+"exam_name": "ALA Deidrasi Eritrocitaria",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "3000",
+"exam_name": "Numero di dibucaina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "3001",
+"exam_name": "Colinesterasi eritrocitaria",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "307",
+"exam_name": "Amilasi Isoenzimi",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "328",
+"exam_name": "Fosfolipidi Abs IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "3281",
+"exam_name": "Fosfolipidi Abs IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "333",
+"exam_name": "Recettore solubile Transferrina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "337",
+"exam_name": "Anticorpi Anti RIB-P (Ribosomiali P)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "351",
+"exam_name": "CTX Plasmatico",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "365",
+"exam_name": "Cistina Urinaria 24h",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "369",
+"exam_name": "PROTEINA LEGANTE IL RETINOLO",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "376",
+"exam_name": "Methotrexate Siero",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "390",
+"exam_name": "Stagno urinario",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "390",
+"exam_name": "Stagno urinario",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "395",
+"exam_name": "Anticorpi anti peptide citrullinato ciclico (CCP)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "396",
+"exam_name": "Vitamina B1 Ematica ",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "404",
+"exam_name": "Chimotripsina Fecale",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "413",
+"exam_name": "DENGUE Abs IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "425",
+"exam_name": "Acidi grassi essenziali (EFA)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "427",
+"exam_name": "A.Anti Toxoplasma Gondii IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "429I2",
+"exam_name": "Recettore solubile Interleuchina 2",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "430",
+"exam_name": "Interleuchina 6 (IL6)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "432",
+"exam_name": "Haemophilus Influenzae B Abs IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "439",
+"exam_name": "PROTEINA S100",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "453",
+"exam_name": "AMH Anti Mullerian Hormone",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "455",
+"exam_name": "ADH Ormone Antidiuretico",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "462",
+"exam_name": "VON WILLEBRAND ATTIVITA'",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "499",
+"exam_name": "Sirolimus (Rapamune) (Rapamicina)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5320",
+"exam_name": "Rickettsia Conorii Abs IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5320M",
+"exam_name": "Rickettsia Conorii Abs IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "538",
+"exam_name": "PARVOVIRUS B19",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "598",
+"exam_name": "Ricerca antigene Galattomannano di Aspergillus",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5D205",
+"exam_name": "IgE specifiche Der p 10, Acaro della polvere domestica, Tropomiosina (Dermatophagoides P.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F232",
+"exam_name": "IgE specifiche Gal d 2, Uovo, Ovoalbumina (Gallus domesticus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F233",
+"exam_name": "IgE specifiche Gal d 1, Uovo, Ovomucoide (Gallus domesticus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F351",
+"exam_name": "IgE specifiche Pen a 1, Gamberetto, Tropomiosina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F352",
+"exam_name": "IgE specifiche Ara h 8, Arachide, PR-10 (Arachis hypogaea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F353",
+"exam_name": "IgE specifiche Gly m 4, Soia, PR-10 (Glycine max)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F354",
+"exam_name": "IgE specifiche Ber e 1, Noce brasiliana (Bertholletia excelsa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F355",
+"exam_name": "IgE specifiche Cyp c 1, Carpa (Cyprinus carpio)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F416",
+"exam_name": "IgE specifiche Tri a 19, Grano, Omega-5 Gliadina (Triticum aestivum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F419",
+"exam_name": "IgE specifiche Pru p 1, Pesca, PR-10 (Prunus persica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F420",
+"exam_name": "IgE specifiche Pru p 3, Pesca, LTP (Prunus persica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F421",
+"exam_name": "IgE specifiche Pru p 4, Pesca, Profilina (Prunus persica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F422",
+"exam_name": "IgE specifiche Ara h 1, Arachide (Arachis hypogaea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F423",
+"exam_name": "IgE specifiche Ara h 2, Arachide (Arachis hypogaea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F424",
+"exam_name": "IgE specifiche Ara h 3, Arachide (Arachis hypogaea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F425",
+"exam_name": "IgE specifiche Cor a 8, Nocciola, LTP (Corylus avellana)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F426",
+"exam_name": "IgE specifiche Gad c 1, Merluzzo (Gadus morhua)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F427",
+"exam_name": "IgE specifiche Ara h 9, Arachide, LTP (Arachis hypogaea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F428",
+"exam_name": "IgE specifiche Cor a 1, Nocciola, PR-10 (Corylus avellana)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F431",
+"exam_name": "IgE specifiche Gly m 5, Soia, Beta-conglicinina (Glycine max)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F432",
+"exam_name": "IgE specifiche Gly m 6, Soia, Glicinina (Glycine max)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F433",
+"exam_name": "IgE specifiche Tri a 14, Grano, LTP (Triticum aestivum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F435",
+"exam_name": "IgE specifiche Mal d 3, Mela, LTP (Malus domestica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F439",
+"exam_name": "IgE specifiche Cor a 14, Nocciola (Corylus avellana)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F440",
+"exam_name": "IgE specifiche Cor a 9, Nocciola (Corylus avellana)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F441",
+"exam_name": "IgE specifiche Jug r 1, Noce (Juglans regia)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F442",
+"exam_name": "IgE specifiche Jug r 3, Noce, LTP (Juglans regia)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F76",
+"exam_name": "IgE specifiche Bos d 4, Latte, Alfa-lattoalbumina (Bos domesticus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F77",
+"exam_name": "IgE specifiche Bos d 5, Latte, Beta-lattoglobulina (Bos domesticus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5F78",
+"exam_name": "IgE specifiche Bos d 8, Latte,Caseina (Bos domesticus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5K208",
+"exam_name": "IgE specifiche Gal d 4, Uovo, Lisozima (Gallus domesticus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5M218",
+"exam_name": "IgE specifiche Asp f 1 (Aspergillus fumigatus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5T215",
+"exam_name": "IgE specifiche Bet v 1, Betulla, PR-10 (Betula verrucosa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5T216",
+"exam_name": "IgE specifiche Bet v 2, Betulla, Profilina (Betula verrucosa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5T220",
+"exam_name": "IgE specifiche Bet v 4, Betulla (Betula verrucosa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5W211",
+"exam_name": "IgE specifiche Par j 2, Erba vetriola, LTP (Parietaria judaica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5W230",
+"exam_name": "IgE specifiche Amb a 1, Ambrosia (Ambrosia elatior)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5W231",
+"exam_name": "IgE specifiche Art v 1, Assenzio selvatico (Artemisia vulgaris)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5W233",
+"exam_name": "IgE specifiche Art v 3, Assenzio selvatico, LTP (Artemisia vulgaris)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6001",
+"exam_name": "HBsAg TEST DI CONFERMA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60061",
+"exam_name": "Citomegalovirus (CMV) DNA quantitativo",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60070",
+"exam_name": "HSV-1/HSV-2 DNA (Herpes Simplex Virus 1-2)",
+"article_code": "TMP01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60080",
+"exam_name": "Toxoplasma gondii DNA",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60085",
+"exam_name": "VZV DNA  (Varicella Zoster virus)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60115",
+"exam_name": "HLA Tipizzazione classe I (Loci A-B-C)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60116",
+"exam_name": "HLA Tipizzazione locus A",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60117",
+"exam_name": "HLA Tipizzazione locus B",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60118",
+"exam_name": "HLA Tipizzazione locus C",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60119",
+"exam_name": "HLA Tipizzazione Classe II (loci DRB1 - DQB1)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60120",
+"exam_name": "HLA Tipizzazione locus DQB1",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60121",
+"exam_name": "HLA-B27 RICERCA MOLECOLARE",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "60150",
+"exam_name": "DNA - Microdelezioni  Cromosoma Y",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6111",
+"exam_name": "Estriolo Libero",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6140",
+"exam_name": "TBG (THYROXINE BINDING GLOBULIN)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6195",
+"exam_name": "Cellule Endoteliali Abs",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6200",
+"exam_name": "17 OH Progesterone",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6203",
+"exam_name": "West Nile Virus Abs IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6204",
+"exam_name": "West Nile Virus Abs IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6210",
+"exam_name": "Diidrotestosterone (DHT)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "62121",
+"exam_name": "Cromogranina A",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6216",
+"exam_name": "LDL ossidate",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "622",
+"exam_name": "Aldosterone in Ortostatismo",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6220",
+"exam_name": "Aldosterone in Clinostatismo",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6235",
+"exam_name": "Musk Abs",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "624",
+"exam_name": "RENINA DIRETTA IN ORTOSTATISMO",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6240",
+"exam_name": "RENINA DIRETTA IN CLINOSTATISMO",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "625",
+"exam_name": "Aldosterone 24h",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6250",
+"exam_name": "Amiodarone",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "627",
+"exam_name": "17 Chetosteroidi urinari",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "629",
+"exam_name": "Acido Vanilmandelico urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "630",
+"exam_name": "Serotonina urine 24H",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6303",
+"exam_name": "Serotonina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6309",
+"exam_name": "ACIDO FENILMERCAPTURICO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6309",
+"exam_name": "ACIDO FENILMERCAPTURICO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "631",
+"exam_name": "Acido 5 OH Indolacetico urine 24H",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "632",
+"exam_name": "Idrossiprolina urinaria",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6321",
+"exam_name": "Desossipiridinolina totale urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6321",
+"exam_name": "Desossipiridinolina totale urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6322",
+"exam_name": "Piridinolina totale urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6322",
+"exam_name": "Piridinolina totale urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6330",
+"exam_name": "Acido Omovanillico urine 24H",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "634",
+"exam_name": "Estrone",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6340",
+"exam_name": "Everolimus",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6341",
+"exam_name": "Immunoglobuline IgG 1",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6342",
+"exam_name": "Immunoglobuline IgG 2",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6343",
+"exam_name": "Immunoglobuline IgG 3",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6344",
+"exam_name": "Immunoglobuline IgG 4",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6350",
+"exam_name": "Ossalati urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6350",
+"exam_name": "Ossalati urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6351",
+"exam_name": "Ossalati urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6351",
+"exam_name": "Ossalati urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6352",
+"exam_name": "Ossalati urine 24H",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6360",
+"exam_name": "DHEA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "637",
+"exam_name": "Delta 4 Androstenedione",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6375",
+"exam_name": "Androstenediolo Glucoronide",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "639",
+"exam_name": "Metaboliti reattivi dell'ossigeno (Radicali liberi)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6392",
+"exam_name": "Potenziale biologico antiossidante",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6410",
+"exam_name": "Calcitonina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6411",
+"exam_name": "Osteocalcina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "642",
+"exam_name": "Somatomedina C  ( IGF-1)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6420",
+"exam_name": "I.G.F. BP-3",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6425",
+"exam_name": "TRIPTASI",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "643",
+"exam_name": "A.Anti Recettori Acetilcolina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "644",
+"exam_name": "Eritropoietina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "646",
+"exam_name": "Complemento C1 Inibitore Attività",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6513",
+"exam_name": "TPA ANTIGENE POLIPEPTIDICO TISSUTALE",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6517",
+"exam_name": "CA 72-4",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6518",
+"exam_name": "CA 50",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6519",
+"exam_name": "NSE (enolasi neuronale specifica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6522",
+"exam_name": "A.Anti Insulina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6540",
+"exam_name": "H.G.H. (Ormone Somatotropo)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "655",
+"exam_name": "Gastrina 17",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6550",
+"exam_name": "GASTROPANEL",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "65609",
+"exam_name": "TIOCIANATI Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "65609",
+"exam_name": "TIOCIANATI Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "65619",
+"exam_name": "TIOCIANATI Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "65619",
+"exam_name": "TIOCIANATI Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6562",
+"exam_name": "Tiocianati sierici",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6611",
+"exam_name": "Vitamina E (Liposolubile)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6612",
+"exam_name": "Vitamina C",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6614",
+"exam_name": "Vitamina B2 Ematica (Idrosolubile)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6617",
+"exam_name": "Vitamina A",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "66170",
+"exam_name": "Vitamina B6  (Pyridoxal) (Idrosolubile)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6740",
+"exam_name": "Monoidrossicarbazepina (Tolep)",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "678",
+"exam_name": "Teofillina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6955",
+"exam_name": "Gentamicina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6956",
+"exam_name": "Vancomicina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6967",
+"exam_name": "TOPIRAMATO (Topamax)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6C1",
+"exam_name": "IgE specifiche Penicilloyl G",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6C2",
+"exam_name": "IgE specifiche Penicilloyl V",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6C5",
+"exam_name": "IgE specifiche Ampicillina (Ampicilloyl)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6C6",
+"exam_name": "IgE specifiche Amoxicillina (Amoxicilloyl)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6C8",
+"exam_name": "IgE specifiche Clorexidina (Chlorhexidine)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6D1",
+"exam_name": "IgE specifiche Dermatophagoides pteronyssinus (House dust mite)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6D2",
+"exam_name": "IgE specifiche Dermatophagoides farinae (House dust mite)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6D70",
+"exam_name": "IgE specifiche Acarus siro (Storage mite)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6D71",
+"exam_name": "IgE specifiche Lepidoglyphus destructor (Storage mite)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6D73",
+"exam_name": "IgE specifiche Glycyphagus domesticus (Storage mite)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6D74",
+"exam_name": "IgE specifiche Euroglyphus maynei (House dust mite)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E1",
+"exam_name": "IgE specifiche Forfora di gatto",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E3",
+"exam_name": "IgE specifiche Forfora di cavallo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E4",
+"exam_name": "IgE specifiche Forfora di vacca",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E5",
+"exam_name": "IgE specifiche Forfora di cane",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E6",
+"exam_name": "IgE specifiche Epitelio di cavia",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E70",
+"exam_name": "IgE specifiche Piume d'oca",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E71",
+"exam_name": "IgE specifiche Epitelio di topo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E72",
+"exam_name": "IgE specifiche Proteine urinarie di topo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E73",
+"exam_name": "IgE specifiche Epitelio di ratto",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E74",
+"exam_name": "IgE specifiche Proteine urinarie di ratto",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E80",
+"exam_name": "IgE specifiche Epitelio di capra",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E81",
+"exam_name": "IgE specifiche Epitelio di pecora",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E82",
+"exam_name": "IgE specifiche Epitelio di coniglio",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6E91",
+"exam_name": "IgE specifiche Piume di pappagallo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F1",
+"exam_name": "IgE specifiche Albume",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F10",
+"exam_name": "IgE specifiche Semi di sesamo (Sesamum indicum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F11",
+"exam_name": "IgE specifiche Grano saraceno (Fagopyrum esculentum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F12",
+"exam_name": "IgE specifiche Piselli (Pisum sativum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F13",
+"exam_name": "IgE specifiche Arachide (Arachis hypogaea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F14",
+"exam_name": "IgE specifiche Semi di soia (Glycine max)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F15",
+"exam_name": "IgE specifiche Fagioli bianchi (Phaseolus vulgaris)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F17",
+"exam_name": "IgE specifiche Nocciola (Corylus avellana)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F18",
+"exam_name": "IgE specifiche Noce brasiliana (Bertholletia excelsa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F2",
+"exam_name": "IgE specifiche Latte",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F20",
+"exam_name": "IgE specifiche Mandorla (Amygdalus communis )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F202",
+"exam_name": "IgE specifiche Anacardio (Anacardium occidentale)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F203",
+"exam_name": "IgE specifiche Pistacchio (Pistacia vera)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F204",
+"exam_name": "IgE specifiche Trota (Oncorhynchus mykiss (Salmo gairdnieri))",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F206",
+"exam_name": "IgE specifiche Sgombro (Scomber scombrus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F207",
+"exam_name": "IgE specifiche Vongola (Ruditapes spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F208",
+"exam_name": "IgE specifiche Limone (Citrus limon)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F209",
+"exam_name": "IgE specifiche Pompelmo (Citrus paradisi)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F210",
+"exam_name": "IgE specifiche Ananas (Ananas comosus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F212",
+"exam_name": "IgE specifiche Funghi, champignon (Agaricus hortensis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F213",
+"exam_name": "IgE specifiche Carne di coniglio (Oryctolagus spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F214",
+"exam_name": "IgE specifiche Spinaci (Spinachia oleracea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F215",
+"exam_name": "IgE specifiche Lattuga (Lactuca sativa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F217",
+"exam_name": "IgE specifiche Cavolini di Bruxelles (Brassica oleracea var. gemmifera)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F218",
+"exam_name": "IgE specifiche Paprica, Peperone (Capsicum annuum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F219",
+"exam_name": "IgE specifiche Semi di Finocchio",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F221",
+"exam_name": "IgE specifiche Caffè (Coffea spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F222",
+"exam_name": "IgE specifiche Tea (Camellia sinensis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F225",
+"exam_name": "IgE specifiche Zucca (Cucurbita pepo)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F23",
+"exam_name": "IgE specifiche Granchio comune (Cancer pagurus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F234",
+"exam_name": "IgE specifiche Vaniglia (Vanilla planifolia)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F235",
+"exam_name": "IgE specifiche Lenticchia (Lens esculenta)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F237",
+"exam_name": "IgE specifiche Albicocca (Prunus armeniaca)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F24",
+"exam_name": "IgE specifiche Gambero (Pandalus borealis, Penaeus monodon)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F242",
+"exam_name": "IgE specifiche Ciliegia (Prunus avium)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F244",
+"exam_name": "IgE specifiche Cetriolo (Cucumis sativus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F25",
+"exam_name": "IgE specifiche Pomodoro (Lycopersicon lycopersicum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F253",
+"exam_name": "IgE specifiche Pinoli (Pinus edulis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F254",
+"exam_name": "IgE specifiche Platessa (Pleuronectes platessa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F255",
+"exam_name": "IgE specifiche Prugna (Prunus domestica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F256",
+"exam_name": "IgE specifiche Noce (Juglans spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F258",
+"exam_name": "IgE specifiche Calamaro (Loligo spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F259",
+"exam_name": "IgE specifiche Uva (Vitis vinifera)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F26",
+"exam_name": "IgE specifiche Carne di maiale (Sus spp. )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F260",
+"exam_name": "IgE specifiche Broccoli (Brassica oleracea var. italica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F262",
+"exam_name": "IgE specifiche Melanzana (Solanum melongena)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F263",
+"exam_name": "IgE specifiche Pepe verde (Piper nigrum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F269",
+"exam_name": "IgE specifiche Basilico (Ocimum basilicum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F27",
+"exam_name": "IgE specifiche Carne di bue (Bos spp. )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F271",
+"exam_name": "IgE specifiche Anice (Pimpinella anisum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F273",
+"exam_name": "IgE specifiche Timo (Thymus vulgaris)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F280",
+"exam_name": "IgE specifiche Pepe nero (Piper nigrum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F283",
+"exam_name": "IgE specifiche Origano (Origanum vulgare)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F284",
+"exam_name": "IgE specifiche Carne di tacchino (Meleagris gallopavo)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F290",
+"exam_name": "IgE specifiche Ostrica (Ostrea edulis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F291",
+"exam_name": "IgE specifiche Cavolfiore (Brassica oleracea var. botrytis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F296",
+"exam_name": "IgE specifiche Carruba (E410) (Ceratonia siliqua)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F297",
+"exam_name": "IgE specifiche Gomma arabica (E414) (Acacia spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F299",
+"exam_name": "IgE specifiche Castagna (Castanea sativa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F3",
+"exam_name": "IgE specifiche Pesce, Merluzzo (Gadus morhua)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F302",
+"exam_name": "IgE specifiche Mandarino (Citrus reticulata)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F304",
+"exam_name": "IgE specifiche Aragosta (Palinurus spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F309",
+"exam_name": "IgE specifiche Ceci (Cicer arietinus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F31",
+"exam_name": "IgE specifiche Carota (Daucus carota)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F313",
+"exam_name": "IgE specifiche Acciuga (Engraulis encrasicolus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F328",
+"exam_name": "IgE specifiche Fico (Ficus carica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F329",
+"exam_name": "IgE specifiche Anguria (Citrullus lanatus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F33",
+"exam_name": "IgE specifiche Arancia (Citrus sinensis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F337",
+"exam_name": "IgE specifiche Sogliola (Solea solea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F36",
+"exam_name": "IgE specifiche Noce di cocco (Cocos nucifera)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F37",
+"exam_name": "IgE specifiche Mitili (Mytilus edulis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F4",
+"exam_name": "IgE specifiche Grano (Frumento)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F40",
+"exam_name": "IgE specifiche Tonno (Thunnus albacares)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F41",
+"exam_name": "IgE specifiche Salmone (Salmo salar)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F44",
+"exam_name": "IgE specifiche Fragola (Fragaria vesca)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F45",
+"exam_name": "IgE specifiche Lievito (Saccharomyces cerevisiae)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F47",
+"exam_name": "IgE specifiche Aglio (Allium sativum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F48",
+"exam_name": "IgE specifiche Cipolla (Allium cepa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F49",
+"exam_name": "IgE specifiche Mela (Malus x domestica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F59",
+"exam_name": "IgE specifiche Polpo (Octopus vulgaris)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F6",
+"exam_name": "IgE specifiche Orzo (Hordeum vulgare )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F61",
+"exam_name": "IgE specifiche Sardina (Sardinops melanosticta)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F75",
+"exam_name": "IgE specifiche Tuorlo",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F79",
+"exam_name": "IgE specifiche Glutine",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F80",
+"exam_name": "IgE specifiche Astice (Homarus gammarus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F81",
+"exam_name": "IgE specifiche Formaggio a pasta molle",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F82",
+"exam_name": "IgE specifiche Formaggio a pasta dura",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F83",
+"exam_name": "IgE specifiche Carne di pollo (Gallus spp. )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F84",
+"exam_name": "IgE specifiche Kiwi (Actinidia deliciosa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F85",
+"exam_name": "IgE specifiche Sedano (Apium graveolens)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F86",
+"exam_name": "IgE specifiche Prezzemolo (Petroselinum crispum )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F87",
+"exam_name": "IgE specifiche Melone (Cucumis melo spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F88",
+"exam_name": "IgE specifiche Carne di montone (Ovis spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F89",
+"exam_name": "IgE specifiche Senape (Brassica/Sinapis spp. )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F9",
+"exam_name": "IgE specifiche Riso integrale (Oryza sativa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F90",
+"exam_name": "IgE specifiche Malto",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F91",
+"exam_name": "IgE specifiche Mango (Mangifera indica )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F92",
+"exam_name": "IgE specifiche Banana (Musa spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F93",
+"exam_name": "IgE specifiche Cacao (Theobroma cacao )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F94",
+"exam_name": "IgE specifiche Pera (Pyrus communis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F95",
+"exam_name": "IgE specifiche Pesca (Prunus persica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6F96",
+"exam_name": "IgE specifiche Avocado (Persea americana)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G1",
+"exam_name": "IgE specifiche Paleino odoroso (Anthoxanthum odoratum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G10",
+"exam_name": "IgE specifiche Cannarecchia (Sorghum halepense)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G12",
+"exam_name": "IgE specifiche Segale (Secale cereale)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G13",
+"exam_name": "IgE specifiche Barbagiona (Holcus lanatus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G14",
+"exam_name": "IgE specifiche Avena (Avena sativa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G15",
+"exam_name": "IgE specifiche Grano (Triticum aestivum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G16",
+"exam_name": "IgE specifiche Alopecurus pratensis",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G2",
+"exam_name": "IgE specifiche Erba canina (Cynodon dactylon)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G202",
+"exam_name": "IgE specifiche Zea mays",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G205",
+"exam_name": "IgE specifiche rPhl p1 - Phleum Pratense (Coda di Topo)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G206",
+"exam_name": "IgE specifiche Phl p 2, Coda di topo (Phleum pratense)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G208",
+"exam_name": "IgE specifiche Phl p 4, Coda di topo (Phleum pratense)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G209",
+"exam_name": "IgE specifiche Phl p 6, Coda di topo (Phleum pratense)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G210",
+"exam_name": "IgE specifiche Phl p 7, Coda di topo (Phleum pratense)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G211",
+"exam_name": "IgE specifiche Phl p 11, Coda di topo (Phleum pratense)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G212",
+"exam_name": "IgE specifiche Phl p 12, Coda di topo (Phleum pratense)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G215",
+"exam_name": "IgE specifiche Phl p 15b, Coda di topo (Phleum pratense)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G3",
+"exam_name": "IgE specifiche Erba mazzolina (Dactylis glomerata)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G4",
+"exam_name": "IgE specifiche Paleo dei prati (Festuca elatior)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G5",
+"exam_name": "IgE specifiche Loglierella (Lolium perenne)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G6",
+"exam_name": "IgE specifiche Coda di Topo (Phleum pratense)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6G8",
+"exam_name": "IgE specifiche Gramigna dei prati (Poa pratensis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6H1",
+"exam_name": "IgE specifiche Polvere (Greer Labs., Inc.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6H2",
+"exam_name": "IgE specifiche Polvere (Hollister-Stier Labs.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6I1",
+"exam_name": "IgE specifiche Ape (Apis mellifera)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6I2",
+"exam_name": "IgE specifiche Calabrone bianco (Dolichovespula maculata)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6I204",
+"exam_name": "IgE specifiche Tafano (Tabanus spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6I3",
+"exam_name": "IgE specifiche Giallone (Vespula spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6I4",
+"exam_name": "IgE specifiche Vespa (Polistes spp.)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6I5",
+"exam_name": "IgE specifiche Calabrone giallo (Dolichovespula arenaria)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6I6",
+"exam_name": "IgE specifiche Scarafaggio (Blatella germanica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6I71",
+"exam_name": "IgE specifiche Zanzara comune (Aedes communis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6I75",
+"exam_name": "IgE specifiche Calabrone europeo (Vespa crabro)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6K75",
+"exam_name": "IgE specifiche Isocianato TDI (Toluene diisocyanate)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6K78",
+"exam_name": "IgE specifiche Ossido di etilene",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6K80",
+"exam_name": "IgE specifiche Formaldeide/Formalina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6K82",
+"exam_name": "IgE specifiche Lattice (Hevea brasiliensis )",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6M1",
+"exam_name": "IgE specifiche Penicillium chrysogenum (P. notatum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6M2",
+"exam_name": "IgE specifiche Cladosporium herbarum",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6M3",
+"exam_name": "IgE specifiche Aspergillus fumigatus",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6M4",
+"exam_name": "IgE specifiche Mucor racemosus",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6M5",
+"exam_name": "IgE specifiche Candida albicans",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6M6",
+"exam_name": "IgE specifiche Alternaria alternata",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6P1",
+"exam_name": "IgE specifiche Ascaris",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6P4",
+"exam_name": "IgE specifiche Anisakis",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6RC7",
+"exam_name": "IgE specifiche Cefaclor",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T1",
+"exam_name": "IgE specifiche Acero (Acer negundo)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T11",
+"exam_name": "IgE specifiche Platano (Platanus acerifolia)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T12",
+"exam_name": "IgE specifiche Salice (Salix caprea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T14",
+"exam_name": "IgE specifiche Pioppo (Populus deltoides)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T15",
+"exam_name": "IgE specifiche Frassino (Fraxinus americana)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T16",
+"exam_name": "IgE specifiche Pino strobo (Pinus strobus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T17",
+"exam_name": "IgE specifiche Cryptomeria japonica",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T19",
+"exam_name": "IgE specifiche Acacia longifolia",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T2",
+"exam_name": "IgE specifiche Ontano bianco (Alnus incana)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T206",
+"exam_name": "IgE specifiche Castagno (Castanea sativa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T208",
+"exam_name": "IgE specifiche Tiglio (Tilia cordata)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T209",
+"exam_name": "IgE specifiche Carpino bianco (Carpinus betulus)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T21",
+"exam_name": "IgE specifiche Melaleuca (Melaleuca leucadendron)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T210",
+"exam_name": "IgE specifiche Ligustro (Ligustrum vulgare)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T23",
+"exam_name": "IgE specifiche Cipresso mediterraneo (Cupressus sempervirens)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T3",
+"exam_name": "IgE specifiche Betulla (Betula verrucosa)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T4",
+"exam_name": "IgE specifiche Nocciolo (Corylus avellana)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T6",
+"exam_name": "IgE specifiche Ginepro sabina (Juniperus sabinoides)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T7",
+"exam_name": "IgE specifiche Quercia bianca (Quercus alba)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T8",
+"exam_name": "IgE specifiche Olmo americano (Ulmus americana)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6T9",
+"exam_name": "IgE specifiche Olivo (Olea europaea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W1",
+"exam_name": "IgE specifiche Ambrosia artemisiifolia (Ambrosia elatior)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W10",
+"exam_name": "IgE specifiche Farinaccio (Chenopodium album)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W12",
+"exam_name": "IgE specifiche Verga d'oro (Solidago virgaurea)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W19",
+"exam_name": "IgE specifiche Erba vetriola (Parietaria officinalis)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W2",
+"exam_name": "IgE specifiche Ambrosia psilostachya",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W20",
+"exam_name": "IgE specifiche Ortica comune (Urtica dioica)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W21",
+"exam_name": "IgE specifiche Parietaria judaica",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W4",
+"exam_name": "IgE specifiche Franseria acanthicarpa",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W6",
+"exam_name": "IgE specifiche Assenzio selvatico (Artemisia vulgaris)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W7",
+"exam_name": "IgE specifiche Margherita dei prati (Chrysanthemum leucanthemum)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W8",
+"exam_name": "IgE specifiche Taraxacum vulgare",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6W9",
+"exam_name": "IgE specifiche Lanciuola (Plantago lanceolata)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "700",
+"exam_name": "Piombemia",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "701",
+"exam_name": "PIOMBO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "701",
+"exam_name": "PIOMBO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7011",
+"exam_name": "PIOMBO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7011",
+"exam_name": "PIOMBO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "702",
+"exam_name": "PIOMBO Urine 24 ore",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "70219",
+"exam_name": "A. Delta Aminolevulinico Urinario (ALA) Urine F.T.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "70219",
+"exam_name": "A. Delta Aminolevulinico Urinario (ALA) Urine F.T.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7029",
+"exam_name": "A. Delta Aminolevulinico Urinario (ALA) Urine I.T.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7029",
+"exam_name": "A. Delta Aminolevulinico Urinario (ALA) Urine I.T.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "703",
+"exam_name": "Zincoprotoporfirine Eritrocitarie",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7051",
+"exam_name": "Porfobilinogeno urine 24H",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7052",
+"exam_name": "Porfirine totali urine 24H",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7053",
+"exam_name": "Coproporfirine urine 24H",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7054",
+"exam_name": "Coproporfirine urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7054",
+"exam_name": "Coproporfirine urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "707",
+"exam_name": "ACIDO TRICLOROACETICO (ATA) - (T.C.A.) Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "707",
+"exam_name": "ACIDO TRICLOROACETICO (ATA) - (T.C.A.) Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7070",
+"exam_name": "ACIDO TRICLOROACETICO (ATA)- (T.C.A.) Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7070",
+"exam_name": "ACIDO TRICLOROACETICO (ATA)- (T.C.A.) Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7081",
+"exam_name": "ORTO-CRESOLO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7081",
+"exam_name": "ORTO-CRESOLO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "70810",
+"exam_name": "ORTO-CRESOLO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "70810",
+"exam_name": "ORTO-CRESOLO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7082",
+"exam_name": "FENOLO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7082",
+"exam_name": "FENOLO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7083",
+"exam_name": "FENOLO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7083",
+"exam_name": "FENOLO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7099",
+"exam_name": "ACIDO IPPURICO Urine Inizio Turno (C) ",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7099",
+"exam_name": "ACIDO IPPURICO Urine Inizio Turno (C) ",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "70991",
+"exam_name": "ACIDO IPPURICO Urine Fine Turno (C)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "70991",
+"exam_name": "ACIDO IPPURICO Urine Fine Turno (C)",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7109",
+"exam_name": "ACIDI METILIPPURICI Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7109",
+"exam_name": "ACIDI METILIPPURICI Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "71119",
+"exam_name": "ACIDO MANDELICO Urine Fine Turno (C)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "71119",
+"exam_name": "ACIDO MANDELICO Urine Fine Turno (C)",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7119",
+"exam_name": "ACIDO MANDELICO Urine Inizio Turno (C) ",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7119",
+"exam_name": "ACIDO MANDELICO Urine Inizio Turno (C) ",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7129",
+"exam_name": "ACIDO FENILGLIOSSILICO Urine Inizio Turno (C)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7129",
+"exam_name": "ACIDO FENILGLIOSSILICO Urine Inizio Turno (C)",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "71299",
+"exam_name": "ACIDO FENILGLIOSSILICO Urine Fine Turno (C)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "71299",
+"exam_name": "ACIDO FENILGLIOSSILICO Urine Fine Turno (C)",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "71309",
+"exam_name": "CADMIO Urine Fine Turno (C)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "71309",
+"exam_name": "CADMIO Urine Fine Turno (C)",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7131",
+"exam_name": "Cadmio ematico",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7132",
+"exam_name": "CADMIO Urine 24 ore",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7139",
+"exam_name": "CADMIO Urine Inizio Turno (C)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7139",
+"exam_name": "CADMIO Urine Inizio Turno (C)",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "71419",
+"exam_name": "CROMO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "71419",
+"exam_name": "CROMO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7144",
+"exam_name": "CROMO Sierico",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7149",
+"exam_name": "CROMO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7149",
+"exam_name": "CROMO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "71509",
+"exam_name": "Nichel Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "71509",
+"exam_name": "Nichel Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7151",
+"exam_name": "Nichel Urine 24 ore",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7159",
+"exam_name": "Nichel Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7159",
+"exam_name": "Nichel Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "717",
+"exam_name": "TRICLOROETANOLO (TCE) Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "717",
+"exam_name": "TRICLOROETANOLO (TCE) Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7171",
+"exam_name": "TRICLOROETANOLO (TCE) Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7171",
+"exam_name": "TRICLOROETANOLO (TCE) Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7173",
+"exam_name": "2,5 ESANDIONE LIBERO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7173",
+"exam_name": "2,5 ESANDIONE LIBERO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7174",
+"exam_name": "2,5 ESANDIONE LIBERO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7174",
+"exam_name": "2,5 ESANDIONE LIBERO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "718",
+"exam_name": "MANGANESE Sierico",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7180",
+"exam_name": "Manganese Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7180",
+"exam_name": "Manganese Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7181",
+"exam_name": "Manganese Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7181",
+"exam_name": "Manganese Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "719",
+"exam_name": "ALLUMINIO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "719",
+"exam_name": "ALLUMINIO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7190",
+"exam_name": "ALLUMINIO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7190",
+"exam_name": "ALLUMINIO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7191",
+"exam_name": "ALLUMINIO Sierico",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7192",
+"exam_name": "ALLUMINIO Urine 24 ore",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7199",
+"exam_name": "ACIDI METILIPPURICI Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7199",
+"exam_name": "ACIDI METILIPPURICI Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "723",
+"exam_name": "NICHEL Sierico",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "724",
+"exam_name": "Rame Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "724",
+"exam_name": "Rame Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7240",
+"exam_name": "Ferro Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7240",
+"exam_name": "Ferro Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7241",
+"exam_name": "Rame Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7241",
+"exam_name": "Rame Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7242",
+"exam_name": "Ferro Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7242",
+"exam_name": "Ferro Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7250",
+"exam_name": "Mercurio",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7251",
+"exam_name": "MERCURIO Urine 24 ore",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7252",
+"exam_name": "MERCURIO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7252",
+"exam_name": "MERCURIO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7253",
+"exam_name": "MERCURIO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7253",
+"exam_name": "MERCURIO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "726",
+"exam_name": "COBALTO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "726",
+"exam_name": "COBALTO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7260",
+"exam_name": "COBALTO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7260",
+"exam_name": "COBALTO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7261",
+"exam_name": "COBALTO",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7263",
+"exam_name": "COBALTO Urine 24 ore",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "728",
+"exam_name": "ACIDO FORMICO Urine Inizio Turno (C)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "728",
+"exam_name": "ACIDO FORMICO Urine Inizio Turno (C)",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7280",
+"exam_name": "ACIDO FORMICO Urine Fine Turno (C)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7280",
+"exam_name": "ACIDO FORMICO Urine Fine Turno (C)",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "72919",
+"exam_name": "ACETONE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "72919",
+"exam_name": "ACETONE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7292",
+"exam_name": "ACETONE Ematico",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7299",
+"exam_name": "ACETONE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7299",
+"exam_name": "ACETONE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "731",
+"exam_name": "ACETATO DI ETILE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "731",
+"exam_name": "ACETATO DI ETILE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7310",
+"exam_name": "ACETATO DI ETILE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7310",
+"exam_name": "ACETATO DI ETILE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "732",
+"exam_name": "ALCOOL BUTILICO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "732",
+"exam_name": "ALCOOL BUTILICO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7320",
+"exam_name": "ALCOOL BUTILICO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7320",
+"exam_name": "ALCOOL BUTILICO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "736",
+"exam_name": "METILETILCHETONE (MEK) Urine Inizio Turno ",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "736",
+"exam_name": "METILETILCHETONE (MEK) Urine Inizio Turno ",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7360",
+"exam_name": "METILETILCHETONE (MEK) Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7360",
+"exam_name": "METILETILCHETONE (MEK) Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "737",
+"exam_name": "ARGENTO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "737",
+"exam_name": "ARGENTO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7370",
+"exam_name": "ARGENTO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7370",
+"exam_name": "ARGENTO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7371",
+"exam_name": "ARGENTO Sierico",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "738",
+"exam_name": "1-IDROSSIPIRENE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "738",
+"exam_name": "1-IDROSSIPIRENE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7380",
+"exam_name": "1-IDROSSIPIRENE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7380",
+"exam_name": "1-IDROSSIPIRENE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "740",
+"exam_name": "AMMINE AROMATICHE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "740",
+"exam_name": "AMMINE AROMATICHE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7400",
+"exam_name": "AMMINE AROMATICHE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7400",
+"exam_name": "AMMINE AROMATICHE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "744",
+"exam_name": "Antimonio Urine I.T.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "744",
+"exam_name": "Antimonio Urine I.T.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7440",
+"exam_name": "Antimonio Urine F.T.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7440",
+"exam_name": "Antimonio Urine F.T.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "745",
+"exam_name": "CLORURO DI METILENE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "745",
+"exam_name": "CLORURO DI METILENE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7451",
+"exam_name": "CLORURO DI METILENE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7451",
+"exam_name": "CLORURO DI METILENE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7452",
+"exam_name": "CLORURO DI METILENE Ematico",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "746",
+"exam_name": "CICLOESANOLO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "746",
+"exam_name": "CICLOESANOLO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7460",
+"exam_name": "CICLOESANOLO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7460",
+"exam_name": "CICLOESANOLO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7491",
+"exam_name": "Citraturia delle 24 ore",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "75009",
+"exam_name": "FLUORURI Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "75009",
+"exam_name": "FLUORURI Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7509",
+"exam_name": "FLUORURI Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7509",
+"exam_name": "FLUORURI Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "753",
+"exam_name": "METANOLO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "753",
+"exam_name": "METANOLO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7531",
+"exam_name": "METANOLO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7531",
+"exam_name": "METANOLO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "757",
+"exam_name": "SELENIO",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "758",
+"exam_name": "METILISOBUTILCHETONE (MIBK) Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "758",
+"exam_name": "METILISOBUTILCHETONE (MIBK) Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7580",
+"exam_name": "METILISOBUTILCHETONE (MIBK) Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7580",
+"exam_name": "METILISOBUTILCHETONE (MIBK) Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "761",
+"exam_name": "ACETATO DI BUTILE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "761",
+"exam_name": "ACETATO DI BUTILE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7610",
+"exam_name": "ACETATO DI BUTILE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7610",
+"exam_name": "ACETATO DI BUTILE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7620",
+"exam_name": "Fattore VIIIc",
+"article_code": "PRV01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "766",
+"exam_name": "Benzene Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "766",
+"exam_name": "Benzene Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7660",
+"exam_name": "Benzene Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7660",
+"exam_name": "Benzene Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "769",
+"exam_name": "PERCLOROETILENE Ematico",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7690",
+"exam_name": "PERCLOROETILENE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7690",
+"exam_name": "PERCLOROETILENE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7691",
+"exam_name": "PERCLOROETILENE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7691",
+"exam_name": "PERCLOROETILENE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "772",
+"exam_name": "CLOROFORMIO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "772",
+"exam_name": "CLOROFORMIO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7720",
+"exam_name": "CLOROFORMIO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7720",
+"exam_name": "CLOROFORMIO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "774",
+"exam_name": "Toluene Ematico",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7740",
+"exam_name": "Toluene Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7740",
+"exam_name": "Toluene Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7741",
+"exam_name": "Toluene Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7741",
+"exam_name": "Toluene Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "781",
+"exam_name": "Bario Urinario I.T.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "781",
+"exam_name": "Bario Urinario I.T.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7810",
+"exam_name": "Bario Urinario F.T.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7810",
+"exam_name": "Bario Urinario F.T.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "785",
+"exam_name": "Metanefrina Urine 24H",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "786",
+"exam_name": "Normetanefrina urine 24 H acide",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "787",
+"exam_name": "Catecolamine Urinarie",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7870",
+"exam_name": "CATECOLAMINE plasmatiche",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "789",
+"exam_name": "Dopamina urinaria",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7890",
+"exam_name": "Dopamina plasmatica",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7934",
+"exam_name": "TETRAIDROFURANO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7934",
+"exam_name": "TETRAIDROFURANO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "79340",
+"exam_name": "TETRAIDROFURANO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "79340",
+"exam_name": "TETRAIDROFURANO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "796",
+"exam_name": "ACIDO TRANS,TRANS-MUCONICO Urine Inizio Turno (C)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "796",
+"exam_name": "ACIDO TRANS,TRANS-MUCONICO Urine Inizio Turno (C)",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7960",
+"exam_name": "ACIDO TRANS, TRANS-MUCONICO Urine Fine Turno (C)",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7960",
+"exam_name": "ACIDO TRANS, TRANS-MUCONICO Urine Fine Turno (C)",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7971",
+"exam_name": "ACRILONITRILE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7971",
+"exam_name": "ACRILONITRILE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7972",
+"exam_name": "ACRILONITRILE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7972",
+"exam_name": "ACRILONITRILE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7973",
+"exam_name": "ACETONITRILE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7973",
+"exam_name": "ACETONITRILE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7974",
+"exam_name": "ACETONITRILE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7974",
+"exam_name": "ACETONITRILE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7981",
+"exam_name": "Leishmania Infantum IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7989",
+"exam_name": "Inibina B",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "79971",
+"exam_name": "Iodio urinario su urine estemporanee",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "79971",
+"exam_name": "Iodio urinario su urine estemporanee",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "810",
+"exam_name": "Esame Chimico del Calcolo Renale",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "834",
+"exam_name": "Anticorpi Anti Ovaio Ig Totali",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8424",
+"exam_name": "Diagnosi molecolare di beta talassemia - sequenziamento completo del gene HBB",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "892",
+"exam_name": "A.Anti Coxsackie Virus B",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8921",
+"exam_name": "DISBIOSI TEST",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8921",
+"exam_name": "DISBIOSI TEST",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8921I",
+"exam_name": "Indicano Urinario",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8921I",
+"exam_name": "Indicano Urinario",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8921S",
+"exam_name": "Scatolo Urinario",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8921S",
+"exam_name": "Scatolo Urinario",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8971",
+"exam_name": "PAPP-A",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8973",
+"exam_name": "XILENE Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8973",
+"exam_name": "XILENE Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8974",
+"exam_name": "XILENE Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8974",
+"exam_name": "XILENE Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8994",
+"exam_name": "Rame Urine 24h",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8995",
+"exam_name": "Ferro Urine 24h",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "900",
+"exam_name": "Pepsinogeno I (PG I)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "901",
+"exam_name": "Pepsinogeno II (PG II)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "ANA",
+"exam_name": "ANTICORPI ANTI NUCLEO ANA IFI",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B5034",
+"exam_name": "Campylobacter Esame Colturale",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "B591",
+"exam_name": "Colturale Feci E.Coli O:157",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "BKES",
+"exam_name": "MICOBATTERI SU ESPETTORATO",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "COTI",
+"exam_name": "Cotinina Urinaria",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "COTI",
+"exam_name": "Cotinina Urinaria",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "DGPA",
+"exam_name": "Anticorpi Anti Gliadina Deamidata IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "DGPG",
+"exam_name": "Anticorpi Anti Gliadina Deamidata IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "ENA",
+"exam_name": "ENA Screening",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE007",
+"exam_name": "Cariotipo (su liquido amniotico o CVS)",
+"article_code": "CNT02",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE026",
+"exam_name": "Atrofia Muscolare Spinale - SMA Carrier Test (test postnatale)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE028",
+"exam_name": "Distrofia Miotonica - Malattia di Steinert (DMPK)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE031",
+"exam_name": "Emocromatosi (3 mutazioni) - HFE (C282Y, S65C, H63D)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE032",
+"exam_name": "Fibrosi Cistica - Gene CFTR Screening 88 Mutazioni",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE035",
+"exam_name": "Fibrosi Cistica - Gene CFTR Sequenziamento completo",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE036",
+"exam_name": "Microdelezioni Cromosoma Y",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE038",
+"exam_name": "Sordità congenita (GJB6/CX30) - Intero gene",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE040",
+"exam_name": "X-Fragile (FRAXA)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE058",
+"exam_name": "JAK2 (Mutazione V617F)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE071",
+"exam_name": "BRCA1 e 2 reflex Ricerca mutazioni e microriarrangamenti",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE086",
+"exam_name": "Gene ACE Polimorfismo in/del introne 16",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE088",
+"exam_name": "APO E (E2-E3-E4)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE089",
+"exam_name": "Beta Fibrinogeno",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE092",
+"exam_name": "FATTORE V mutazione Y1702C (DNA)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE093",
+"exam_name": "FATTORE V mutazione H1299R (DNA)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE098",
+"exam_name": "MTHFR mutazione A1298C",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE144",
+"exam_name": "HLA (locus B51) Tipizzazione",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE145",
+"exam_name": "HLA I Classe (A, B, C)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE147",
+"exam_name": "HLA II Classe (loci DQB1, DRB1)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE148",
+"exam_name": "HLA II (singolo locus)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "GENE149",
+"exam_name": "HLA I Classe (A, B, C) e HLA II Classe (DQB1, DRB1)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "HSV1",
+"exam_name": "HSV 1 - virus Herpes Simplex IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "HSV2",
+"exam_name": "HSV 2 - virus Herpes Simplex IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "LEGU",
+"exam_name": "LEGIONELLA PNEUMOPHILA SU URINE",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "LEGU",
+"exam_name": "LEGIONELLA PNEUMOPHILA SU URINE",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "NIPT001",
+"exam_name": "Test Prenatale - AURORA LIGHT",
+"article_code": "KIT12",
+"qty_per_exam": 1
+},
+{
+"exam_code": "NIPT002",
+"exam_name": "Test Prenatale - AURORA",
+"article_code": "KIT12",
+"qty_per_exam": 1
+},
+{
+"exam_code": "NIPT003",
+"exam_name": "Test Prenatale - AURORA PLUS",
+"article_code": "KIT12",
+"qty_per_exam": 1
+},
+{
+"exam_code": "NIPT004",
+"exam_name": "Test Prenatale - AURORA CARIOTIPO",
+"article_code": "KIT12",
+"qty_per_exam": 1
+},
+{
+"exam_code": "NIPT005",
+"exam_name": "Test Prenatale - AURORA CARIOTIPO PLUS",
+"article_code": "KIT12",
+"qty_per_exam": 1
+},
+{
+"exam_code": "039",
+"exam_name": "Elettroforesi Hb",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "150",
+"exam_name": "A.Anti Piastrine",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "151",
+"exam_name": "A.Anti Brucella IgG (Reazione di Wright)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "151M",
+"exam_name": "A.Anti Brucella IgM (Reazione di Wright)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1611",
+"exam_name": "A.Anti Bartonella Henselae IgM",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1666",
+"exam_name": "TEST PRE-ECLAMPSIA (Dosaggio PLGF Plus e sFlt-1)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "2050",
+"exam_name": "Fruttosamina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "303",
+"exam_name": "Aldolasi",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "357",
+"exam_name": "Clozapina e Norclozapina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "4035",
+"exam_name": "Omega2 - Acidi grassi frazionati",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "514",
+"exam_name": "Esame Feci x Parassiti",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5141",
+"exam_name": "Esame Feci x Parassiti II Campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "5142",
+"exam_name": "Esame Feci x Parassiti III Campione",
+"article_code": "CNT01",
+"qty_per_exam": 1
+},
+{
+"exam_code": "574",
+"exam_name": "Amiloide A",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6081",
+"exam_name": "A.Anti HDV",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6179",
+"exam_name": "Macroprolattina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6208",
+"exam_name": "LEVETIRACETAM (KEPPRA)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6653",
+"exam_name": "Proteina Cationica Eosinofila (ECP)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "670",
+"exam_name": "Phenobarbital (Gardenale)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "672",
+"exam_name": "Etosuccimide",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "673",
+"exam_name": "Primidone (Mysoline)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "674",
+"exam_name": "Carbamazepina (Tegretol)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "675",
+"exam_name": "Fenitoina (Dintoina) (Difenilidantoina)",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "680",
+"exam_name": "Lamotrigina",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "685",
+"exam_name": "Tacrolimus (FK506)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "716",
+"exam_name": "Zinco Urine I.T.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "716",
+"exam_name": "Zinco Urine I.T.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7161",
+"exam_name": "Zinco Urine F.T.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7161",
+"exam_name": "Zinco Urine F.T.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "720",
+"exam_name": "Carbossiemoglobina",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "721",
+"exam_name": "Metaemoglobina",
+"article_code": "PRV06",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7431",
+"exam_name": "ARSENICO Urine Inizio Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7431",
+"exam_name": "ARSENICO Urine Inizio Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7432",
+"exam_name": "ARSENICO Urine Fine Turno",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7432",
+"exam_name": "ARSENICO Urine Fine Turno",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7433",
+"exam_name": "ARSENICO Urine 24 ore",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "7661",
+"exam_name": "Benzene Ematico",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "79972",
+"exam_name": "Iodio Urinario 24 h",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8922",
+"exam_name": "A.Anti S. Cerevisiae (ASCA) IgG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8923",
+"exam_name": "A.Anti S. Cerevisiae (ASCA) IgA",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "8970",
+"exam_name": "Free Beta HCG",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "CD20",
+"exam_name": "Linfociti B (CD20+CD3-)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "FOX",
+"exam_name": "Fox Test - Food Explorer",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "LACO",
+"exam_name": "Lacosamide",
+"article_code": "PRV03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "PATLEG",
+"exam_name": "Test di paternità - Valenza Legale",
+"article_code": "PRV07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1080",
+"exam_name": "Amfetamine/Metamfetamine/MDMA matrice pilifera  - Valenza Medico Legale",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1080CL",
+"exam_name": "Amfetamine/Metamfetamine/MDMA matrice pilifera - Valenza Clinica",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1081",
+"exam_name": "Buprenorfina matrice pilifera - Valenza Medico Legale",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1081CL",
+"exam_name": "Buprenorfina matrice pilifera - Valenza clinica",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1082",
+"exam_name": "Cannabinoidi matrice pilifera - Valenza Medico Legale",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1082CL",
+"exam_name": "Cannabinoidi matrice pilifera - Valenza Clinica",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1083",
+"exam_name": "Cocaina matrice pilifera - Valenza Medico Legale",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1083CL",
+"exam_name": "Cocaina matrice pilifera - Valenza clinica",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1084",
+"exam_name": "Barbiturici matrice pilifera - Valenza Medico Legale",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1085",
+"exam_name": "Metadone matrice pilifera - Valenza Medico Legale",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1085CL",
+"exam_name": "Metadone matrice pilifera - Valenza clinica",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1086",
+"exam_name": "Oppiacei matrice pilifera - Valenza Medico Legale",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1086CL",
+"exam_name": "Oppiacei matrice pilifera - Valenza clinica",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1087",
+"exam_name": "Etilglucoronide matrice pilifera - Valenza Medico Legale",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1088",
+"exam_name": "Etilglucoronide su matrice urinaria Test di conferma",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1088",
+"exam_name": "Etilglucoronide su matrice urinaria Test di conferma",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1550CL",
+"exam_name": "Etilglucoronide su matrice pilifera (valenza clinica)",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1558",
+"exam_name": "Ketamina test di screening su urine-valenza medico legale",
+"article_code": "KIT07",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1558CL",
+"exam_name": "Ketamina matrice Urinaria  - Valenza Clinica",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1558CL",
+"exam_name": "Ketamina matrice Urinaria  - Valenza Clinica",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1561",
+"exam_name": "Ketamina test di conferma -matrice urinaria",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1561",
+"exam_name": "Ketamina test di conferma -matrice urinaria",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1564",
+"exam_name": "Ketamina matrice pilifera -valenza medico legale",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1564CL",
+"exam_name": "Ketamina Matrice Pilifera Valenza Clinica",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1566",
+"exam_name": "Benzodiazepine test di conferma",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1566",
+"exam_name": "Benzodiazepine test di conferma",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1567",
+"exam_name": "Benzodiazepine matrice pilifera-valenza legale",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "1567CL",
+"exam_name": "Benzodiazepine Matrice Pilifera Valenza Clinica",
+"article_code": "KIT08",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6345",
+"exam_name": "Barbiturici test di conferma su urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6345",
+"exam_name": "Barbiturici test di conferma su urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6346",
+"exam_name": "Buprenorfina test di conferma su urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6346",
+"exam_name": "Buprenorfina test di conferma su urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6347",
+"exam_name": "Cannabinoidi test di conferma su urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6347",
+"exam_name": "Cannabinoidi test di conferma su urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6348",
+"exam_name": "Cocaina test di conferma su urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6348",
+"exam_name": "Cocaina test di conferma su urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6349",
+"exam_name": "Etanolo test di conferma su urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6349",
+"exam_name": "Etanolo test di conferma su urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6353",
+"exam_name": "Amfetamine / Metamfetamine / MDMA (Ecsatsy) test di conferma su urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6353",
+"exam_name": "Amfetamine / Metamfetamine / MDMA (Ecsatsy) test di conferma su urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6354",
+"exam_name": "Metadone test di conferma su urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6354",
+"exam_name": "Metadone test di conferma su urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6355",
+"exam_name": "Oppiacei test di conferma su urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "6355",
+"exam_name": "Oppiacei test di conferma su urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "400",
+"exam_name": "Esame Urine",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "400",
+"exam_name": "Esame Urine",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "401",
+"exam_name": "Esame Urine Completo II Camp.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "401",
+"exam_name": "Esame Urine Completo II Camp.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "402",
+"exam_name": "Esame Urine Completo III Camp.",
+"article_code": "PRV05",
+"qty_per_exam": 1
+},
+{
+"exam_code": "402",
+"exam_name": "Esame Urine Completo III Camp.",
+"article_code": "CNT03",
+"qty_per_exam": 1
+},
+{
+"exam_code": "010",
+"exam_name": "V.E.S. (Velocità di eritrosedimentazione)",
+"article_code": "PRV07",
+"qty_per_exam": 1
+}
+]

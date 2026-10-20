@@ -82,7 +82,8 @@ test('Orders Management: flusso completo', async (t) => {
     let r = await P.post('/api/mappings', { exam_code: '0014', exam_name: 'Emocromo', article_id: ctx.art.PRV07.id, qty_per_exam: 1 }); assert.equal(r.status, 201);
     r = await P.post('/api/mappings', { exam_code: '0020', exam_name: 'Glicemia', article_id: ctx.art.PRV04.id, qty_per_exam: 1 }); assert.equal(r.status, 201);
     r = await P.post('/api/mappings', { exam_code: '0020', exam_name: 'Glicemia', article_id: ctx.art.PRE01.id, qty_per_exam: 1 }); assert.equal(r.status, 201);
-    assert.equal((await P.get('/api/mappings')).data.length, 3);
+    assert.ok((await P.get('/api/mappings')).data.length >= 1385, 'correlazioni precaricate dal listino esami');
+    assert.equal((await P.get('/api/mappings')).data.filter((m) => m.exam_code === '0014').length, 1);
     // tre mesi di produzione: 140 emocromi medi per il cliente
     for (const [m, q14, q20] of [['2026-07', 130, 90], ['2026-08', 150, 100], ['2026-09', 140, 110]]) {
       r = await P.post('/api/production', { struttura_id: ctx.cliente, month: m, items: [{ examCode: '0014', examName: 'Emocromo', qty: q14 }, { examCode: '0020', examName: 'Glicemia', qty: q20 }] });

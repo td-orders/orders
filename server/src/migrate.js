@@ -58,6 +58,20 @@ async function seed() {
     added += r.rowCount;
   }
   if (added) console.log(`[seed] catalogo MOD252: ${added} articoli inseriti`);
+  // Correlazione esami StudioLab -> materiali: precaricata dal listino esami (proposta del 20/10/2026) solo se la tabella è vuota
+  if ((await pool.query('SELECT count(*)::int AS n FROM exam_mappings')).rows[0].n === 0) {
+    const seedFile = path.join(here, 'assets', 'correlazioni_seed.json');
+    if (fs.existsSync(seedFile)) {
+      const arts = new Map((await pool.query('SELECT id, code FROM articles')).rows.map((a) => [a.code, a.id]));
+      let n = 0;
+      for (const m of JSON.parse(fs.readFileSync(seedFile, 'utf8'))) {
+        if (!arts.has(m.article_code)) continue;
+        await pool.query('INSERT INTO exam_mappings (exam_code, exam_name, article_id, qty_per_exam) VALUES ($1,$2,$3,$4) ON CONFLICT (exam_code, article_id) DO NOTHING', [m.exam_code, m.exam_name || null, arts.get(m.article_code), m.qty_per_exam || 1]);
+        n++;
+      }
+      console.log(`[seed] correlazioni esami-materiali: ${n} righe`);
+    }
+  }
   // Il laboratorio di analisi di Toscana Diagnostica esiste sempre
   if ((await pool.query("SELECT count(*)::int AS n FROM strutture WHERE kind='LAB'")).rows[0].n === 0) {
     await pool.query(`INSERT INTO strutture (kind, code, name, address, zip, city, province, email, stock_deadline_day)

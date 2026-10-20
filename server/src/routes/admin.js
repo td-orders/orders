@@ -2,15 +2,18 @@ import { Router } from 'express';
 import crypto from 'node:crypto';
 import bcrypt from 'bcryptjs';
 import { z } from 'zod';
-import { one, many, q } from '../db.js';
+import { one, many, q, tx } from '../db.js';
 import { ah, bad, forbidden, notFound, audit, parse, getSetting } from '../lib/util.js';
 import { requireRole, isOps, isSuper, Params, OPS_ROLES } from '../lib/access.js';
 import { mailStatus, sendMail } from '../lib/mailer.js';
 import { studiolabStatus } from '../lib/studiolab.js';
 import { silvaStatus } from '../lib/silva.js';
 import { config } from '../config.js';
+import multer from 'multer';
+import ExcelJS from 'exceljs';
 
 const r = Router();
+const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 * 1024 * 1024 } });
 const opt = (s) => s.optional().nullable().transform((v) => (v === '' ? null : v));
 const CODE = /^[A-Z0-9_-]{2,16}$/;
 
@@ -188,6 +191,45 @@ r.post('/mappings', requireRole(...OPS_ROLES), ah(async (req, res) => {
   await audit(req, 'MAPPING_SAVE', 'mapping', row.id, d);
   res.status(201).json(row);
 }));
+// Export e import della tabella (XLSX: codice esame, descrizione, codice articolo MOD252, unità per esame)
+r.get('/mappings/export.xlsx', requireRole(...OPS_ROLES), ah(async (_req, res) => {
+  const rows = await many(`SELECT m.exam_code, m.exam_name, a.code AS article_code, a.name AS article_name, m.qty_per_exam FROM exam_mappings m JOIN articles a ON a.id=m.article_id WHERE m.active ORDER BY m.exam_code, a.code`);
+  const wb = new ExcelJS.Workbook(); const ws = wb.addWorksheet('Correlazioni');
+  ws.addRow(['Codice esame', 'Descrizione esame', 'Codice articolo MOD252', 'Articolo', 'Unità per esame']); ws.getRow(1).font = { bold: true };
+  for (const x of rows) ws.addRow([x.exam_code, x.exam_name, x.article_code, x.article_name, Number(x.qty_per_exam)]);
+  ws.columns.forEach((c, i) => { c.width = [14, 60, 22, 50, 14][i]; });
+  const arts = wb.addWorksheet('Articoli'); arts.addRow(['Codice', 'Articolo', 'Confezione']); arts.getRow(1).font = { bold: true };
+  for (const a of await many('SELECT code, name, pack_label FROM articles WHERE active ORDER BY sort')) arts.addRow([a.code, a.name, a.pack_label]);
+  arts.columns.forEach((c, i) => { c.width = [12, 60, 30][i]; });
+  res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+  res.setHeader('Content-Disposition', 'attachment; filename="correlazioni_esami_materiali.xlsx"');
+  res.send(Buffer.from(await wb.xlsx.writeBuffer()));
+}));
+
+r.post('/mappings/import', requireRole(...OPS_ROLES), upload.single('file'), ah(async (req, res) => {
+  if (!req.file) throw bad('File mancante');
+  const wb = new ExcelJS.Workbook(); await wb.xlsx.load(req.file.buffer);
+  const ws = wb.worksheets[0];
+  const arts = new Map((await many('SELECT id, code FROM articles')).map((a) => [a.code, a.id]));
+  const items = []; const errors = [];
+  ws.eachRow((row, i) => {
+    if (i === 1) return;
+    const v = row.values.slice(1).map((x) => (x && typeof x === 'object' && 'text' in x ? x.text : x));
+    const [exam, name, art, , qty] = v.map((x) => (x == null ? '' : String(x).trim()));
+    if (!exam && !art) return;
+    if (!arts.has(art)) return errors.push(`riga ${i}: codice articolo "${art}" non in catalogo`);
+    items.push({ exam, name, article_id: arts.get(art), qty: Number(String(qty).replace(',', '.')) || 1 });
+  });
+  if (errors.length) return res.status(400).json({ error: `Importazione non eseguita: ${errors.length} errori`, details: errors.slice(0, 50) });
+  const replace = req.query.replace === '1';
+  await tx(async (c) => {
+    if (replace) await c.query('DELETE FROM exam_mappings');
+    for (const it of items) await c.query(`INSERT INTO exam_mappings (exam_code, exam_name, article_id, qty_per_exam) VALUES ($1,$2,$3,$4) ON CONFLICT (exam_code, article_id) DO UPDATE SET exam_name=EXCLUDED.exam_name, qty_per_exam=EXCLUDED.qty_per_exam, active=TRUE`, [it.exam, it.name || null, it.article_id, it.qty]);
+  });
+  await audit(req, 'MAPPINGS_IMPORT', 'mapping', null, { rows: items.length, replace });
+  res.json({ rows: items.length, replace });
+}));
+
 r.delete('/mappings/:id', requireRole(...OPS_ROLES), ah(async (req, res) => {
   await q('DELETE FROM exam_mappings WHERE id=$1', [req.params.id]);
   await audit(req, 'MAPPING_DELETE', 'mapping', req.params.id);
