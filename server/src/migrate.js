@@ -72,6 +72,20 @@ async function seed() {
       console.log(`[seed] correlazioni esami-materiali: ${n} righe`);
     }
   }
+  // Clienti Service e sedi del network: precaricati dall'elenco clienti StudioLab (20/10/2026) solo se non esistono ancora strutture
+  if ((await pool.query("SELECT count(*)::int AS n FROM strutture WHERE kind <> 'LAB'")).rows[0].n === 0) {
+    const seedFile = path.join(here, 'assets', 'strutture_seed.json');
+    if (fs.existsSync(seedFile)) {
+      let n = 0;
+      for (const x of JSON.parse(fs.readFileSync(seedFile, 'utf8'))) {
+        await pool.query(`INSERT INTO strutture (kind, code, name, address, zip, city, province, phone, email, referente, studiolab_code, stock_deadline_day)
+          VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,15) ON CONFLICT (code) DO NOTHING`,
+        [x.kind, x.code, x.name, x.address || null, x.zip || null, x.city || null, x.province || null, x.phone || null, x.email || null, x.referente || null, x.studiolab_code || x.code]);
+        n++;
+      }
+      console.log(`[seed] strutture da elenco clienti: ${n}`);
+    }
+  }
   // Il laboratorio di analisi di Toscana Diagnostica esiste sempre
   if ((await pool.query("SELECT count(*)::int AS n FROM strutture WHERE kind='LAB'")).rows[0].n === 0) {
     await pool.query(`INSERT INTO strutture (kind, code, name, address, zip, city, province, email, stock_deadline_day)

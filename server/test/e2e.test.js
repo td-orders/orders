@@ -62,6 +62,9 @@ test('Orders Management: flusso completo', async (t) => {
     r = await S.post('/api/strutture', { kind: 'SEDE', code: 'SEDE-CAL', name: 'Punto prelievo Calenzano', city: 'Calenzano', province: 'FI', email: 'calenzano@example.org', studiolab_code: 'SL-CAL' });
     assert.equal(r.status, 201); ctx.sede = r.data.id;
     const lab = (await S.get('/api/strutture?kind=LAB')).data; assert.equal(lab.length, 1); ctx.lab = lab[0].id; assert.equal(lab[0].stock_deadline_day, 30);
+    const all = (await S.get('/api/strutture')).data;
+    assert.ok(all.filter((x) => x.kind === 'CLIENTE').length >= 70 && all.filter((x) => x.kind === 'SEDE').length >= 20, 'clienti e sedi precaricati dall\'elenco StudioLab');
+    assert.ok(all.find((x) => x.code === 'TD02' && x.studiolab_code === 'TD02'));
     assert.equal((await S.post('/api/strutture', { kind: 'CLIENTE', code: 'CLI-001', name: 'Duplicato' })).status, 400);
   });
   await t.test('utenti: procurement, cliente, sede, laboratorio', async () => {
@@ -231,7 +234,7 @@ test('Orders Management: flusso completo', async (t) => {
   await t.test('annullamento, cruscotti, export, solleciti, registri', async () => {
     let r = await C.post('/api/orders', { lines: [{ article_id: ctx.art.TRB01.id, qty: 1 }], submit: true }); assert.equal(r.status, 201);
     r = await C.post(`/api/orders/${r.data.id}/cancel`, { reason: 'Inserito per errore' }); assert.equal(r.status, 200);
-    const dOps = (await P.get('/api/stats/dashboard')).data; assert.ok(dOps.byStatus); assert.ok(dOps.pendingCounts.length >= 0); assert.ok(dOps.strutture.clienti === 1);
+    const dOps = (await P.get('/api/stats/dashboard')).data; assert.ok(dOps.byStatus); assert.ok(dOps.pendingCounts.length >= 20); assert.ok(dOps.strutture.clienti >= 70);
     const dCli = (await C.get('/api/stats/dashboard')).data; assert.equal(dCli.stock.packs, 3); assert.equal(dCli.stockCount, undefined);
     const dSede = (await D.get('/api/stats/dashboard')).data; assert.equal(dSede.stockCount.status, 'DA_INSERIRE' === dSede.stockCount.status ? dSede.stockCount.status : dSede.stockCount.status);
     const x1 = await P.raw('/api/stats/export/orders.xlsx'); assert.equal(x1.status, 200);

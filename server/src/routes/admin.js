@@ -69,6 +69,39 @@ r.put('/strutture/:id', requireRole(...OPS_ROLES), ah(async (req, res) => {
   res.json({ ok: true });
 }));
 
+// Import dell'elenco clienti esportato da StudioLab (colonne: CodiceCliente, Profilo, RagSoc, PartIVA, CodFisc, PersonaDiRiferimento, Indirizzo, Cap, Citta, Provincia, Telefono1, ...)
+// Aggiorna le strutture esistenti per codice e crea quelle nuove; non disattiva nulla.
+r.post('/strutture/import', requireRole('SUPERADMIN'), upload.single('file'), ah(async (req, res) => {
+  if (!req.file) throw bad('File mancante');
+  const wb = new ExcelJS.Workbook(); await wb.xlsx.load(req.file.buffer);
+  const ws = wb.worksheets[0];
+  const head = ws.getRow(1).values.slice(1).map((v) => String(v || '').trim().toLowerCase());
+  const col = (name) => head.indexOf(name.toLowerCase());
+  const need = ['codicecliente', 'profilo', 'ragsoc'];
+  for (const k of need) if (col(k) < 0) throw bad(`Colonna ${k} mancante nel file`);
+  const txt = (row, name) => { const i = col(name); if (i < 0) return ''; const v = row.values.slice(1)[i]; return v == null ? '' : String(typeof v === 'object' && 'text' in v ? v.text : v).trim(); };
+  let created = 0, updated = 0;
+  await tx(async (c) => {
+    for (let i = 2; i <= ws.rowCount; i++) {
+      const row = ws.getRow(i);
+      const code = txt(row, 'codicecliente'); if (!code) continue;
+      const kind = /sede/i.test(txt(row, 'profilo')) ? 'SEDE' : 'CLIENTE';
+      const email = (txt(row, 'email').match(/[\w.+-]+@[\w-]+\.[\w.-]+/) || [''])[0].toLowerCase();
+      const vals = [code, kind, txt(row, 'ragsoc'), txt(row, 'indirizzo') || null, txt(row, 'cap') || null, txt(row, 'citta') || null, (txt(row, 'provincia') || '').toUpperCase().slice(0, 2) || null, txt(row, 'telefono1') || txt(row, 'telefono2') || null, email || null, txt(row, 'personadiriferimento') || null];
+      const ex = await c.query('SELECT id FROM strutture WHERE code=$1', [code]);
+      if (ex.rows.length) {
+        await c.query(`UPDATE strutture SET name=$3, address=coalesce($4, address), zip=coalesce($5, zip), city=coalesce($6, city), province=coalesce($7, province), phone=coalesce($8, phone), email=coalesce($9, email), referente=coalesce($10, referente), studiolab_code=coalesce(studiolab_code, $1), updated_at=now() WHERE code=$1`, vals);
+        updated++;
+      } else {
+        await c.query(`INSERT INTO strutture (code, kind, name, address, zip, city, province, phone, email, referente, studiolab_code, stock_deadline_day) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$1,15)`, vals);
+        created++;
+      }
+    }
+  });
+  await audit(req, 'STRUTTURE_IMPORT', 'struttura', null, { created, updated });
+  res.json({ created, updated });
+}));
+
 // ---------------- Utenti ----------------
 const userFields = {
   email: z.string().email(), full_name: z.string().min(2).max(120),

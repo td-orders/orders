@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { api } from '../api.js';
 import { useAuth } from '../auth.jsx';
-import { useApi, Field, Loading, Empty, Badge, Modal, ErrorBox, Card, useToast } from '../components/ui.jsx';
+import { useApi, Field, Loading, Empty, Badge, Modal, ErrorBox, Card, Icon, useToast } from '../components/ui.jsx';
 import { KIND, monthLabel } from '../format.js';
 
 const empty = { kind: 'CLIENTE', code: '', name: '', address: '', zip: '', city: '', province: '', phone: '', email: '', pec: '', referente: '', referente_phone: '', studiolab_code: '', delivery_notes: '', delivery_mode: 'GIRO', stock_deadline_day: 15, active: true };
@@ -15,7 +15,13 @@ export default function Strutture() {
   const { data, reload } = useApi('/strutture');
   const [edit, setEdit] = useState(null);
   const [err, setErr] = useState(null);
-  const rows = (data || []).filter((s) => !kind || s.kind === kind);
+  const [search, setSearch] = useState('');
+  const rows = (data || []).filter((s) => (!kind || s.kind === kind) && (!search || `${s.code} ${s.name} ${s.city || ''}`.toLowerCase().includes(search.toLowerCase())));
+  const importFile = async (f) => {
+    setErr(null);
+    const fd = new FormData(); fd.append('file', f);
+    try { const r = await api.upload('/strutture/import', fd); toast(`Elenco clienti importato: ${r.created} nuove, ${r.updated} aggiornate`); reload(); } catch (e) { setErr(e); }
+  };
   const save = async () => {
     setErr(null);
     const b = { ...edit }; ['id', 'users_count', 'referenti', 'open_orders', 'last_stock_month', 'created_at', 'updated_at'].forEach((k) => delete b[k]);
@@ -25,9 +31,11 @@ export default function Strutture() {
   return (
     <div className="page">
       <div className="page-head">
-        <div><h1>Strutture</h1><div className="sub">Clienti Service (ordinano dal catalogo), sedi del network (giacenza entro il 15) e laboratorio TD (giacenza entro il 30). I referenti derivano dagli utenti.</div></div>
+        <div><h1>Strutture</h1><div className="sub">Clienti Service (ordinano dal catalogo), sedi del network (giacenza entro il 15) e laboratorio TD (giacenza entro il 30). Precaricate dall'elenco clienti StudioLab del 20/10/2026; il codice StudioLab coincide con il codice cliente. I referenti derivano dagli utenti.</div></div>
         <div className="row">
+          <Field label="Cerca"><input placeholder="Codice, nome, città" value={search} onChange={(e) => setSearch(e.target.value)} /></Field>
           <Field label="Tipo"><select value={kind} onChange={(e) => setKind(e.target.value)}><option value="">Tutte</option>{Object.entries(KIND).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select></Field>
+          {sup && <label className="btn ghost" title="Elenco clienti esportato da StudioLab: aggiorna per codice e crea le nuove"><Icon name="upload" size={16} />Importa elenco StudioLab<input type="file" accept=".xlsx" style={{ display: 'none' }} onChange={(e) => e.target.files[0] && importFile(e.target.files[0])} /></label>}
           {sup && <button className="btn" onClick={() => setEdit({ ...empty })}>+ Nuova struttura</button>}
         </div>
       </div>
