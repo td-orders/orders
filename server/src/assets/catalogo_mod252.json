@@ -1,0 +1,72 @@
+{
+  "_nota": "Elenco chiuso del modulo TD-SGI-MOD252_00 Sezione B: 48 articoli in 9 categorie. Il confezionamento (pack_size, unità per confezione) è un'IPOTESI da validare con l'Area Operations: si modifica dalla pagina Catalogo articoli senza toccare il codice.",
+  "categorie": [
+    { "code": "PRELIEVO", "name": "Aghi, siringhe e dispositivi per prelievo", "icon": "needle" },
+    { "code": "PROVETTE", "name": "Provette per campioni ematici", "icon": "tube" },
+    { "code": "CONTENITORI", "name": "Contenitori per campioni biologici", "icon": "jar" },
+    { "code": "TAMPONI", "name": "Tamponi microbiologici", "icon": "swab" },
+    { "code": "TRANSBAG", "name": "Transbag per trasporto campioni", "icon": "bag" },
+    { "code": "KIT", "name": "Kit diagnostici dedicati", "icon": "kit" },
+    { "code": "CITOLOGIA", "name": "Materiale per PAP test e citologia", "icon": "slide" },
+    { "code": "ISTOLOGIA", "name": "Materiale per istologia", "icon": "bottle" },
+    { "code": "LOGISTICA", "name": "Materiale amministrativo e logistico", "icon": "doc" }
+  ],
+  "articoli": [
+    { "code": "PRE01", "category": "PRELIEVO", "name": "Aghi butterfly 21G", "unit": "n. di aghi", "pack_size": 50, "pack_label": "scatola da 50 aghi", "color": "#4CAF50" },
+    { "code": "PRE02", "category": "PRELIEVO", "name": "Aghi butterfly 23G", "unit": "n. di aghi", "pack_size": 50, "pack_label": "scatola da 50 aghi", "color": "#2196F3" },
+    { "code": "PRE03", "category": "PRELIEVO", "name": "Camicie", "unit": "n. di camicie", "pack_size": 100, "pack_label": "busta da 100 camicie", "color": "#9E9E9E" },
+
+    { "code": "PRV01", "category": "PROVETTE", "name": "Tappo Azzurro", "unit": "n. provette", "pack_size": 100, "pack_label": "confezione da 100 provette", "color": "#5DADE2" },
+    { "code": "PRV02", "category": "PROVETTE", "name": "Tappo Bianco", "unit": "n. provette", "pack_size": 100, "pack_label": "confezione da 100 provette", "color": "#F4F6F7" },
+    { "code": "PRV03", "category": "PROVETTE", "name": "Tappo Giallo", "unit": "n. provette", "pack_size": 100, "pack_label": "confezione da 100 provette", "color": "#F4D03F" },
+    { "code": "PRV04", "category": "PROVETTE", "name": "Tappo Grigio", "unit": "n. provette", "pack_size": 100, "pack_label": "confezione da 100 provette", "color": "#95A5A6" },
+    { "code": "PRV05", "category": "PROVETTE", "name": "Tappo Oliva Urine", "unit": "n. provette", "pack_size": 100, "pack_label": "confezione da 100 provette", "color": "#8B9A46" },
+    { "code": "PRV06", "category": "PROVETTE", "name": "Tappo Verde", "unit": "n. provette", "pack_size": 100, "pack_label": "confezione da 100 provette", "color": "#27AE60" },
+    { "code": "PRV07", "category": "PROVETTE", "name": "Tappo Viola", "unit": "n. provette", "pack_size": 100, "pack_label": "confezione da 100 provette", "color": "#8E44AD" },
+
+    { "code": "CNT01", "category": "CONTENITORI", "name": "Contenitore feci", "unit": "n. contenitori", "pack_size": 100, "pack_label": "confezione da 100 contenitori", "color": "#D7BDE2" },
+    { "code": "CNT02", "category": "CONTENITORI", "name": "Contenitore sterile 150 ml tappo rosso (senza mezzo di trasporto)", "unit": "n. contenitori", "pack_size": 100, "pack_label": "confezione da 100 contenitori", "color": "#E74C3C" },
+    { "code": "CNT03", "category": "CONTENITORI", "name": "Contenitori urine del mattino tappo giallo 45 ml", "unit": "n. contenitori", "pack_size": 100, "pack_label": "confezione da 100 contenitori", "color": "#F4D03F" },
+
+    { "code": "TMP01", "category": "TAMPONI", "name": "Tampone tappo ROSA standard", "unit": "n. tamponi", "pack_size": 50, "pack_label": "confezione da 50 tamponi", "color": "#F1948A" },
+    { "code": "TMP02", "category": "TAMPONI", "name": "Tampone tappo ROSA asta fine", "unit": "n. tamponi", "pack_size": 50, "pack_label": "confezione da 50 tamponi", "color": "#F5B7B1" },
+    { "code": "TMP03", "category": "TAMPONI", "name": "Tampone tappo VERDE (fecal swab)", "unit": "n. tamponi", "pack_size": 50, "pack_label": "confezione da 50 tamponi", "color": "#58D68D" },
+
+    { "code": "TRB01", "category": "TRANSBAG", "name": "Transbag Arancione", "unit": "n. Transbag", "pack_size": 100, "pack_label": "confezione da 100 Transbag", "color": "#E67E22" },
+    { "code": "TRB02", "category": "TRANSBAG", "name": "Transbag Azzurro", "unit": "n. Transbag", "pack_size": 100, "pack_label": "confezione da 100 Transbag", "color": "#5DADE2" },
+    { "code": "TRB03", "category": "TRANSBAG", "name": "Transbag Giallo", "unit": "n. Transbag", "pack_size": 100, "pack_label": "confezione da 100 Transbag", "color": "#F4D03F" },
+    { "code": "TRB04", "category": "TRANSBAG", "name": "Transbag Giallo Grande", "unit": "n. Transbag", "pack_size": 100, "pack_label": "confezione da 100 Transbag", "color": "#F1C40F" },
+    { "code": "TRB05", "category": "TRANSBAG", "name": "Transbag Rosso", "unit": "n. Transbag", "pack_size": 100, "pack_label": "confezione da 100 Transbag", "color": "#E74C3C" },
+    { "code": "TRB06", "category": "TRANSBAG", "name": "Transbag Rosso Grande", "unit": "n. Transbag", "pack_size": 100, "pack_label": "confezione da 100 Transbag", "color": "#C0392B" },
+    { "code": "TRB07", "category": "TRANSBAG", "name": "Transbag Trasparente", "unit": "n. Transbag", "pack_size": 100, "pack_label": "confezione da 100 Transbag", "color": "#D5DBDB" },
+
+    { "code": "KIT01", "category": "KIT", "name": "KIT Breath test FRUTTOSIO", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#71B1BD" },
+    { "code": "KIT02", "category": "KIT", "name": "KIT Breath test GLUCOSIO", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#71B1BD" },
+    { "code": "KIT03", "category": "KIT", "name": "KIT Breath test H.PYLORI", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#71B1BD" },
+    { "code": "KIT04", "category": "KIT", "name": "KIT Breath test LATTOSIO", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#71B1BD" },
+    { "code": "KIT05", "category": "KIT", "name": "KIT Breath test LATTULOSIO", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#71B1BD" },
+    { "code": "KIT06", "category": "KIT", "name": "KIT Breath test SORBITOLO", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#71B1BD" },
+    { "code": "KIT07", "category": "KIT", "name": "KIT DROGHE MDL URINE valenza legale", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#DEC0F1" },
+    { "code": "KIT08", "category": "KIT", "name": "KIT DROGHE Privato PILIFERO valenza legale", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#DEC0F1" },
+    { "code": "KIT09", "category": "KIT", "name": "KIT DROGHE Privato URINE valenza legale", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#DEC0F1" },
+    { "code": "KIT10", "category": "KIT", "name": "KIT Feci sangue occulto, calprotectina, elastasi fecale", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#D7BDE2" },
+    { "code": "KIT11", "category": "KIT", "name": "Kit Quantiferon", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#1C505E" },
+    { "code": "KIT12", "category": "KIT", "name": "NIPT Test Prenatale", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#F5B7B1" },
+    { "code": "KIT13", "category": "KIT", "name": "Salivette cortisolo", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#FFFAE3" },
+
+    { "code": "CIT01", "category": "CITOLOGIA", "name": "Portavetrini", "unit": "n.", "pack_size": 1, "pack_label": "pezzo singolo", "color": "#95A5A6" },
+    { "code": "CIT02", "category": "CITOLOGIA", "name": "Vetrini smerigliati", "unit": "n.", "pack_size": 50, "pack_label": "scatola da 50 vetrini", "color": "#D6EAF8" },
+    { "code": "CIT03", "category": "CITOLOGIA", "name": "Contenitore thin prep", "unit": "n. contenitori", "pack_size": 25, "pack_label": "confezione da 25 contenitori", "color": "#71B1BD" },
+    { "code": "CIT04", "category": "CITOLOGIA", "name": "Contenitori citologico urinario", "unit": "n. KIT", "pack_size": 1, "pack_label": "kit singolo", "color": "#F4D03F" },
+
+    { "code": "IST01", "category": "ISTOLOGIA", "name": "Contenitori formalina 20 ml", "unit": "n.", "pack_size": 50, "pack_label": "confezione da 50 contenitori", "color": "#AED6F1" },
+    { "code": "IST02", "category": "ISTOLOGIA", "name": "Contenitori formalina 45 ml", "unit": "n.", "pack_size": 50, "pack_label": "confezione da 50 contenitori", "color": "#85C1E9" },
+    { "code": "IST03", "category": "ISTOLOGIA", "name": "Contenitori formalina 150 ml", "unit": "n.", "pack_size": 25, "pack_label": "confezione da 25 contenitori", "color": "#5DADE2" },
+    { "code": "IST04", "category": "ISTOLOGIA", "name": "Contenitori formalina 500 ml", "unit": "n.", "pack_size": 10, "pack_label": "confezione da 10 contenitori", "color": "#3498DB" },
+    { "code": "IST05", "category": "ISTOLOGIA", "name": "Contenitori formalina 1000 ml", "unit": "n.", "pack_size": 10, "pack_label": "confezione da 10 contenitori", "color": "#2E86C1" },
+    { "code": "IST06", "category": "ISTOLOGIA", "name": "Contenitori formalina 3000 ml", "unit": "n.", "pack_size": 1, "pack_label": "pezzo singolo", "color": "#2874A6" },
+
+    { "code": "LOG01", "category": "LOGISTICA", "name": "Bolle di consegna", "unit": "n. bolle", "pack_size": 50, "pack_label": "blocco da 50 bolle", "color": "#FFFAE3" },
+    { "code": "LOG02", "category": "LOGISTICA", "name": "Etichette stampante Zebra", "unit": "n. rotolini", "pack_size": 1, "pack_label": "rotolino singolo", "color": "#01212C" }
+  ]
+}

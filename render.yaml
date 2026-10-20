@@ -1,0 +1,62 @@
+# Deploy su Render: New > Blueprint > collega il repository GitHub "orders-management".
+# Piani a pagamento: app sempre accesa (niente attesa al primo accesso) e database persistente con backup.
+services:
+  - type: web
+    name: td-orders
+    runtime: docker
+    plan: starter
+    region: frankfurt
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "3000"
+      - key: BASE_URL
+        value: https://orders.toscanadiagnostica.it   # dominio ufficiale: gli altri host vengono reindirizzati qui
+      - key: DATABASE_URL
+        fromDatabase:
+          name: td-orders-db
+          property: connectionString
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: SESSION_HOURS
+        value: "10"
+      - key: REQUIRE_TOTP_FOR_ADMINS
+        value: "true"
+      - key: SEED_SUPERADMIN_EMAIL
+        value: francesco.epifani@toscanadiagnostica.it
+      - key: SEED_SUPERADMIN_NAME
+        value: Francesco Epifani
+      - key: SEED_SUPERADMIN_PASSWORD
+        sync: false   # inserire a mano nel pannello (min 12 caratteri): richiesta al primo accesso, poi da cambiare
+      - key: ENTRA_TENANT_ID
+        sync: false   # gestite nel pannello Render: il Sync del Blueprint non le sovrascrive
+      - key: ENTRA_CLIENT_ID
+        sync: false
+      - key: ENTRA_CLIENT_SECRET
+        sync: false
+      - key: GRAPH_SENDER
+        value: amministrazione@toscanadiagnostica.it   # casella mittente (Microsoft Graph, permesso Mail.Send)
+      - key: SILVA_MODE
+        value: SIMULATO   # SIMULATO | EMAIL | API
+      - key: SILVA_ORDER_EMAIL
+        sync: false   # casella ordini del fornitore (per SILVA_MODE=EMAIL)
+      - key: SILVA_API_URL
+        value: https://silva.cloud/PortaleOrdini
+      - key: SILVA_API_KEY
+        sync: false
+      - key: SILVA_CUSTOMER_CODE
+        sync: false
+      - key: STUDIOLAB_MODE
+        value: SIMULATO   # SIMULATO | API
+      - key: STUDIOLAB_API_URL
+        sync: false
+      - key: STUDIOLAB_API_KEY
+        sync: false
+databases:
+  - name: td-orders-db
+    plan: basic-256mb
+    region: frankfurt
+    databaseName: orders
+    user: orders
