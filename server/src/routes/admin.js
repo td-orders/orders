@@ -69,6 +69,22 @@ r.put('/strutture/:id', requireRole(...OPS_ROLES), ah(async (req, res) => {
   res.json({ ok: true });
 }));
 
+// Eliminazione di una struttura: solo senza attività registrata (ordini, confezioni, giacenze, produzione, utenti); altrimenti si disattiva
+r.delete('/strutture/:id', requireRole('SUPERADMIN'), ah(async (req, res) => {
+  const s = await one('SELECT * FROM strutture WHERE id=$1', [req.params.id]);
+  if (!s) throw notFound();
+  if (s.kind === 'LAB') throw bad('Il laboratorio TD non si elimina');
+  const used = await one(`SELECT (SELECT count(*) FROM orders WHERE struttura_id=$1)::int AS orders, (SELECT count(*) FROM packages WHERE struttura_id=$1)::int AS packages,
+    (SELECT count(*) FROM stock_counts WHERE struttura_id=$1)::int AS counts, (SELECT count(*) FROM production WHERE struttura_id=$1)::int AS production, (SELECT count(*) FROM users WHERE struttura_id=$1)::int AS users`, [s.id]);
+  const busy = Object.entries(used).filter(([, v]) => v > 0).map(([k, v]) => `${v} ${{ orders: 'ordini', packages: 'confezioni', counts: 'giacenze mensili', production: 'righe di produzione', users: 'utenti' }[k]}`);
+  if (busy.length) throw bad(`Struttura con attività registrata (${busy.join(', ')}): disattivala invece di eliminarla`);
+  await q('DELETE FROM email_log WHERE struttura_id=$1', [s.id]);
+  await q('DELETE FROM issues WHERE struttura_id=$1', [s.id]);
+  await q('DELETE FROM strutture WHERE id=$1', [s.id]);
+  await audit(req, 'STRUTTURA_DELETE', 'struttura', s.id, { code: s.code, name: s.name });
+  res.json({ ok: true });
+}));
+
 // Import dell'elenco clienti esportato da StudioLab (colonne: CodiceCliente, Profilo, RagSoc, PartIVA, CodFisc, PersonaDiRiferimento, Indirizzo, Cap, Citta, Provincia, Telefono1, ...)
 // Aggiorna le strutture esistenti per codice e crea quelle nuove; non disattiva nulla.
 r.post('/strutture/import', requireRole('SUPERADMIN'), upload.single('file'), ah(async (req, res) => {
@@ -155,6 +171,25 @@ r.put('/users/:id', requireRole(...OPS_ROLES), ah(async (req, res) => {
   await q(`UPDATE users SET email=$2, full_name=$3, role=$4, struttura_id=$5, auth_provider=$6, studiolab_username=$7, is_referente=$8, active=coalesce($9, active), updated_at=now() WHERE id=$1`,
     [u.id, d.email, d.full_name, d.role, d.struttura_id, d.auth_provider, d.studiolab_username, Boolean(d.is_referente), d.active ?? null]);
   await audit(req, 'USER_UPDATE', 'user', u.id, d);
+  res.json({ ok: true });
+}));
+
+// Eliminazione di un utente: solo senza attività registrata (ordini, ricezioni, giacenze); altrimenti si disattiva
+r.delete('/users/:id', requireRole(...OPS_ROLES), ah(async (req, res) => {
+  const u = await one('SELECT * FROM users WHERE id=$1', [req.params.id]);
+  if (!u) throw notFound();
+  if (u.id === req.user.id) throw bad('Non puoi eliminare il tuo utente');
+  if (u.role === 'SUPERADMIN' && !isSuper(req.user)) throw forbidden();
+  try {
+    await tx(async (c) => {
+      await c.query('DELETE FROM email_log WHERE sent_by=$1', [u.id]);
+      await c.query('DELETE FROM users WHERE id=$1', [u.id]);
+    });
+  } catch (e) {
+    if (e.code === '23503') throw bad('Utente con attività registrata (ordini, ricezioni, giacenze): disattivalo invece di eliminarlo');
+    throw e;
+  }
+  await audit(req, 'USER_DELETE', 'user', u.id, { email: u.email, role: u.role });
   res.json({ ok: true });
 }));
 

@@ -17,6 +17,11 @@ export default function Strutture() {
   const [err, setErr] = useState(null);
   const [search, setSearch] = useState('');
   const rows = (data || []).filter((s) => (!kind || s.kind === kind) && (!search || `${s.code} ${s.name} ${s.city || ''}`.toLowerCase().includes(search.toLowerCase())));
+  const remove = async (s) => {
+    if (!window.confirm(`Eliminare la struttura ${s.name} (${s.code})? L'operazione non si annulla. Se ha ordini, giacenze, produzione o utenti verrà rifiutata: in quel caso disattivala.`)) return;
+    setErr(null);
+    try { await api.del(`/strutture/${s.id}`); toast('Struttura eliminata'); reload(); } catch (e) { setErr(e); }
+  };
   const importFile = async (f) => {
     setErr(null);
     const fd = new FormData(); fd.append('file', f);
@@ -55,7 +60,7 @@ export default function Strutture() {
                 <td className="num"><Link to={`/ordini?struttura_id=${s.id}`}>{s.open_orders}</Link></td>
                 <td className="small">{s.last_stock_month ? monthLabel(s.last_stock_month) : '–'}</td>
                 <td>{s.active ? <Badge tone="green">Attiva</Badge> : <Badge tone="red">Disattiva</Badge>}</td>
-                <td className="num" style={{ whiteSpace: 'nowrap' }}><Link className="btn sm ghost" to={`/giacenza?struttura_id=${s.id}`}>Giacenza</Link> <button className="btn sm ghost" onClick={() => setEdit({ ...empty, ...s })}>Modifica</button></td>
+                <td className="num" style={{ whiteSpace: 'nowrap' }}><Link className="btn sm ghost" to={`/giacenza?struttura_id=${s.id}`}>Giacenza</Link> <button className="btn sm ghost" onClick={() => setEdit({ ...empty, ...s })}>Modifica</button>{sup && s.kind !== 'LAB' && <>{' '}<button className="iconbtn" title="Elimina struttura" aria-label="Elimina" onClick={() => remove(s)}><Icon name="trash" size={16} /></button></>}</td>
               </tr>))}</tbody>
           </table></div>
         )}

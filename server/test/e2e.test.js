@@ -247,6 +247,15 @@ test('Orders Management: flusso completo', async (t) => {
     r = await S.put('/api/settings', { production_months: 3, reorder_formula: 'DIFF_X_FACTOR' }); assert.equal(r.status, 200);
     const list = (await P.get('/api/orders?status=CHIUSO')).data; assert.equal(list.length, 3);
     assert.equal((await P.get(`/api/strutture`)).data.find((s) => s.id === ctx.cliente).open_orders, 0);
+    // eliminazione: consentita solo senza attività, altrimenti rifiutata con indicazione di disattivare
+    r = await S.post('/api/strutture', { kind: 'CLIENTE', code: 'CLI-TMP', name: 'Cliente temporaneo' }); assert.equal(r.status, 201); const tmpS = r.data.id;
+    r = await S.post('/api/users', { email: 'tmp@example.org', full_name: 'Utente temporaneo', role: 'CLIENTE', struttura_id: tmpS, auth_provider: 'LOCAL' }); assert.equal(r.status, 201); const tmpU = r.data.id;
+    assert.equal((await S.del(`/api/strutture/${tmpS}`)).status, 400, 'struttura con utenti');
+    assert.equal((await S.del(`/api/users/${tmpU}`)).status, 200);
+    assert.equal((await S.del(`/api/strutture/${tmpS}`)).status, 200);
+    assert.equal((await S.del(`/api/strutture/${ctx.cliente}`)).status, 400, 'struttura con ordini');
+    assert.equal((await P.del(`/api/users/${(await S.get('/api/users')).data.find((u) => u.email === 'cliente@example.org').id}`)).status, 400, 'utente con ordini');
+    assert.equal((await S.del(`/api/strutture/${ctx.lab}`)).status, 400, 'laboratorio non eliminabile');
     assert.equal((await C.post('/api/auth/logout')).status, 200); assert.equal((await C.get('/api/auth/me')).status, 401);
   });
 });

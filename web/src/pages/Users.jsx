@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { api } from '../api.js';
 import { useAuth } from '../auth.jsx';
-import { useApi, Field, Loading, ErrorBox, Empty, Badge, Modal, Card, useToast } from '../components/ui.jsx';
+import { useApi, Field, Loading, ErrorBox, Empty, Badge, Modal, Card, Icon, useToast } from '../components/ui.jsx';
 import { itDateTime, ROLE, ROLE_HELP, PROVIDER, KIND } from '../format.js';
 
 const empty = { email: '', full_name: '', role: 'CLIENTE', struttura_id: '', auth_provider: 'LOCAL', studiolab_username: '', is_referente: false, active: true };
@@ -36,6 +36,11 @@ export default function Users() {
       if (r.temporaryPassword) setCred({ email: u.email, pwd: r.temporaryPassword, mailed: r.mailed }); else toast('2FA azzerata'); reload();
     } catch (e) { setErr(e); }
   };
+  const remove = async (u) => {
+    if (!window.confirm(`Eliminare l'utente ${u.full_name} (${u.email})? L'operazione non si annulla. Se ha attività registrata verrà rifiutata: in quel caso disattivalo.`)) return;
+    setErr(null);
+    try { await api.del(`/users/${u.id}`); toast('Utente eliminato'); reload(); } catch (e) { setErr(e); }
+  };
   const expectedKind = { CLIENTE: 'CLIENTE', SEDE: 'SEDE', LAB: 'LAB' }[edit?.role];
   const rows = (data || []).filter((u) => !roleF || u.role === roleF);
   return (
@@ -62,6 +67,7 @@ export default function Users() {
                   <button className="btn sm ghost" onClick={() => setEdit({ ...empty, ...u, struttura_id: u.struttura_id || '' })}>Modifica</button>
                   {!['ENTRA', 'STUDIOLAB'].includes(u.auth_provider) && <>{' '}<button className="btn sm ghost" onClick={() => reset(u, 'pwd')}>Nuova password</button></>}
                   {sup && u.totp_enabled && <>{' '}<button className="btn sm ghost" onClick={() => reset(u, 'totp')}>Reset 2FA</button></>}
+                  {u.id !== user.id && <>{' '}<button className="iconbtn" title="Elimina utente" aria-label="Elimina" onClick={() => remove(u)}><Icon name="trash" size={16} /></button></>}
                 </td>
               </tr>))}</tbody>
           </table></div>
