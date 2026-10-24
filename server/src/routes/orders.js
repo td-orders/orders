@@ -246,6 +246,22 @@ r.post('/:id/close', requireRole(...OPS_ROLES), ah(async (req, res) => {
   res.json({ ok: true });
 }));
 
+// Eliminazione definitiva dall'archivio (Area Operations). Rifiutata se l'ordine ha confezioni già in giacenza o messe in uso
+// (toglierle a sistema falserebbe le scorte: si annulla, non si elimina) o se una giacenza mensile lo ha generato.
+r.delete('/:id', requireRole(...OPS_ROLES), ah(async (req, res) => {
+  const o = await loadOrder(req, req.params.id);
+  const inStock = await one("SELECT count(*)::int AS n FROM packages WHERE order_id=$1 AND status IN ('RICEVUTO','IN_USO','RETTIFICATO')", [o.id]);
+  if (inStock.n > 0) throw bad(`L'ordine ${o.number} ha ${inStock.n} confezioni caricate o già usate: non si può eliminare, si annulla`);
+  const sc = await one('SELECT id FROM stock_counts WHERE order_id=$1 LIMIT 1', [o.id]);
+  if (sc) throw bad(`L'ordine ${o.number} è stato generato da una giacenza mensile: non si può eliminare, si annulla`);
+  await tx(async (c) => {
+    await c.query('DELETE FROM packages WHERE order_id=$1', [o.id]);
+    await c.query('DELETE FROM orders WHERE id=$1', [o.id]);
+  });
+  await audit(req, 'ORDER_DELETE', 'order', o.id, { number: o.number, status: o.status, struttura: o.struttura_name });
+  res.json({ ok: true });
+}));
+
 r.post('/:id/cancel', ah(async (req, res) => {
   const o = await loadOrder(req, req.params.id);
   const { reason } = parse(z.object({ reason: z.string().min(3).max(500) }), req.body);

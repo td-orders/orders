@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth, isOps } from '../auth.jsx';
-import { useApi, Field, Loading, Empty, StatusBadge, Badge, Icon } from '../components/ui.jsx';
-import { qs } from '../api.js';
+import { useApi, Field, Loading, Empty, StatusBadge, Badge, Icon, ErrorBox, useToast } from '../components/ui.jsx';
+import { api, qs } from '../api.js';
 import { itDateTime, KIND, ORIGIN, STATUS } from '../format.js';
 import { PhaseBanner } from '../components/phase.jsx';
 
@@ -12,7 +12,14 @@ export default function Orders({ verify = false }) {
   const nav = useNavigate();
   const [f, setF] = useState({ status: verify ? 'INVIATO' : '', kind: '', struttura_id: '' });
   const strutture = useApi(ops ? '/strutture' : null);
-  const { data } = useApi(`/orders${qs(verify ? { status: 'INVIATO,BOZZA' } : f)}`, [verify]);
+  const toast = useToast();
+  const [err, setErr] = useState(null);
+  const { data, reload } = useApi(`/orders${qs(verify ? { status: 'INVIATO,BOZZA' } : f)}`, [verify]);
+  const remove = async (e, o) => {
+    e.stopPropagation(); setErr(null);
+    if (!window.confirm(`Eliminare definitivamente l'ordine ${o.number} (${o.struttura_name})? L'operazione non si annulla e sparisce dall'archivio e dalle statistiche. Se ha confezioni già caricate o in uso verrà rifiutata: in quel caso annullalo.`)) return;
+    try { await api.del(`/orders/${o.id}`); toast(`Ordine ${o.number} eliminato`); reload(); } catch (x) { setErr(x); }
+  };
   const rows = (data || []).filter((o) => !verify || o.status === 'INVIATO' || (o.status === 'BOZZA' && o.origin === 'OPERATIONS'));
   return (
     <div className="page">
@@ -31,10 +38,11 @@ export default function Orders({ verify = false }) {
           {ops && <Field label="Struttura"><select value={f.struttura_id} onChange={(e) => setF({ ...f, struttura_id: e.target.value })}><option value="">Tutte</option>{(strutture.data || []).map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}</select></Field>}
         </div>
       )}
+      <ErrorBox error={err} />
       <div className="card">
         {!data ? <Loading /> : !rows.length ? <Empty>{verify ? 'Nessun ordine in attesa di verifica' : 'Nessun ordine'}</Empty> : (
           <div className="table-wrap"><table className="t">
-            <thead><tr><th>Ordine</th>{ops && <th>Struttura</th>}<th>Origine</th><th>Stato</th><th className="num">Articoli</th><th className="num">Confezioni</th><th className="num">Consegnate</th><th>Segnali</th><th>Aggiornato</th></tr></thead>
+            <thead><tr><th>Ordine</th>{ops && <th>Struttura</th>}<th>Origine</th><th>Stato</th><th className="num">Articoli</th><th className="num">Confezioni</th><th className="num">Consegnate</th><th>Segnali</th><th>Aggiornato</th>{ops && !verify && <th />}</tr></thead>
             <tbody>{rows.map((o) => (
               <tr key={o.id} className="click" onClick={() => nav(`/ordini/${o.id}`)}>
                 <td><span className="mono strong">{o.number}</span>{o.urgent && <> <Badge tone="red">Urgente</Badge></>}</td>
@@ -45,6 +53,7 @@ export default function Orders({ verify = false }) {
                 <td className="num">{['CONSEGNATO', 'IMMAGAZZINATO', 'CHIUSO'].includes(o.status) ? `${o.packs_delivered}` : '–'}</td>
                 <td className="small">{o.anomalies > 0 && <Badge tone="mauve">{o.anomalies} scostamenti &gt;50%</Badge>} {o.open_issues > 0 && <Badge tone="red">{o.open_issues} difformità</Badge>}</td>
                 <td className="small muted">{itDateTime(o.updated_at)}</td>
+                {ops && !verify && <td className="num"><button className="iconbtn" title="Elimina ordine" aria-label="Elimina" onClick={(e) => remove(e, o)}><Icon name="trash" size={16} /></button></td>}
               </tr>))}</tbody>
           </table></div>
         )}

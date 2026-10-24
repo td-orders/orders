@@ -270,7 +270,15 @@ test('Orders Management v2: flusso a fasi', async (t) => {
 
   await t.test('annullamento, cruscotti, export, solleciti, registri, eliminazioni', async () => {
     let r = await C.post('/api/orders', { lines: [{ article_id: ctx.art.TRB01.id, qty: 1 }], submit: true }); assert.equal(r.status, 201);
-    r = await C.post(`/api/orders/${r.data.id}/cancel`, { reason: 'Inserito per errore' }); assert.equal(r.status, 200);
+    const cancelledId = r.data.id;
+    r = await C.post(`/api/orders/${cancelledId}/cancel`, { reason: 'Inserito per errore' }); assert.equal(r.status, 200);
+    // eliminazione dall'archivio: solo Area Operations; rifiutata con confezioni in giacenza o ordine nato da una giacenza mensile
+    assert.equal((await C.del(`/api/orders/${cancelledId}`)).status, 403);
+    const closed = (await P.get('/api/orders?status=CHIUSO')).data.find((o) => o.kind === 'SEDE');
+    r = await P.del(`/api/orders/${closed.id}`); assert.equal(r.status, 400, JSON.stringify(r.data)); assert.match(r.data.error, /caricate|giacenza/);
+    assert.equal((await P.del(`/api/orders/${cancelledId}`)).status, 200);
+    assert.equal((await P.get(`/api/orders/${cancelledId}`)).status, 404);
+    assert.ok((await S.get('/api/audit')).data.some((a) => a.action === 'ORDER_DELETE'));
     const dOps = (await P.get('/api/stats/dashboard')).data; assert.ok(dOps.byStatus); assert.ok(dOps.supplier.last_poll_at); assert.ok(dOps.supplier.last_feed_at); assert.ok(dOps.supplier.last_hl7_at);
     const dCli = (await C.get('/api/stats/dashboard')).data; assert.equal(dCli.stock.packs, 5);
     const dSede = (await D.get('/api/stats/dashboard')).data; assert.equal(dSede.stockCount.status, 'CONFERMATO');
