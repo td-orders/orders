@@ -32,7 +32,7 @@ export default function Stock() {
   return (
     <div className="page">
       <div className="page-head">
-        <div><h1>Giacenza e messa in uso</h1><div className="sub">{data ? `${data.struttura.name}: confezioni in giacenza per articolo. Mettere in uso una confezione la toglie dalla giacenza.` : 'Confezioni in giacenza per articolo'}</div></div>
+        <div><h1>{data?.struttura.kind === 'CLIENTE' ? 'Materiale ricevuto' : 'Giacenza attuale'}</h1><div className="sub">{data ? `${data.struttura.name}: confezioni in giacenza per articolo, aggiornata dai carichi (fase 5) e dagli scarichi (fase 6)` : 'Confezioni in giacenza per articolo'}</div></div>
         <div className="row">
           {ops && <Field label="Struttura"><select value={sid} onChange={(e) => setSp(e.target.value ? { struttura_id: e.target.value } : {})} style={{ minWidth: 260 }}><option value="">Scegli…</option>{(strutture.data || []).map((s) => <option key={s.id} value={s.id}>{s.name} ({s.kind})</option>)}</select></Field>}
           {data && <a className="btn ghost" href={`/api/stats/export/stock.xlsx`}><Icon name="download" size={16} />Excel</a>}
@@ -47,14 +47,14 @@ export default function Stock() {
           <div className="card kpi"><div className="lbl">Messe in uso questo mese</div><div className="val">{totals.used}</div></div>
           <div className="card kpi"><div className="lbl">Sotto scorta</div><div className="val" style={{ color: totals.alerts ? 'var(--red)' : undefined }}>{totals.alerts}</div><div className="foot">meno di mezzo mese di consumo o sotto soglia</div></div>
         </div>
-        <Card title="Metti in uso" className="mb">
+        <Card title={data.struttura.kind === 'CLIENTE' ? 'Metti in uso' : 'Scarico rapido'} className="mb">
           <form className="row" onSubmit={(e) => { e.preventDefault(); if (code.trim()) use({ code: code.trim() }); }}>
             <input ref={inputRef} className="mono" placeholder="Leggi il codice a barre della confezione prelevata e premi Invio" value={code} onChange={(e) => setCode(e.target.value)} style={{ maxWidth: 460 }} autoFocus />
             <button className="btn"><Icon name="barcode" size={16} />Metti in uso</button>
             <ScanButton onCode={(c) => use({ code: c })} />
             <label className="f inline small" style={{ marginLeft: 'auto' }}><input type="checkbox" checked={onlyStock} onChange={(e) => setOnlyStock(e.target.checked)} />Solo articoli movimentati</label>
           </form>
-          <div className="small muted" style={{ marginTop: 8 }}>In alternativa usa il pulsante "Metti in uso" sulla riga dell'articolo: esce la confezione con la scadenza più vicina (FEFO).</div>
+          <div className="small muted" style={{ marginTop: 8 }}>{data.struttura.kind === 'CLIENTE' ? 'In alternativa usa il pulsante sulla riga dell\'articolo: esce la confezione con la scadenza più vicina.' : 'La pagina dedicata è Scarico materiale (fase 6), con il registro degli scarichi.'}</div>
         </Card>
         <Card flush>
           <div className="table-wrap"><table className="t">

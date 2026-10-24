@@ -27,7 +27,7 @@ r.get('/', ah(async (req, res) => {
       (SELECT min(expiry) FROM packages p WHERE p.struttura_id=$1 AND p.article_id=a.id AND p.status='RICEVUTO') AS next_expiry,
       (SELECT count(*)::int FROM packages p WHERE p.struttura_id=$1 AND p.article_id=a.id AND p.status='IN_USO' AND p.used_at >= date_trunc('month', now() AT TIME ZONE 'Europe/Rome')) AS used_this_month,
       (SELECT count(*)::int FROM packages p WHERE p.struttura_id=$1 AND p.article_id=a.id AND p.status='ATTESO') AS packs_incoming
-    FROM articles a JOIN categories c ON c.code=a.category_code WHERE a.active AND ($2 OR NOT a.lab_only) ORDER BY c.sort, a.sort`, [sid, s.kind === 'LAB']);
+    FROM articles a JOIN categories c ON c.code=a.category_code WHERE a.active AND (a.visible_all OR ${s.kind === 'CLIENTE' ? 'a.visible_service' : 'a.visible_sedi'} OR EXISTS (SELECT 1 FROM packages p WHERE p.struttura_id=$1 AND p.article_id=a.id)) ORDER BY c.sort, a.sort`, [sid]);
   for (const row of rows) {
     const p = cons.map.get(row.article_id);
     row.prod_packs_avg = p ? p.packs : null;
@@ -129,6 +129,36 @@ r.get('/counts/:id', ah(async (req, res) => {
   if (!c) throw notFound();
   if (!isOps(req.user) && c.struttura_id !== req.user.struttura_id) throw forbidden();
   res.json(c);
+}));
+
+// Fase 7: righe fuori elenco (articolo a catalogo non in elenco, oppure descrizione libera)
+r.post('/counts/:id/extras', ah(async (req, res) => {
+  const c = await one('SELECT * FROM stock_counts WHERE id=$1', [req.params.id]);
+  if (!c) throw notFound();
+  if (!isOps(req.user) && c.struttura_id !== req.user.struttura_id) throw forbidden();
+  if (c.status === 'CONFERMATO') throw bad('Giacenza già confermata');
+  const d = parse(z.object({ article_id: opt(z.coerce.number().int()), name: opt(z.string().max(200)), qty: z.coerce.number().int().min(0).max(99999), note: opt(z.string().max(300)) }), req.body);
+  if (!d.article_id && !d.name) throw bad('Indica un articolo del catalogo o una descrizione');
+  const row = await one('INSERT INTO stock_count_extras (count_id, article_id, name, qty, note) VALUES ($1,$2,$3,$4,$5) RETURNING id', [c.id, d.article_id, d.name, d.qty, d.note]);
+  res.status(201).json(row);
+}));
+r.delete('/counts/:id/extras/:eid', ah(async (req, res) => {
+  const c = await one('SELECT * FROM stock_counts WHERE id=$1', [req.params.id]);
+  if (!c) throw notFound();
+  if (!isOps(req.user) && c.struttura_id !== req.user.struttura_id) throw forbidden();
+  if (c.status === 'CONFERMATO') throw bad('Giacenza già confermata');
+  await q('DELETE FROM stock_count_extras WHERE id=$1 AND count_id=$2', [req.params.eid, c.id]);
+  res.json({ ok: true });
+}));
+
+// Fase 6: scarichi di oggi della struttura (registro della pagina Scarico)
+r.get('/unloads', ah(async (req, res) => {
+  const sid = targetStruttura(req);
+  await assertStruttura(req.user, sid);
+  res.json(await many(`SELECT p.id, p.used_at, p.lot, p.expiry, p.barcode, a.name AS article_name, a.pack_label, a.color, u.full_name AS used_by_name,
+      (SELECT count(*)::int FROM packages x WHERE x.struttura_id=p.struttura_id AND x.article_id=p.article_id AND x.status='RICEVUTO') AS remaining
+    FROM packages p JOIN articles a ON a.id=p.article_id LEFT JOIN users u ON u.id=p.used_by
+    WHERE p.struttura_id=$1 AND p.status='IN_USO' AND p.used_at >= now() - interval '7 days' ORDER BY p.used_at DESC LIMIT 200`, [sid]));
 }));
 
 r.put('/counts/:id', ah(async (req, res) => {

@@ -35,11 +35,11 @@ export async function runDailyAlerts({ force = false } = {}) {
   }
   // 2. Ordini trasmessi da oltre N giorni senza conferma di ricezione
   const rDays = Number(await getSetting('receipt_reminder_days', '5'));
-  for (const o of await many(`SELECT o.id, o.number, o.transmitted_at, s.name, s.email, s.id AS sid FROM orders o JOIN strutture s ON s.id=o.struttura_id WHERE o.status='TRASMESSO' AND o.transmitted_at < now() - ($1 || ' days')::interval`, [rDays])) {
+  for (const o of await many(`SELECT o.id, o.number, o.delivered_at AS transmitted_at, s.name, s.email, s.id AS sid FROM orders o JOIN strutture s ON s.id=o.struttura_id WHERE o.status='CONSEGNATO' AND o.delivered_at < now() - ($1 || ' days')::interval`, [rDays])) {
     if (!o.email) continue;
     results.receipt.push({ order: o.number, ...(await sendMail({ kind: 'SOLLECITO_RICEZIONE', refKey: `RICEZIONE_SOLLECITO:${o.id}:${today}`, to: o.email, strutturaId: o.sid,
-      subject: `Ordine ${o.number}: confermare la ricezione del materiale`, title: 'Conferma di ricezione mancante',
-      body: `L'ordine ${o.number} è stato trasmesso al magazzino il ${itDate(o.transmitted_at)} e non risulta ancora confermata la ricezione. Alla consegna spuntate o scansionate ogni confezione in Orders Management e confermate. Se il materiale non è arrivato, segnalatelo con una difformità.` })) });
+      subject: `Ordine ${o.number}: caricare il materiale consegnato nel magazzino interno`, title: 'Carico magazzino mancante',
+      body: `L'ordine ${o.number} risulta consegnato il ${itDate(o.transmitted_at)} e non ancora caricato nel magazzino interno. Dalla pagina Carico magazzino leggete i codici a barre delle confezioni e confermate. Se il materiale non è arrivato, segnalatelo con una difformità.` })) });
   }
   // 3. Ordini in attesa di verifica da oltre N giorni: riepilogo all'Area Operations
   const vDays = Number(await getSetting('verify_reminder_days', '2'));

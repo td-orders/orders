@@ -23,7 +23,7 @@ export async function lastOrderByArticle(strutturaId, excludeOrderId = null) {
   const rows = await many(`
     SELECT DISTINCT ON (l.article_id) l.article_id, coalesce(l.qty_approved, l.qty_requested) AS qty, o.number, o.approved_at
       FROM order_lines l JOIN orders o ON o.id = l.order_id
-     WHERE o.struttura_id=$1 AND o.status IN ('APPROVATO','TRASMESSO','CONSEGNATO','CHIUSO') AND ($2::int IS NULL OR o.id <> $2)
+     WHERE o.struttura_id=$1 AND o.status IN ('APPROVATO','PRESO_IN_CARICO','SPEDITO','CONSEGNATO','IMMAGAZZINATO','CHIUSO') AND ($2::int IS NULL OR o.id <> $2)
      ORDER BY l.article_id, o.approved_at DESC NULLS LAST, o.id DESC`, [strutturaId, excludeOrderId]);
   return new Map(rows.map((r) => [r.article_id, r]));
 }
@@ -86,6 +86,7 @@ export async function stockCountDetail(countId) {
     FROM stock_counts c JOIN strutture s ON s.id=c.struttura_id LEFT JOIN users u ON u.id=c.confirmed_by LEFT JOIN orders o ON o.id=c.order_id WHERE c.id=$1`, [countId]);
   if (!c) return null;
   c.lines = await many(`SELECT l.*, ${ARTICLE_COLS} FROM stock_count_lines l JOIN articles a ON a.id=l.article_id WHERE l.count_id=$1 ORDER BY a.sort, a.code`, [countId]);
+  c.extras = await many(`SELECT e.*, a.name AS article_name, a.pack_label FROM stock_count_extras e LEFT JOIN articles a ON a.id=e.article_id WHERE e.count_id=$1 ORDER BY e.id`, [countId]);
   return c;
 }
 
@@ -98,7 +99,9 @@ export async function openStockCount(strutturaId, monthIso) {
   const s = await one('SELECT kind FROM strutture WHERE id=$1', [strutturaId]);
   const stock = await stockByArticle(strutturaId);
   const last = await lastOrderByArticle(strutturaId);
-  const arts = await many(`SELECT id FROM articles WHERE active AND ($1 OR NOT lab_only) ORDER BY sort`, [s.kind === 'LAB']);
+  // elenco della struttura: articoli visibili al suo tipo più quelli che ha comunque movimentato
+  const arts = await many(`SELECT id FROM articles a WHERE a.active AND (a.visible_all OR ${s.kind === 'CLIENTE' ? 'a.visible_service' : 'a.visible_sedi'}
+    OR EXISTS (SELECT 1 FROM packages p WHERE p.struttura_id=$1 AND p.article_id=a.id)) ORDER BY a.sort`, [strutturaId]);
   for (const a of arts) {
     const sys = stock.get(a.id)?.packs || 0;
     await q(`INSERT INTO stock_count_lines (count_id, article_id, last_order_qty, system_qty, counted_qty) VALUES ($1,$2,$3,$4,$4)

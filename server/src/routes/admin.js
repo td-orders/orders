@@ -218,17 +218,23 @@ r.post('/users/:id/reset-totp', requireRole('SUPERADMIN'), ah(async (req, res) =
 // ---------------- Catalogo ----------------
 r.get('/categories', ah(async (_req, res) => res.json(await many('SELECT * FROM categories ORDER BY sort'))));
 
+// Catalogo: l'Area Operations vede tutto (con ?all=1 anche i disattivati); le strutture solo gli articoli resi visibili al loro tipo (fase 0)
+export const visibleClause = (user, alias = 'a') => {
+  if (isOps(user)) return 'TRUE';
+  const k = user.struttura_kind === 'CLIENTE' ? `${alias}.visible_service` : `${alias}.visible_sedi`;
+  return `(${alias}.visible_all OR ${k})`;
+};
 r.get('/articles', ah(async (req, res) => {
   const all = req.query.all === '1' && isOps(req.user);
-  const labOk = isOps(req.user) || req.user.struttura_kind === 'LAB';
   res.json(await many(`SELECT a.*, c.name AS category_name, c.icon,
       (SELECT count(*)::int FROM exam_mappings m WHERE m.article_id=a.id AND m.active) AS mappings_count
-    FROM articles a JOIN categories c ON c.code=a.category_code WHERE ($1 OR a.active) AND ($2 OR NOT a.lab_only) ORDER BY c.sort, a.sort, a.code`, [all, labOk]));
+    FROM articles a JOIN categories c ON c.code=a.category_code WHERE ($1 OR a.active) AND ${visibleClause(req.user)} ORDER BY c.sort, a.sort, a.code`, [all]));
 }));
 
 const articleFields = {
   name: z.string().min(2).max(200), unit: z.string().min(1).max(60), pack_size: z.coerce.number().int().min(1), pack_label: z.string().min(1).max(120),
-  color: opt(z.string().max(12)), gtin: opt(z.string().max(32)), coverage_factor: z.coerce.number().min(0).max(12).optional(),
+  color: opt(z.string().max(12)), gtin: opt(z.string().max(32)), silva_code: opt(z.string().max(40)), coverage_factor: z.coerce.number().min(0).max(12).optional(),
+  visible_all: z.boolean().optional(), visible_sedi: z.boolean().optional(), visible_service: z.boolean().optional(),
   min_stock_packs: z.coerce.number().int().min(0).optional(), lab_only: z.boolean().optional(), active: z.boolean().optional(), category_code: z.string().optional(),
 };
 r.post('/articles', requireRole('SUPERADMIN'), ah(async (req, res) => {
@@ -308,7 +314,8 @@ r.delete('/mappings/:id', requireRole(...OPS_ROLES), ah(async (req, res) => {
 const SETTING_KEYS = ['reorder_formula', 'production_months', 'alerts_enabled', 'alert_hour', 'receipt_reminder_days', 'verify_reminder_days'];
 r.get('/settings', requireRole(...OPS_ROLES), ah(async (_req, res) => {
   const rows = await many('SELECT key, value FROM app_settings WHERE key = ANY($1)', [SETTING_KEYS]);
-  res.json({ settings: Object.fromEntries(rows.map((x) => [x.key, x.value])), mail: mailStatus(), studiolab: studiolabStatus(), silva: silvaStatus(), entra: config.entra.enabled, baseUrl: config.baseUrl });
+  const last = Object.fromEntries((await many("SELECT key, value FROM app_settings WHERE key IN ('silva_last_poll_at','silva_last_feed_at','studiolab_last_hl7_at')")).map((x) => [x.key, x.value]));
+  res.json({ settings: Object.fromEntries(rows.map((x) => [x.key, x.value])), mail: mailStatus(), studiolab: { ...studiolabStatus(), last_hl7_at: last.studiolab_last_hl7_at || null }, silva: { ...silvaStatus(), last_poll_at: last.silva_last_poll_at || null, last_feed_at: last.silva_last_feed_at || null }, entra: config.entra.enabled, baseUrl: config.baseUrl });
 }));
 r.put('/settings', requireRole('SUPERADMIN'), ah(async (req, res) => {
   const d = parse(z.object({

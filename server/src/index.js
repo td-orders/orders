@@ -16,6 +16,8 @@ import orderRoutes from './routes/orders.js';
 import stockRoutes from './routes/stock.js';
 import productionRoutes from './routes/production.js';
 import statsRoutes from './routes/stats.js';
+import integrationRoutes from './routes/integrations.js';
+import warehouseRoutes from './routes/warehouse.js';
 import { startScheduler, runDailyAlerts } from './lib/alerts.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -44,6 +46,9 @@ app.use(session({
   cookie: { httpOnly: true, sameSite: 'lax', secure: config.secureCookies, maxAge: config.sessionHours * 3600 * 1000 },
 }));
 
+// API per i sistemi esterni (Silva Group, StudioLab): chiave API nell'header, nessuna sessione, prima del controllo CSRF
+app.use('/api/integrations', integrationRoutes);
+
 // Protezione CSRF: le richieste che modificano dati devono arrivare dal client dell'app
 app.use('/api', (req, _res, next) => {
   if (['GET', 'HEAD', 'OPTIONS'].includes(req.method)) return next();
@@ -60,6 +65,7 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/stock', stockRoutes);
 app.use('/api/production', productionRoutes);
 app.use('/api/stats', statsRoutes);
+app.use('/api/warehouse', warehouseRoutes);
 app.post('/api/alerts/run', requireRole(...OPS_ROLES), ah(async (_req, res) => res.json(await runDailyAlerts({ force: true }))));
 app.use('/api', (_req, _res, next) => next(new HttpError(404, 'Endpoint inesistente')));
 

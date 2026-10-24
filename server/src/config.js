@@ -3,7 +3,7 @@ const env = process.env;
 
 export const config = {
   port: Number(env.PORT || 3000),
-  baseUrl: env.BASE_URL || 'http://localhost:3000',
+  baseUrl: (env.BASE_URL || 'http://localhost:3000').trim().replace(/\/+$/, ''),   // senza barra finale: il redirect URI verso Entra deve coincidere esattamente
   databaseUrl: env.DATABASE_URL || 'postgres://postgres@localhost:5432/orders',
   sessionSecret: env.SESSION_SECRET || 'dev-only-change-me',
   secureCookies: env.NODE_ENV === 'production',
@@ -15,19 +15,21 @@ export const config = {
     clientSecret: env.ENTRA_CLIENT_SECRET || '',
     get enabled() { return Boolean(this.tenantId && this.clientId && this.clientSecret); },
   },
-  // Integrazione StudioLab (gestionale di laboratorio): credenziali clienti e produzione mensile
+  // Integrazione StudioLab ServiceNET (CB Sistemi): REST con header X-API-KEY (catalogo esami, materiali, whoami) e
+  // ricezione HL7 over HTTPS (notifiche di accettazione, da cui si ricava la produzione per cliente)
   studiolab: {
-    mode: env.STUDIOLAB_MODE || 'SIMULATO',      // SIMULATO | API
-    baseUrl: env.STUDIOLAB_API_URL || '',
-    apiKey: env.STUDIOLAB_API_KEY || '',
+    baseUrl: (env.STUDIOLAB_API_URL || 'https://servicenet.toscanadiagnostica.it/API').trim().replace(/\/+$/, ''),
+    apiKey: env.STUDIOLAB_API_KEY || '',             // chiave fornita da CB Sistemi: solo nel pannello Render
+    clientCode: env.STUDIOLAB_CLIENT_CODE || 'TD',   // CodiceCliente da passare alle chiamate
+    inboundKey: env.STUDIOLAB_INBOUND_KEY || '',     // chiave che StudioLab usa per inviarci i messaggi HL7
+    get enabled() { return Boolean(this.apiKey); },
   },
-  // Integrazione Silva PortaleOrdini (fornitore esterno che gestisce il magazzino)
+  // Integrazione Silva Group (gestore del magazzino): il fornitore interroga le nostre API ogni 5 minuti con la chiave
+  // SILVA_INBOUND_KEY (feed giacenze in ingresso, ordini da preparare in uscita, avanzamento consegne). EMAIL: ripiego.
   silva: {
-    mode: env.SILVA_MODE || 'SIMULATO',          // SIMULATO | API | EMAIL
-    baseUrl: env.SILVA_API_URL || 'https://silva.cloud/PortaleOrdini',
-    apiKey: env.SILVA_API_KEY || '',
+    inboundKey: env.SILVA_INBOUND_KEY || '',
     email: env.SILVA_ORDER_EMAIL || '',
-    customerCode: env.SILVA_CUSTOMER_CODE || '',
+    customerCode: env.SILVA_CUSTOMER_CODE || 'TOSCANA-DIAGNOSTICA',
   },
   seed: {
     superadminEmail: env.SEED_SUPERADMIN_EMAIL || '',

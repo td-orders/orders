@@ -38,22 +38,20 @@ services:
         sync: false
       - key: GRAPH_SENDER
         value: amministrazione@toscanadiagnostica.it   # casella mittente (Microsoft Graph, permesso Mail.Send)
-      - key: SILVA_MODE
-        value: SIMULATO   # SIMULATO | EMAIL | API
+      - key: SILVA_INBOUND_KEY
+        generateValue: true   # chiave che Silva Group usa per chiamare le nostre API (feed, ordini, avanzamento)
       - key: SILVA_ORDER_EMAIL
-        sync: false   # casella ordini del fornitore (per SILVA_MODE=EMAIL)
-      - key: SILVA_API_URL
-        value: https://silva.cloud/PortaleOrdini
-      - key: SILVA_API_KEY
-        sync: false
+        sync: false   # casella ordini del fornitore: ripiego, PDF all'approvazione
       - key: SILVA_CUSTOMER_CODE
-        sync: false
-      - key: STUDIOLAB_MODE
-        value: SIMULATO   # SIMULATO | API
+        value: TOSCANA-DIAGNOSTICA
       - key: STUDIOLAB_API_URL
-        sync: false
+        value: https://servicenet.toscanadiagnostica.it/API
       - key: STUDIOLAB_API_KEY
-        sync: false
+        sync: false   # fornita da CB Sistemi
+      - key: STUDIOLAB_CLIENT_CODE
+        value: TD
+      - key: STUDIOLAB_INBOUND_KEY
+        generateValue: true   # chiave che StudioLab usa per inviarci i messaggi HL7
 databases:
   - name: td-orders-db
     plan: basic-256mb

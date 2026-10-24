@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { api, qs } from '../api.js';
 import { useAuth, isOps } from '../auth.jsx';
 import { useApi, Field, Loading, Empty, Card, ErrorBox, Modal, Icon, Badge, useToast } from '../components/ui.jsx';
-import { monthLabel, currentMonth, dec } from '../format.js';
+import { monthLabel, currentMonth, dec, itDateTime } from '../format.js';
 
 // Produzione mensile per struttura (StudioLab): esami x mesi, correlata ai materiali consumati
 export default function Production() {
@@ -24,7 +24,8 @@ export default function Production() {
     const fd = new FormData(); fd.append('file', f);
     try { const r = await api.upload('/production/import', fd); toast(`Importate ${r.rows} righe su ${r.months} mesi`); reload(); } catch (e) { setErr(e); }
   };
-  const sync = async () => { setErr(null); try { await api.post('/production/sync', { struttura_id: Number(sid) }); toast('Sincronizzazione completata'); reload(); } catch (e) { setErr(e); } };
+  const testSl = async () => { setErr(null); try { const r = await api.get('/production/studiolab/test'); toast(`ServiceNET risponde: ${JSON.stringify(r.whoami).slice(0, 120)}`); } catch (e) { setErr(e); } };
+  const syncExams = async () => { setErr(null); try { const r = await api.post('/production/studiolab/sync-exams'); toast(`Catalogo esami sincronizzato: ${r.exams} esami`); } catch (e) { setErr(e); } };
   const sl = settings.data?.studiolab;
   return (
     <div className="page">
@@ -35,11 +36,12 @@ export default function Production() {
           {ops && <a className="btn ghost" href="/api/production/import/template.xlsx"><Icon name="download" size={16} />Modello</a>}
           {ops && <label className="btn ghost"><Icon name="upload" size={16} />Importa file<input type="file" accept=".csv,.xlsx" style={{ display: 'none' }} onChange={(e) => e.target.files[0] && importFile(e.target.files[0])} /></label>}
           {ops && sid && <button className="btn ghost" onClick={() => setManual({ month: currentMonth(), items: [{ examCode: '', examName: '', qty: '' }] })}><Icon name="plus" size={16} />Inserisci mese</button>}
-          {ops && sid && <button className="btn" disabled={!(sl?.mode === 'API' && sl?.configured)} title={sl?.mode !== 'API' ? 'StudioLab in modalità simulata: usa import o inserimento manuale' : ''} onClick={sync}><Icon name="link" size={16} />Sincronizza da StudioLab</button>}
+          {ops && <button className="btn ghost" disabled={!sl?.configured} title={!sl?.configured ? 'STUDIOLAB_API_KEY non impostata' : ''} onClick={testSl}><Icon name="link" size={16} />Prova ServiceNET</button>}
+          {ops && <button className="btn ghost" disabled={!sl?.configured} onClick={syncExams}><Icon name="link" size={16} />Sincronizza catalogo esami</button>}
         </div>
       </div>
       <ErrorBox error={err} />
-      {ops && sl && sl.mode !== 'API' && <div className="alert info" style={{ marginBottom: 14 }}>StudioLab non è collegato (modalità {sl.mode}). La produzione si carica con il file esportato dal gestionale (codice struttura, mese, codice esame, descrizione, quantità) o a mano. Quando il fornitore fornirà l'API, basta impostare STUDIOLAB_MODE=API.</div>}
+      {ops && sl && <div className="alert info" style={{ marginBottom: 14 }}>La produzione arriva in tempo reale dai messaggi HL7 che StudioLab invia a Orders Management (ultimo: {sl.last_hl7_at ? itDateTime(sl.last_hl7_at) : 'nessuno ancora'}); in alternativa dal file esportato dal gestionale o a mano. Le API REST di ServiceNET servono per il catalogo esami, non per la produzione.</div>}
       {!target ? <Card><Empty>Scegli una struttura</Empty></Card> : !data ? <Loading /> : (
         <div className="grid" style={{ gridTemplateColumns: 'minmax(0, 1.5fr) minmax(0, 1fr)' }}>
           <Card title="Esami per mese" flush>

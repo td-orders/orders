@@ -14,7 +14,7 @@ const TOP = 40 * MM;
 const BOTTOM = PAGE.h - 30 * MM;
 const fullDT = (d) => (d ? new Date(d).toLocaleString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '');
 
-const STATUS = { BOZZA: 'Bozza', INVIATO: 'Inviato a Toscana Diagnostica', APPROVATO: 'Approvato', TRASMESSO: 'Trasmesso al fornitore', CONSEGNATO: 'Consegnato', CHIUSO: 'Chiuso', ANNULLATO: 'Annullato' };
+const STATUS = { BOZZA: 'Bozza', INVIATO: 'Inviato a Toscana Diagnostica', APPROVATO: 'Approvato, in attesa del magazzino', PRESO_IN_CARICO: 'Preso in carico dal magazzino', SPEDITO: 'Spedito', CONSEGNATO: 'Consegnato', IMMAGAZZINATO: 'Caricato nel magazzino interno', CHIUSO: 'Chiuso', ANNULLATO: 'Annullato' };
 
 function letterhead(doc, company, order) {
   const top = M.top;
@@ -136,10 +136,10 @@ export async function buildOrderPdf({ order, struttura, lines, company, packages
   if (y > BOTTOM - 110) y = newPage();
   y = section(doc, y, 'Sezione D · Riservata a Toscana Diagnostica: presa in carico ed evasione');
   kv(doc, M.left, y, cw, 'Ricezione richiesta', fullDT(order.submitted_at)); kv(doc, M.left + cw, y, cw, 'Approvazione Area Operations', `${order.approved_by_name || ''} ${fullDT(order.approved_at)}`.trim());
-  kv(doc, M.left + cw * 2, y, cw, 'Trasmissione al fornitore', order.transmitted_at ? `${fullDT(order.transmitted_at)} · ${order.silva_mode || ''}` : '–');
+  kv(doc, M.left + cw * 2, y, cw, 'Presa in carico magazzino', order.picked_at ? fullDT(order.picked_at) : '–');
   y += 30;
   if (order.silva_reference) { kv(doc, M.left + cw * 2, y, cw, 'Riferimento fornitore', order.silva_reference); }
-  kv(doc, M.left, y, cw, 'Conferma ricezione', `${order.received_by_name || ''} ${fullDT(order.received_at)}`.trim()); kv(doc, M.left + cw, y, cw, 'Chiusura', `${order.closed_by_name || ''} ${fullDT(order.closed_at)}`.trim());
+  kv(doc, M.left, y, cw, 'Consegna', order.delivered_at ? `${fullDT(order.delivered_at)}${order.ddt_number ? ' · DDT ' + order.ddt_number : ''}` : '–'); kv(doc, M.left + cw, y, cw, 'Chiusura', `${order.closed_by_name || ''} ${fullDT(order.closed_at)}`.trim());
   y += 30;
   if (order.ops_notes) { kv(doc, M.left, y, W, 'Note Operations', order.ops_notes); y += 30; }
   y += 4;

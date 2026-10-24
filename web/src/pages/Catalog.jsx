@@ -1,10 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api } from '../api.js';
 import { useAuth, isOps } from '../auth.jsx';
 import { useApi, Field, Loading, ErrorBox, Icon, useToast, Modal } from '../components/ui.jsx';
 import { ProductArt } from '../components/art.jsx';
-import { num } from '../format.js';
+import { PhaseBanner } from '../components/phase.jsx';
 
 // Catalogo a carrello (modello e-commerce): elenco chiuso del MOD252, grafica dell'oggetto, confezionamento, aggiunta al carrello.
 export default function Catalog() {
@@ -16,14 +16,12 @@ export default function Catalog() {
   const strutture = useApi(ops ? '/strutture' : null);
   const articles = useApi('/articles');
   const categories = useApi('/categories');
-  const stock = useApi(ops ? (strutturaId ? `/stock?struttura_id=${strutturaId}` : null) : '/stock', [strutturaId]);
   const [cat, setCat] = useState('');
   const [search, setSearch] = useState('');
   const [cart, setCart] = useState({});
   const [head, setHead] = useState({ notes: '', urgent: false, urgent_reason: '', client_ref: '' });
   const [err, setErr] = useState(null);
   const [confirm, setConfirm] = useState(false);
-  const stockMap = useMemo(() => new Map((stock.data?.rows || []).map((r) => [r.article_id, r])), [stock.data]);
 
   const list = (articles.data || []).filter((a) => (!cat || a.category_code === cat) && (!search || `${a.name} ${a.code}`.toLowerCase().includes(search.toLowerCase())));
   const items = Object.entries(cart).filter(([, q]) => q > 0).map(([id, q]) => ({ a: articles.data.find((x) => x.id === Number(id)), q }));
@@ -41,8 +39,9 @@ export default function Catalog() {
 
   return (
     <div className="page">
+      <PhaseBanner n="1" title="Ordine" desc="Il catalogo mostra gli articoli che il magazzino mette a disposizione della tua struttura. Aggiungi al carrello le confezioni che servono e invia: la richiesta passa alla verifica di Toscana Diagnostica." next="Fase 2: verifica dell'Area Operations" />
       <div className="page-head">
-        <div><h1>Nuovo ordine</h1><div className="sub">Elenco chiuso del modulo TD-SGI-MOD252: aggiungi al carrello le confezioni che servono</div></div>
+        <div><h1>Nuovo ordine</h1><div className="sub">Articoli disponibili per la tua struttura</div></div>
       </div>
       {ops && !strutturaId && <div className="alert warn" style={{ marginBottom: 14 }}>Stai ordinando per conto di una struttura: scegli prima il cliente o la sede.</div>}
       <ErrorBox error={err} />
@@ -61,14 +60,14 @@ export default function Catalog() {
           {!articles.data ? <Loading /> : (
             <div className="products">
               {list.map((a) => {
-                const q = cart[a.id] || 0; const st = stockMap.get(a.id);
+                const q = cart[a.id] || 0;
                 return (
                   <div key={a.id} className={`product ${q ? 'in' : ''}`}>
                     <ProductArt icon={a.icon} color={a.color} size={84} />
                     <div className="pinfo">
                       <div className="pname">{a.name}</div>
                       <div className="pmeta">{a.pack_label} · {a.unit}</div>
-                      <div className="pmeta mono">{a.code}{st && <span className="muted"> · in giacenza {num(st.packs)} conf.{st.prod_packs_avg ? ` · consumo ${st.prod_packs_avg.toLocaleString('it-IT', { maximumFractionDigits: 1 })}/mese` : ''}</span>}</div>
+                      <div className="pmeta mono">{a.code}</div>
                     </div>
                     <div className="pqty">
                       {q ? <>

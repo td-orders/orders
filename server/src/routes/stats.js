@@ -28,9 +28,10 @@ r.get('/dashboard', ah(async (req, res) => {
         (SELECT count(*)::int FROM packages p WHERE p.struttura_id=s.id AND p.article_id=a.id AND p.status='RICEVUTO') AS packs
       FROM strutture s CROSS JOIN articles a WHERE s.active AND s.kind IN ('SEDE','LAB') AND a.active AND a.min_stock_packs > 0
         AND (SELECT count(*) FROM packages p WHERE p.struttura_id=s.id AND p.article_id=a.id AND p.status='RICEVUTO') < a.min_stock_packs ORDER BY s.name, a.sort LIMIT 50`);
+    out.supplier = { last_poll_at: await getSetting('silva_last_poll_at', null), last_feed_at: await getSetting('silva_last_feed_at', null), last_hl7_at: await getSetting('studiolab_last_hl7_at', null) };
     out.strutture = await one(`SELECT count(*) FILTER (WHERE kind='CLIENTE')::int AS clienti, count(*) FILTER (WHERE kind='SEDE')::int AS sedi, count(*) FILTER (WHERE kind='LAB')::int AS lab FROM strutture WHERE active`);
     out.topArticles = await many(`SELECT a.name, a.code, sum(coalesce(l.qty_approved, l.qty_requested))::int AS packs FROM order_lines l JOIN orders o ON o.id=l.order_id JOIN articles a ON a.id=l.article_id
-      WHERE o.status IN ('APPROVATO','TRASMESSO','CONSEGNATO','CHIUSO') AND o.created_at > now() - interval '3 months' GROUP BY a.id ORDER BY packs DESC LIMIT 8`);
+      WHERE o.status IN ('APPROVATO','PRESO_IN_CARICO','SPEDITO','CONSEGNATO','IMMAGAZZINATO','CHIUSO') AND o.created_at > now() - interval '3 months' GROUP BY a.id ORDER BY packs DESC LIMIT 8`);
   } else {
     const sid = req.user.struttura_id;
     out.stock = await one(`SELECT count(*) FILTER (WHERE status='RICEVUTO')::int AS packs, count(*) FILTER (WHERE status='ATTESO')::int AS incoming,
@@ -40,7 +41,8 @@ r.get('/dashboard', ah(async (req, res) => {
       const c = await one(`SELECT id, status FROM stock_counts WHERE struttura_id=$1 AND month=$2`, [sid, `${month}-01`]);
       out.stockCount = { month, deadline: req.user.stock_deadline_day, status: c?.status || 'DA_INSERIRE', id: c?.id || null };
     }
-    out.toReceive = await many(`SELECT o.id, o.number, o.transmitted_at FROM orders o WHERE o.struttura_id=$1 AND o.status='TRASMESSO' ORDER BY o.transmitted_at`, [sid]);
+    out.toReceive = await many(`SELECT o.id, o.number, o.delivered_at AS transmitted_at FROM orders o WHERE o.struttura_id=$1 AND o.status='CONSEGNATO' ORDER BY o.delivered_at`, [sid]);
+    out.inTransit = await many(`SELECT o.id, o.number, o.status FROM orders o WHERE o.struttura_id=$1 AND o.status IN ('APPROVATO','PRESO_IN_CARICO','SPEDITO') ORDER BY o.approved_at`, [sid]);
   }
   res.json(out);
 }));
@@ -58,7 +60,7 @@ const xlsxHeaders = (ws, headers) => { ws.addRow(headers); ws.getRow(1).font = {
 r.get('/export/orders.xlsx', ah(async (req, res) => {
   const P = new Params();
   const scope = isOps(req.user) ? 'TRUE' : `o.struttura_id=${P.add(req.user.struttura_id)}`;
-  const rows = await many(`SELECT o.number, o.status, o.kind, o.origin, o.urgent, o.created_at, o.submitted_at, o.approved_at, o.transmitted_at, o.received_at, o.closed_at, o.silva_reference, s.code AS scode, s.name AS sname,
+  const rows = await many(`SELECT o.number, o.status, o.kind, o.origin, o.urgent, o.created_at, o.submitted_at, o.approved_at, o.shipped_at AS transmitted_at, o.delivered_at AS received_at, o.closed_at, o.silva_reference, s.code AS scode, s.name AS sname,
       a.code AS acode, a.name AS aname, a.pack_label, l.qty_requested, l.qty_proposed, l.qty_approved, l.prod_packs_avg, l.delta_pct, l.stock_packs, l.qty_received, l.note_client, l.note_ops
     FROM orders o JOIN strutture s ON s.id=o.struttura_id JOIN order_lines l ON l.order_id=o.id JOIN articles a ON a.id=l.article_id WHERE ${scope} ORDER BY o.created_at DESC, a.sort`, P.values);
   const wb = new ExcelJS.Workbook(); const ws = wb.addWorksheet('Ordini');

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { api } from '../api.js';
 import { useApi, Field, Loading, ErrorBox, Card, Badge, useToast } from '../components/ui.jsx';
+import { itDateTime } from '../format.js';
 
 export default function Settings() {
   const toast = useToast();
@@ -21,7 +22,7 @@ export default function Settings() {
         <Card title="Ordine automatico delle sedi">
           <Field label="Formula di riordino">
             <select value={s.reorder_formula} onChange={(e) => setS({ ...s, reorder_formula: e.target.value })}>
-              <option value="DIFF_X_FACTOR">(Produzione mensile − Giacenza) × fattore</option>
+              <option value="DIFF_X_FACTOR">(Produzione mensile − Giacenza reale) × fattore</option>
               <option value="TARGET_MINUS_STOCK">Produzione mensile × fattore − Giacenza</option>
             </select>
             <span className="help">Scelta di Francesco: la prima. Con giacenza pari alla produzione la prima ordina zero, la seconda ricostituisce la scorta obiettivo. Il fattore (default 1,5) si imposta per articolo nel catalogo. Il risultato è sempre arrotondato per eccesso a confezioni intere e mai negativo.</span>
@@ -39,12 +40,13 @@ export default function Settings() {
         </Card>
         <Card title="Integrazioni">
           <table className="t"><tbody>
-            <tr><td>Silva PortaleOrdini (fornitore magazzino)</td><td><Mode ok={data.silva.mode !== 'SIMULATO' && data.silva.configured} label={data.silva.mode} /></td><td className="small muted">{data.silva.mode === 'SIMULATO' ? 'Nessuna chiamata esterna: riferimento fittizio, flusso collaudabile' : data.silva.mode === 'EMAIL' ? `Ordine PDF inviato a ${data.silva.email || '(casella non impostata)'}` : 'POST verso il portale con chiave API (contratto da confermare)'}</td></tr>
-            <tr><td>StudioLab (credenziali clienti e produzione)</td><td><Mode ok={data.studiolab.mode === 'API' && data.studiolab.configured} label={data.studiolab.mode} /></td><td className="small muted">{data.studiolab.mode === 'API' ? 'Login clienti con credenziali StudioLab e sincronizzazione produzione attivi' : 'Produzione da import file o manuale; login clienti con credenziali generate dall\'app'}</td></tr>
+            <tr><td>Silva Group: API del magazzino (feed giacenze, ordini in polling, avanzamento)</td><td><Mode ok={data.silva.inboundConfigured} label={data.silva.inboundConfigured ? 'chiave attiva' : 'chiave mancante'} /></td><td className="small muted">{data.silva.inboundConfigured ? `Ultimo feed ${data.silva.last_feed_at ? itDateTime(data.silva.last_feed_at) : 'mai'} · ultima lettura ordini ${data.silva.last_poll_at ? itDateTime(data.silva.last_poll_at) : 'mai'}` : 'Impostare SILVA_INBOUND_KEY su Render e consegnarla al fornitore'}{data.silva.email ? ` · email di ripiego ${data.silva.email}` : ''}</td></tr>
+            <tr><td>StudioLab ServiceNET: REST (X-API-KEY)</td><td><Mode ok={data.studiolab.configured} label={data.studiolab.configured ? 'collegato' : 'non configurato'} /></td><td className="small muted">{data.studiolab.configured ? `${data.studiolab.baseUrl} · CodiceCliente ${data.studiolab.clientCode}` : 'Impostare STUDIOLAB_API_KEY su Render'}</td></tr>
+            <tr><td>StudioLab: HL7 in ingresso (produzione)</td><td><Mode ok={data.studiolab.inboundConfigured} label={data.studiolab.inboundConfigured ? 'chiave attiva' : 'chiave mancante'} /></td><td className="small muted">{data.studiolab.inboundConfigured ? `Ultimo messaggio ${data.studiolab.last_hl7_at ? itDateTime(data.studiolab.last_hl7_at) : 'mai'}` : 'Impostare STUDIOLAB_INBOUND_KEY e comunicare a CB Sistemi URL e chiave'}</td></tr>
             <tr><td>Microsoft 365: accesso</td><td><Mode ok={data.entra} label={data.entra ? 'attivo' : 'non configurato'} /></td><td className="small muted">Variabili ENTRA_* su Render</td></tr>
             <tr><td>Email</td><td><Mode ok={data.mail.configured} label={data.mail.mode || 'non configurata'} /></td><td className="small muted">{data.mail.from ? `Mittente ${data.mail.from}` : 'Gli invii restano registrati ma non partono'}</td></tr>
           </tbody></table>
-          <div className="small muted mt">Le modalità si impostano con le variabili d'ambiente SILVA_MODE (SIMULATO, EMAIL, API) e STUDIOLAB_MODE (SIMULATO, API) nel pannello di Render: vedi README.</div>
+          <div className="small muted mt">Endpoint per i fornitori: {data.baseUrl}/api/integrations/silva/… e {data.baseUrl}/api/integrations/studiolab/hl7. Chiavi e contratti nel README.</div>
         </Card>
         <Card title="Email di prova">
           <div className="row"><input type="email" placeholder="destinatario" value={testTo} onChange={(e) => setTestTo(e.target.value)} style={{ maxWidth: 320 }} /><button className="btn ghost" disabled={!testTo} onClick={async () => { const r = await api.post('/settings/test-email', { to: testTo }); toast(`Esito: ${r.status}${r.error ? ' · ' + r.error : ''}`, r.status === 'INVIATA' ? 'ok' : 'err'); }}>Invia</button></div>

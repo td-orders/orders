@@ -53,7 +53,7 @@ async function seed() {
   let added = 0; i = 0;
   for (const a of cat.articoli) {
     const r = await pool.query(
-      `INSERT INTO articles (code, category_code, name, unit, pack_size, pack_label, color, sort) VALUES ($1,$2,$3,$4,$5,$6,$7,$8) ON CONFLICT (code) DO NOTHING`,
+      `INSERT INTO articles (code, category_code, name, unit, pack_size, pack_label, color, sort, source, visible_all) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,'MOD252',TRUE) ON CONFLICT (code) DO NOTHING`,
       [a.code, a.category, a.name, a.unit, a.pack_size, a.pack_label, a.color || null, i++]);
     added += r.rowCount;
   }

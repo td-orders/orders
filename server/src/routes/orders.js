@@ -3,8 +3,9 @@ import { z } from 'zod';
 import { one, many, q, tx } from '../db.js';
 import { ah, bad, forbidden, notFound, audit, parse, itDate } from '../lib/util.js';
 import { requireRole, isOps, Params, assertStruttura, OPS_ROLES } from '../lib/access.js';
-import { nextOrderNumber, orderLines, enrichLines, createPackages, assertStatus, ARTICLE_COLS } from '../lib/orders.js';
-import { transmit } from '../lib/silva.js';
+import { nextOrderNumber, orderLines, enrichLines, assertStatus, ARTICLE_COLS } from '../lib/orders.js';
+import { emailOrder } from '../lib/silva.js';
+import { ORDER_COLS, ORDER_JOINS as JOINS, event, markPicked, markShipped, markDelivered, markStored } from '../lib/orderflow.js';
 import { buildOrderPdf } from '../pdf/order.js';
 import { sendMail, opsEmails } from '../lib/mailer.js';
 
@@ -13,25 +14,11 @@ const opt = (s) => s.optional().nullable().transform((v) => (v === '' ? null : v
 const lineSchema = z.array(z.object({ article_id: z.coerce.number().int(), qty: z.coerce.number().int().min(0).max(9999), note: opt(z.string().max(300)) })).max(200);
 const headSchema = { notes: opt(z.string().max(1000)), urgent: z.boolean().optional(), urgent_reason: opt(z.string().max(300)), client_ref: opt(z.string().max(60)) };
 
-const ORDER_COLS = `o.*, s.name AS struttura_name, s.code AS struttura_code, s.kind AS struttura_kind, s.city AS struttura_city,
-  ru.full_name AS requested_by_name, au.full_name AS approved_by_name, cu.full_name AS received_by_name, ku.full_name AS closed_by_name,
-  (SELECT count(*)::int FROM order_lines l WHERE l.order_id=o.id AND coalesce(l.qty_approved, l.qty_requested) > 0) AS lines_count,
-  (SELECT coalesce(sum(coalesce(l.qty_approved, l.qty_requested)),0)::int FROM order_lines l WHERE l.order_id=o.id) AS packs_total,
-  (SELECT count(*)::int FROM packages p WHERE p.order_id=o.id AND p.status IN ('RICEVUTO','IN_USO')) AS packs_received,
-  (SELECT count(*)::int FROM packages p WHERE p.order_id=o.id AND p.status='ATTESO') AS packs_pending,
-  (SELECT count(*)::int FROM issues i WHERE i.order_id=o.id AND i.status='APERTA') AS open_issues,
-  (SELECT count(*)::int FROM order_lines l WHERE l.order_id=o.id AND l.delta_pct IS NOT NULL AND abs(l.delta_pct) > 50) AS anomalies`;
-const JOINS = `FROM orders o JOIN strutture s ON s.id=o.struttura_id LEFT JOIN users ru ON ru.id=o.requested_by LEFT JOIN users au ON au.id=o.approved_by
-  LEFT JOIN users cu ON cu.id=o.received_by LEFT JOIN users ku ON ku.id=o.closed_by`;
-
 async function loadOrder(req, id) {
   const o = await one(`SELECT ${ORDER_COLS} ${JOINS} WHERE o.id=$1`, [id]);
   if (!o) throw notFound('Ordine non trovato');
   if (!isOps(req.user) && o.struttura_id !== req.user.struttura_id) throw forbidden('Ordine non autorizzato');
   return o;
-}
-async function event(orderId, userId, ev, data) {
-  await q('INSERT INTO order_events (order_id, user_id, event, data) VALUES ($1,$2,$3,$4)', [orderId, userId, ev, data ? JSON.stringify(data) : null]);
 }
 async function saveLines(client, orderId, lines) {
   await client.query('DELETE FROM order_lines WHERE order_id=$1', [orderId]);
@@ -146,69 +133,88 @@ r.post('/:id/verify', requireRole(...OPS_ROLES), ah(async (req, res) => {
 
 async function approve(req, id) {
   const o = await loadOrder(req, id);
-  assertStatus(o, 'INVIATO', 'BOZZA', 'APPROVATO');
-  if (o.status !== 'APPROVATO') {
-    const n = await one('SELECT coalesce(sum(coalesce(qty_approved, qty_requested)),0)::int AS n FROM order_lines WHERE order_id=$1', [id]);
-    if (!n.n) throw bad('Nessuna quantità approvata: annulla l\'ordine invece di approvarlo');
-    if (o.kind === 'LAB' && o.status === 'BOZZA') await enrichLines(id, o.struttura_id, o.kind);
-    await tx(async (c) => {
-      await c.query("UPDATE order_lines SET qty_approved = coalesce(qty_approved, qty_requested) WHERE order_id=$1", [id]);
-      await c.query("UPDATE orders SET status='APPROVATO', approved_by=$2, approved_at=now(), submitted_at=coalesce(submitted_at, now()), updated_at=now() WHERE id=$1", [id, req.user.id]);
-      const n2 = await createPackages(c, { id, struttura_id: o.struttura_id });
-      await event(id, req.user.id, 'Approvato dall\'Area Operations', { packages: n2 });
-    });
-    await audit(req, 'ORDER_APPROVE', 'order', id);
-  }
-  return transmitOrder(req, id);
+  assertStatus(o, 'INVIATO', 'BOZZA');
+  const n = await one('SELECT coalesce(sum(coalesce(qty_approved, qty_requested)),0)::int AS n FROM order_lines WHERE order_id=$1', [id]);
+  if (!n.n) throw bad('Nessuna quantità approvata: annulla l\'ordine invece di approvarlo');
+  if (o.kind === 'LAB' && o.status === 'BOZZA') await enrichLines(id, o.struttura_id, o.kind);
+  await tx(async (c) => {
+    await c.query("UPDATE order_lines SET qty_approved = coalesce(qty_approved, qty_requested) WHERE order_id=$1", [id]);
+    await c.query("UPDATE orders SET status='APPROVATO', approved_by=$2, approved_at=now(), submitted_at=coalesce(submitted_at, now()), updated_at=now() WHERE id=$1", [id, req.user.id]);
+  });
+  await event(id, req.user.id, 'Approvato dall\'Area Operations: in attesa del magazzino', { packs: n.n });
+  await audit(req, 'ORDER_APPROVE', 'order', id);
+  // PDF archiviato sull'ordine e inviato alla struttura
+  const full = await fullDetail(req, id);
+  const company = await one('SELECT * FROM company LIMIT 1');
+  const cats = await many('SELECT code, name FROM categories');
+  const lines = full.lines.map((l) => ({ ...l, category_name: cats.find((c) => c.code === l.category_code)?.name }));
+  const pdf = await buildOrderPdf({ order: full, struttura: full.struttura, lines, company, packages: [], events: full.events });
+  await q('UPDATE orders SET pdf=$2 WHERE id=$1', [id, pdf]);
+  if (full.struttura.email) await sendMail({ kind: 'ORDINE_APPROVATO', refKey: `APPROVATO:${id}`, to: full.struttura.email, strutturaId: o.struttura_id, subject: `Ordine ${o.number} approvato`, title: `Ordine ${o.number} approvato`,
+    body: `L'ordine ${o.number} è stato approvato da Toscana Diagnostica ed è in preparazione presso il magazzino. Riceverete un avviso alla consegna.`, attachment: { filename: `${o.number}.pdf`, content: pdf } });
+  return { ok: true, status: 'APPROVATO' };
 }
 r.post('/:id/approve', requireRole(...OPS_ROLES), ah(async (req, res) => res.json(await approve(req, req.params.id))));
 
-async function transmitOrder(req, id) {
+// Ripiego quando il fornitore non legge le API: ordine PDF via email alla casella del magazzino
+async function emailToSupplier(req, id) {
   const o = await fullDetail(req, id);
-  assertStatus(o, 'APPROVATO');
+  assertStatus(o, 'APPROVATO', 'PRESO_IN_CARICO');
   const company = await one('SELECT * FROM company LIMIT 1');
-  const lines = o.lines.map((l) => ({ ...l, category_name: null }));
   const cats = await many('SELECT code, name FROM categories');
-  for (const l of lines) l.category_name = cats.find((c) => c.code === l.category_code)?.name;
-  const pdf = await buildOrderPdf({ order: o, struttura: o.struttura, lines, company, packages: o.packages, events: o.events });
-  const t = await transmit({ order: o, struttura: o.struttura, lines, pdf });
-  if (t.status === 'OK') {
-    await q(`UPDATE orders SET status='TRASMESSO', transmitted_at=now(), silva_mode=$2, silva_reference=$3, silva_payload=$4, pdf=$5, updated_at=now() WHERE id=$1`, [id, t.mode, t.reference, JSON.stringify(t.payload), pdf]);
-    await event(id, req.user.id, `Trasmesso al fornitore (${t.mode})`, { reference: t.reference });
-    await audit(req, 'ORDER_TRANSMIT', 'order', id, { mode: t.mode, reference: t.reference });
-    if (o.struttura.email) await sendMail({ kind: 'ORDINE_APPROVATO', refKey: `APPROVATO:${id}`, to: o.struttura.email, strutturaId: o.struttura_id, subject: `Ordine ${o.number} approvato e in consegna`, title: `Ordine ${o.number} approvato`,
-      body: `L'ordine ${o.number} è stato approvato da Toscana Diagnostica e trasmesso al magazzino.\n\nAlla consegna confermate la ricezione in Orders Management, confezione per confezione (lettura del codice a barre o spunta), entro 3 giorni lavorativi: le differenze vanno segnalate lì.`, attachment: { filename: `${o.number}.pdf`, content: pdf } });
-    return { ok: true, status: 'TRASMESSO', reference: t.reference, mode: t.mode };
-  }
-  await q('UPDATE orders SET silva_mode=$2, silva_payload=$3, pdf=$4, updated_at=now() WHERE id=$1', [id, t.mode, JSON.stringify(t.payload), pdf]);
-  await event(id, req.user.id, `Trasmissione al fornitore fallita (${t.mode})`, { error: t.error });
-  return { ok: false, status: 'APPROVATO', error: t.error, mode: t.mode };
+  const lines = o.lines.map((l) => ({ ...l, category_name: cats.find((c) => c.code === l.category_code)?.name }));
+  const pdf = o.pdf || await buildOrderPdf({ order: o, struttura: o.struttura, lines, company, packages: [], events: o.events });
+  const r2 = await emailOrder({ order: o, struttura: o.struttura, lines, pdf });
+  await event(id, req.user.id, r2.status === 'INVIATA' ? 'Ordine inviato via email al magazzino' : `Invio email al magazzino non riuscito (${r2.error || r2.status})`);
+  await audit(req, 'ORDER_EMAIL_SUPPLIER', 'order', id, { status: r2.status });
+  return { ok: r2.status === 'INVIATA', status: r2.status, error: r2.error };
 }
-r.post('/:id/transmit', requireRole(...OPS_ROLES), ah(async (req, res) => res.json(await transmitOrder(req, req.params.id))));
+r.post('/:id/email-supplier', requireRole(...OPS_ROLES), ah(async (req, res) => res.json(await emailToSupplier(req, req.params.id))));
 
-// ---------------- Ricezione: una riga per confezione, scansione o spunta ----------------
-const canReceive = (req, o) => isOps(req.user) || o.struttura_id === req.user.struttura_id;
-
-// Lettura di un codice: risolve l'articolo (GTIN, codice articolo, o codice confezione già noto) e spunta la prossima confezione attesa
-r.post('/:id/scan', ah(async (req, res) => {
-  const o = await loadOrder(req, req.params.id);
-  if (!canReceive(req, o)) throw forbidden();
-  assertStatus(o, 'TRASMESSO', 'APPROVATO');
-  const { code, lot, expiry } = parse(z.object({ code: z.string().min(1).max(120), lot: opt(z.string().max(60)), expiry: opt(z.string().regex(/^\d{4}-\d{2}-\d{2}$/)) }), req.body);
-  const parsed = parseGs1(code);
-  const art = await one(`SELECT a.id FROM articles a WHERE a.gtin IS NOT NULL AND (a.gtin=$1 OR a.gtin=$2) OR upper(a.code)=upper($1) LIMIT 1`, [code.trim(), parsed.gtin || '']);
-  if (!art) throw bad(`Codice ${code} non riconosciuto: associa il codice a barre all'articolo nel catalogo oppure spunta la riga a mano`);
-  const pk = await one(`SELECT id FROM packages WHERE order_id=$1 AND article_id=$2 AND status='ATTESO' ORDER BY seq LIMIT 1`, [o.id, art.id]);
-  if (!pk) throw bad('Tutte le confezioni di questo articolo risultano già ricevute');
-  const row = await one(`UPDATE packages SET status='RICEVUTO', barcode=$2, lot=coalesce($3, lot), expiry=coalesce($4::date, expiry), received_at=now(), received_by=$5 WHERE id=$1 RETURNING *`,
-    [pk.id, code.trim(), lot || parsed.lot || null, expiry || parsed.expiry || null, req.user.id]);
-  res.json(row);
+// Fasi 3 e 4 registrate a mano dall'Area Operations (quando il fornitore non chiama le API)
+r.post('/:id/picked', requireRole(...OPS_ROLES), ah(async (req, res) => {
+  const d = parse(z.object({ reference: opt(z.string().max(80)) }), req.body || {});
+  const out = await markPicked(await loadOrder(req, req.params.id), { reference: d.reference, userId: req.user.id, actor: req.user.full_name });
+  await audit(req, 'ORDER_PICKED', 'order', req.params.id, d); res.json(out);
+}));
+r.post('/:id/shipped', requireRole(...OPS_ROLES), ah(async (req, res) => {
+  const d = parse(z.object({ ddt: opt(z.string().max(80)) }), req.body || {});
+  const out = await markShipped(await loadOrder(req, req.params.id), { ddt: d.ddt, userId: req.user.id, actor: req.user.full_name });
+  await audit(req, 'ORDER_SHIPPED', 'order', req.params.id, d); res.json(out);
+}));
+r.post('/:id/delivered', requireRole(...OPS_ROLES), ah(async (req, res) => {
+  const d = parse(z.object({ ddt: opt(z.string().max(80)), lines: z.array(z.object({ article_code: z.string(), packs: z.coerce.number().int().min(0), lot: opt(z.string().max(60)), expiry: opt(z.string()) })).optional() }), req.body || {});
+  const out = await markDelivered(await loadOrder(req, req.params.id), { ddt: d.ddt, lines: d.lines?.map((l) => ({ codiceArticolo: l.article_code, confezioni: l.packs, lotto: l.lot, scadenza: l.expiry })), userId: req.user.id, actor: req.user.full_name });
+  await audit(req, 'ORDER_DELIVERED', 'order', req.params.id, { ddt: d.ddt }); res.json(out);
 }));
 
-r.post('/:id/receive', ah(async (req, res) => {
+// ---------------- Fase 5 · Carico nel magazzino interno (strutture TD): una riga per confezione, lettura o spunta ----------------
+const canLoad = (req, o) => (isOps(req.user) || o.struttura_id === req.user.struttura_id) && o.kind !== 'CLIENTE';
+
+// Lettura di un codice: confezione già nota (barcode comunicato dal fornitore), GTIN o codice articolo -> prossima confezione attesa
+r.post('/:id/load-scan', ah(async (req, res) => {
   const o = await loadOrder(req, req.params.id);
-  if (!canReceive(req, o)) throw forbidden();
-  assertStatus(o, 'TRASMESSO', 'APPROVATO');
+  if (!canLoad(req, o)) throw forbidden();
+  assertStatus(o, 'CONSEGNATO');
+  const { code, lot, expiry } = parse(z.object({ code: z.string().min(1).max(120), lot: opt(z.string().max(60)), expiry: opt(z.string().regex(/^\d{4}-\d{2}-\d{2}$/)) }), req.body);
+  const c = code.trim();
+  let pk = await one("SELECT id FROM packages WHERE order_id=$1 AND status='ATTESO' AND barcode=$2 ORDER BY seq LIMIT 1", [o.id, c]);
+  if (!pk) {
+    const parsed = parseGs1(c);
+    const art = await one(`SELECT a.id FROM articles a WHERE (a.gtin IS NOT NULL AND (a.gtin=$1 OR a.gtin=$2)) OR upper(a.code)=upper($1) OR upper(a.silva_code)=upper($1) LIMIT 1`, [c, parsed.gtin || '']);
+    if (!art) throw bad(`Codice ${c} non riconosciuto: associa il codice a barre all'articolo nel catalogo oppure spunta la riga a mano`);
+    pk = await one(`SELECT id FROM packages WHERE order_id=$1 AND article_id=$2 AND status='ATTESO' ORDER BY seq LIMIT 1`, [o.id, art.id]);
+    if (!pk) throw bad('Tutte le confezioni di questo articolo risultano già caricate');
+    const row = await one(`UPDATE packages SET status='RICEVUTO', barcode=coalesce(barcode,$2), lot=coalesce($3, lot), expiry=coalesce($4::date, expiry), received_at=now(), received_by=$5 WHERE id=$1 RETURNING *`, [pk.id, c, lot || parsed.lot || null, expiry || parsed.expiry || null, req.user.id]);
+    return res.json(row);
+  }
+  res.json(await one(`UPDATE packages SET status='RICEVUTO', lot=coalesce($2, lot), expiry=coalesce($3::date, expiry), received_at=now(), received_by=$4 WHERE id=$1 RETURNING *`, [pk.id, lot || null, expiry || null, req.user.id]));
+}));
+
+r.post('/:id/load', ah(async (req, res) => {
+  const o = await loadOrder(req, req.params.id);
+  if (!canLoad(req, o)) throw forbidden();
+  assertStatus(o, 'CONSEGNATO');
   const d = parse(z.object({ all: z.boolean().optional(), packages: z.array(z.object({ id: z.coerce.number().int(), received: z.boolean().default(true), lot: opt(z.string().max(60)), expiry: opt(z.string().regex(/^\d{4}-\d{2}-\d{2}$/)) })).optional() }), req.body);
   await tx(async (c) => {
     if (d.all) await c.query("UPDATE packages SET status='RICEVUTO', received_at=now(), received_by=$2 WHERE order_id=$1 AND status='ATTESO'", [o.id, req.user.id]);
@@ -220,37 +226,18 @@ r.post('/:id/receive', ah(async (req, res) => {
   res.json({ ok: true });
 }));
 
-// Conferma finale: le confezioni non spuntate diventano "non ricevute" e aprono una difformità verso l'Area Operations
-r.post('/:id/confirm-receipt', ah(async (req, res) => {
+r.post('/:id/load-confirm', ah(async (req, res) => {
   const o = await loadOrder(req, req.params.id);
-  if (!canReceive(req, o)) throw forbidden();
-  assertStatus(o, 'TRASMESSO', 'APPROVATO');
-  const d = parse(z.object({ note: opt(z.string().max(1000)) }), req.body);
-  const missing = await many(`SELECT p.id, a.name FROM packages p JOIN articles a ON a.id=p.article_id WHERE p.order_id=$1 AND p.status='ATTESO'`, [o.id]);
-  const received = await one("SELECT count(*)::int AS n FROM packages WHERE order_id=$1 AND status='RICEVUTO'", [o.id]);
-  if (!received.n && missing.length) throw bad('Nessuna confezione spuntata: segnala la mancata consegna con una difformità invece di confermare');
-  await tx(async (c) => {
-    await c.query("UPDATE packages SET status='NON_RICEVUTO' WHERE order_id=$1 AND status='ATTESO'", [o.id]);
-    await c.query(`UPDATE order_lines l SET qty_received = (SELECT count(*) FROM packages p WHERE p.line_id=l.id AND p.status IN ('RICEVUTO','IN_USO')) WHERE l.order_id=$1`, [o.id]);
-    await c.query("UPDATE orders SET status='CONSEGNATO', received_at=now(), received_by=$2, updated_at=now() WHERE id=$1", [o.id, req.user.id]);
-    if (missing.length) {
-      const byName = {};
-      for (const m of missing) byName[m.name] = (byName[m.name] || 0) + 1;
-      const desc = `Confezioni non ricevute: ${Object.entries(byName).map(([n, k]) => `${n} x${k}`).join(', ')}.${d.note ? ' ' + d.note : ''}`;
-      await c.query("INSERT INTO issues (order_id, struttura_id, kind, description, opened_by) VALUES ($1,$2,'MANCANTE',$3,$4)", [o.id, o.struttura_id, desc, req.user.id]);
-    }
-  });
-  await event(o.id, req.user.id, missing.length ? `Ricezione confermata con ${missing.length} confezioni mancanti` : 'Ricezione confermata, materiale preso in carico', { missing: missing.length, note: d.note });
-  await audit(req, 'ORDER_RECEIVED', 'order', o.id, { missing: missing.length });
-  const to = await opsEmails();
-  if (to.length) await sendMail({ kind: 'RICEZIONE', refKey: `RICEZIONE:${o.id}`, to, strutturaId: o.struttura_id, subject: `Ordine ${o.number} ricevuto da ${o.struttura_name}${missing.length ? ` · ${missing.length} confezioni mancanti` : ''}`, title: `Ricezione ordine ${o.number}`,
-    body: missing.length ? `${o.struttura_name} ha confermato la ricezione dell'ordine ${o.number} segnalando ${missing.length} confezioni mancanti. È aperta una difformità da gestire.` : `${o.struttura_name} ha confermato la ricezione completa dell'ordine ${o.number}. Verifica e chiudi l'ordine.` });
-  res.json({ ok: true, missing: missing.length });
+  if (!canLoad(req, o)) throw forbidden();
+  const d = parse(z.object({ note: opt(z.string().max(1000)) }), req.body || {});
+  const out = await markStored(o, { userId: req.user.id, note: d.note });
+  await audit(req, 'ORDER_STORED', 'order', o.id, out);
+  res.json(out);
 }));
 
 r.post('/:id/close', requireRole(...OPS_ROLES), ah(async (req, res) => {
   const o = await loadOrder(req, req.params.id);
-  assertStatus(o, 'CONSEGNATO');
+  if (o.kind === 'CLIENTE') assertStatus(o, 'CONSEGNATO'); else assertStatus(o, 'IMMAGAZZINATO');
   const open = await one("SELECT count(*)::int AS n FROM issues WHERE order_id=$1 AND status='APERTA'", [o.id]);
   if (open.n) throw bad('Chiudi prima le difformità aperte');
   await q("UPDATE orders SET status='CHIUSO', closed_by=$2, closed_at=now(), updated_at=now() WHERE id=$1", [o.id, req.user.id]);
@@ -262,7 +249,7 @@ r.post('/:id/close', requireRole(...OPS_ROLES), ah(async (req, res) => {
 r.post('/:id/cancel', ah(async (req, res) => {
   const o = await loadOrder(req, req.params.id);
   const { reason } = parse(z.object({ reason: z.string().min(3).max(500) }), req.body);
-  if (isOps(req.user)) assertStatus(o, 'BOZZA', 'INVIATO', 'APPROVATO', 'TRASMESSO');
+  if (isOps(req.user)) assertStatus(o, 'BOZZA', 'INVIATO', 'APPROVATO', 'PRESO_IN_CARICO');
   else assertStatus(o, 'BOZZA', 'INVIATO');
   await tx(async (c) => {
     await c.query("DELETE FROM packages WHERE order_id=$1 AND status='ATTESO'", [o.id]);
@@ -287,6 +274,7 @@ r.get('/:id/pdf', ah(async (req, res) => {
 // ---------------- Difformità ----------------
 r.post('/:id/issues', ah(async (req, res) => {
   const o = await loadOrder(req, req.params.id);
+  if (!isOps(req.user) && o.struttura_id !== req.user.struttura_id) throw forbidden();
   const d = parse(z.object({ kind: z.enum(['MANCANTE', 'DANNEGGIATO', 'ERRATO', 'ALTRO']), description: z.string().min(3).max(1000) }), req.body);
   const row = await one('INSERT INTO issues (order_id, struttura_id, kind, description, opened_by) VALUES ($1,$2,$3,$4,$5) RETURNING id', [o.id, o.struttura_id, d.kind, d.description, req.user.id]);
   await event(o.id, req.user.id, `Difformità segnalata (${d.kind})`, { description: d.description });

@@ -9,7 +9,6 @@ import { one, q } from '../db.js';
 import { config } from '../config.js';
 import { ah, bad, audit, parse, HttpError } from '../lib/util.js';
 import { requireAuth, onboardingState } from '../lib/access.js';
-import { verifyCredentials, studiolabStatus } from '../lib/studiolab.js';
 
 const r = Router();
 authenticator.options = { window: 1 };
@@ -35,28 +34,8 @@ async function completeLogin(req, user, method) {
 }
 
 r.get('/config', (_req, res) => {
-  res.json({ entraEnabled: config.entra.enabled, studiolabEnabled: config.studiolab.mode === 'API' && studiolabStatus().configured, appName: config.appName });
+  res.json({ entraEnabled: config.entra.enabled, studiolabEnabled: false, appName: config.appName });
 });
-
-// Accesso clienti con le credenziali StudioLab (quelle dell'accettazione campioni): l'utente viene creato al primo accesso
-// e collegato alla struttura con lo stesso codice StudioLab. Attivo solo con STUDIOLAB_MODE=API.
-r.post('/login-studiolab', loginLimiter, ah(async (req, res) => {
-  const { username, password } = parse(z.object({ username: z.string().min(1).max(100), password: z.string().min(1) }), req.body);
-  if (!(config.studiolab.mode === 'API' && studiolabStatus().configured)) throw bad('Accesso con credenziali StudioLab non attivo');
-  const v = await verifyCredentials(username.trim(), password);
-  if (!v.ok) { await audit(req, 'LOGIN_STUDIOLAB_FAILED', 'user', username); throw new HttpError(401, v.reason || 'Credenziali StudioLab non valide'); }
-  let u = await one('SELECT * FROM users WHERE lower(studiolab_username)=lower($1)', [username.trim()]);
-  if (!u) {
-    const s = await one("SELECT * FROM strutture WHERE kind='CLIENTE' AND active AND studiolab_code=$1", [v.clientCode]);
-    if (!s) throw new HttpError(403, `Nessun cliente con codice StudioLab ${v.clientCode}: chiedi all'Area Operations di censire la struttura`);
-    u = await one(`INSERT INTO users (email, full_name, role, struttura_id, auth_provider, studiolab_username, must_change_password)
-      VALUES ($1,$2,'CLIENTE',$3,'STUDIOLAB',$4,FALSE) RETURNING *`, [`${username.trim().toLowerCase()}@studiolab.local`, v.clientName || s.name, s.id, username.trim()]);
-    await audit(req, 'USER_AUTOPROVISION', 'user', u.id, { studiolab: username, struttura: s.code });
-  }
-  if (!u.active) throw new HttpError(403, 'Utente disattivato');
-  await completeLogin(req, u, 'STUDIOLAB');
-  res.json({ ok: true, onboarding: null });
-}));
 
 r.post('/login', loginLimiter, ah(async (req, res) => {
   const { email, password } = parse(z.object({ email: z.string().email(), password: z.string().min(1) }), req.body);

@@ -4,6 +4,7 @@ import { api, qs } from '../api.js';
 import { useAuth, isOps } from '../auth.jsx';
 import { useApi, Field, Loading, Empty, Badge, ErrorBox, Card } from '../components/ui.jsx';
 import { itDateTime, monthLabel, currentMonth, KIND } from '../format.js';
+import { PhaseBanner } from '../components/phase.jsx';
 
 // Giacenze mensili: la struttura apre quella del mese (sedi entro il 15, laboratorio entro il 30); l'Area Operations vede tutte
 export default function StockCounts() {
@@ -23,6 +24,7 @@ export default function StockCounts() {
   const canOpen = !ops || sid;
   return (
     <div className="page">
+      {!ops && <PhaseBanner n="7" title="Giacenza reale del mese" desc={`Entro il giorno ${user.stock_deadline_day} di ogni mese inserisci la giacenza reale, confrontata con quella teorica. Alla conferma il sistema genera l'ordine del mese e il flusso riparte.`} next="Fase 1: ordine del mese" />}
       <div className="page-head">
         <div><h1>{ops ? 'Giacenze mensili delle strutture' : 'Giacenza mensile'}</h1><div className="sub">{ops ? 'Inserimento della giacenza entro il 15 (sedi) e il 30 (laboratorio); dalla conferma nasce l\'ordine del mese' : `Da inserire e confermare entro il giorno ${user.stock_deadline_day} di ogni mese: dalla conferma il sistema genera l'ordine`}</div></div>
         <div className="row">

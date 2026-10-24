@@ -6,7 +6,7 @@ import { z } from 'zod';
 import { one, many, q } from '../db.js';
 import { ah, bad, audit, parse } from '../lib/util.js';
 import { requireRole, isOps, assertStruttura, OPS_ROLES } from '../lib/access.js';
-import { saveProduction, syncProduction, studiolabStatus } from '../lib/studiolab.js';
+import { saveProduction, studiolabStatus, whoAmI, syncExamCatalog } from '../lib/studiolab.js';
 
 const r = Router();
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 * 1024 * 1024 } });
@@ -74,13 +74,22 @@ r.get('/import/template.xlsx', requireRole(...OPS_ROLES), ah(async (_req, res) =
   res.send(Buffer.from(await wb.xlsx.writeBuffer()));
 }));
 
-// Sincronizzazione da StudioLab (solo con STUDIOLAB_MODE=API)
-r.post('/sync', requireRole(...OPS_ROLES), ah(async (req, res) => {
-  const d = parse(z.object({ struttura_id: z.coerce.number().int(), months: z.coerce.number().int().min(1).max(12).default(3) }), req.body);
-  if (!studiolabStatus().configured || studiolabStatus().mode !== 'API') throw bad('StudioLab non collegato: in modalità SIMULATO usa l\'import da file o l\'inserimento manuale');
-  const out = await syncProduction(d.struttura_id, d.months);
-  await audit(req, 'PRODUCTION_SYNC', 'struttura', d.struttura_id, { out });
+// StudioLab ServiceNET: prova del collegamento e sincronizzazione del catalogo esami (con materiale) per la correlazione
+r.get('/studiolab/test', requireRole(...OPS_ROLES), ah(async (_req, res) => {
+  if (!studiolabStatus().configured) throw bad('StudioLab non collegato: impostare STUDIOLAB_API_KEY nel pannello Render');
+  try { res.json({ ok: true, whoami: await whoAmI() }); } catch (e) { res.status(502).json({ ok: false, error: e.message }); }
+}));
+r.post('/studiolab/sync-exams', requireRole(...OPS_ROLES), ah(async (req, res) => {
+  const out = await syncExamCatalog();
+  await audit(req, 'STUDIOLAB_SYNC_EXAMS', 'exam_catalog', null, out);
   res.json(out);
+}));
+r.get('/exam-catalog', requireRole(...OPS_ROLES), ah(async (_req, res) => {
+  res.json(await many(`SELECT e.*, (SELECT count(*)::int FROM exam_mappings m WHERE m.exam_code=e.code AND m.active) AS mappings FROM exam_catalog e ORDER BY e.code`));
+}));
+// Eventi HL7 ricevuti (ultimi 200)
+r.get('/hl7-events', requireRole(...OPS_ROLES), ah(async (_req, res) => {
+  res.json(await many('SELECT * FROM studiolab_events ORDER BY received_at DESC LIMIT 200'));
 }));
 
 export default r;

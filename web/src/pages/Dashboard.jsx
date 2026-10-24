@@ -25,13 +25,13 @@ export default function Dashboard() {
       </div>
       <div className="grid g4" style={{ marginBottom: 16 }}>
         {ops ? <>
-          <Kpi label="Da verificare" value={n('INVIATO')} foot={urgent ? `${urgent} urgenti` : 'ordini inviati dalle strutture'} accent />
-          <Kpi label="In consegna" value={n('TRASMESSO') + n('APPROVATO')} foot="trasmessi al magazzino" />
-          <Kpi label="Ricevuti da chiudere" value={n('CONSEGNATO')} foot="ricezione confermata" />
+          <Kpi label="Fase 2 · da verificare" value={n('INVIATO')} foot={urgent ? `${urgent} urgenti` : 'richieste inviate dalle strutture'} accent />
+          <Kpi label="Fase 3 · al magazzino" value={n('APPROVATO') + n('PRESO_IN_CARICO')} foot={d.supplier?.last_poll_at ? `ultima lettura del fornitore ${itDateTime(d.supplier.last_poll_at)}` : 'il fornitore non ha ancora letto le API'} />
+          <Kpi label="Fase 4-5 · in consegna e carico" value={n('SPEDITO') + n('CONSEGNATO') + n('IMMAGAZZINATO')} foot={`${n('CONSEGNATO')} in attesa di carico interno`} />
           <Kpi label="Difformità aperte" value={d.openIssues} foot={`${d.pendingCounts?.length || 0} giacenze mensili mancanti`} />
         </> : <>
           <Kpi label="Confezioni in giacenza" value={d.stock.packs} foot={d.stock.expiring ? `${d.stock.expiring} in scadenza entro 60 giorni` : 'nessuna in scadenza a 60 giorni'} accent />
-          <Kpi label="In arrivo" value={d.stock.incoming} foot={`${d.toReceive.length} ordini da ricevere`} />
+          <Kpi label="In arrivo" value={(d.inTransit || []).length} foot={`${d.toReceive.length} consegnati da caricare`} />
           <Kpi label="In uso questo mese" value={d.stock.used_month} foot="confezioni messe in uso" />
           {d.stockCount ? <Kpi label={`Giacenza di ${monthLabel(d.stockCount.month)}`} value={d.stockCount.status === 'CONFERMATO' ? 'Confermata' : d.stockCount.status === 'BOZZA' ? 'Bozza' : 'Da inserire'} foot={d.stockCount.status === 'CONFERMATO' ? 'ordine del mese generato' : day > d.stockCount.deadline ? `scadenza del ${d.stockCount.deadline} superata` : `entro il giorno ${d.stockCount.deadline}`} /> : <Kpi label="Ordini aperti" value={d.byStatus.reduce((s, x) => s + x.n, 0)} foot={`${d.openIssues} difformità aperte`} />}
         </>}
@@ -39,7 +39,7 @@ export default function Dashboard() {
       <div className="grid" style={{ gridTemplateColumns: 'minmax(0, 1.4fr) minmax(0, 1fr)' }}>
         <div>
           {!ops && d.toReceive.length > 0 && (
-            <div className="alert warn" style={{ marginBottom: 16 }}><Icon name="truck" size={18} /><div>Materiale in consegna: {d.toReceive.map((o) => <Link key={o.id} to={`/ordini/${o.id}`} style={{ marginRight: 8 }}>{o.number}</Link>)}. Alla consegna conferma la ricezione confezione per confezione.</div></div>
+            <div className="alert warn" style={{ marginBottom: 16 }}><Icon name="truck" size={18} /><div>{user.struttura_kind === 'CLIENTE' ? <>Ordini consegnati: {d.toReceive.map((o) => <Link key={o.id} to={`/ordini/${o.id}`} style={{ marginRight: 8 }}>{o.number}</Link>)}</> : <>Materiale consegnato da caricare nel magazzino interno (fase 5): {d.toReceive.map((o) => <Link key={o.id} to={`/carico/${o.id}`} style={{ marginRight: 8 }}>{o.number}</Link>)}</>}</div></div>
           )}
           {!ops && d.stockCount && d.stockCount.status !== 'CONFERMATO' && day > d.stockCount.deadline - 4 && (
             <div className="alert err" style={{ marginBottom: 16 }}><Icon name="alert" size={18} /><div>Giacenza di {monthLabel(d.stockCount.month)} da {d.stockCount.status === 'BOZZA' ? 'completare e confermare' : 'inserire'} entro il giorno {d.stockCount.deadline}. <Link to="/giacenze">Apri la giacenza</Link></div></div>
@@ -82,6 +82,7 @@ export default function Dashboard() {
               <table className="t"><tbody>{d.topArticles.map((a) => <tr key={a.code}><td>{a.name}</td><td className="num strong">{a.packs}</td></tr>)}</tbody></table>
             </Card>
           )}
+          {ops && d.supplier && <Card title="Integrazioni" className="mt"><div className="small">Feed magazzino Silva: <b>{d.supplier.last_feed_at ? itDateTime(d.supplier.last_feed_at) : 'mai ricevuto'}</b></div><div className="small">Lettura ordini da Silva: <b>{d.supplier.last_poll_at ? itDateTime(d.supplier.last_poll_at) : 'mai'}</b></div><div className="small">Ultimo messaggio HL7 StudioLab: <b>{d.supplier.last_hl7_at ? itDateTime(d.supplier.last_hl7_at) : 'mai'}</b></div></Card>}
           {ops && d.strutture && <Card title="Rete" className="mt"><div className="row"><div className="statbox"><div className="small muted">Clienti Service</div><div className="strong" style={{ fontSize: 20 }}>{d.strutture.clienti}</div></div><div className="statbox"><div className="small muted">Sedi</div><div className="strong" style={{ fontSize: 20 }}>{d.strutture.sedi}</div></div><div className="statbox"><div className="small muted">Laboratorio</div><div className="strong" style={{ fontSize: 20 }}>{d.strutture.lab}</div></div></div></Card>}
         </div>
       </div>
